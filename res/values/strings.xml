@@ -4507,7 +4507,6 @@
     <string name="cell_broadcast_settings">Cell broadcasts</string>
     <!-- Cell Broadcast settings description [CHAR LIMIT=100] -->
     <string name="cell_broadcast_settings_summary">Select the types of emergency alerts to display.</string>
-
     <!-- User app limits screen title [CHAR LIMIT=35] -->
     <string name="user_restrictions_title">Application and content restrictions</string>
     <!-- User limits screen, user name rename text [CHAR LIMIT=15] -->
@@ -4589,9 +4588,6 @@
     <!-- time range preference -->
     <string name="start_time_title">Start</string>
     <string name="end_time_title">End</string>
-
-    <!-- Hostname setting -->
-    <string name="device_hostname">Device hostname</string>
 
     <!-- About phone screen,  setting option name-->
     <string name="mod_version">C-RoM version</string>
