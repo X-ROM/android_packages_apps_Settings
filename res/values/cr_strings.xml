@@ -680,4 +680,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="ime_switcher_notify">Selector notification</string>
     <string name="ime_switcher_notify_summary">Display input method selector notification</string>
 
+    <!-- Title for the accessibility preference to home button to answers a call. [CHAR LIMIT=35] -->
+    <string name="accessibility_home_button_answers_call_prerefence_title">Home button answers call</string>
+
 </resources>
