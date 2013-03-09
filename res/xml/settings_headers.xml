@@ -63,13 +63,19 @@
         android:title="@string/header_category_crom_links" />
 
     <!-- C-Tool -->
-    <header android:icon="@drawable/ic_settings_crom"
-            android:title="@string/ctool_title">
+    <header 
+        android:icon="@drawable/ic_settings_crom"
+        android:title="@string/ctool_title">
         <intent
-                android:action="android.intent.action.MAIN"
-                android:targetClass="com.crom.settings.CrSettingsActivity"
-                android:targetPackage="com.crom.settings" />
-    </header>
+        android:action="android.intent.action.MAIN"
+        android:targetClass="com.crom.settings.CrSettingsActivity"
+        android:targetPackage="com.crom.settings" />
+
+    <!-- Dark C-RoM -->
+    <header
+        android:id="@+id/trds_settings"
+        android:icon="@drawable/ic_settings_trds"
+        android:title="@string/trds_settings_title" />
 
     <!-- Performance -->
     <header
