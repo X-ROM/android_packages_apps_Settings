@@ -1671,6 +1671,8 @@
 
         <activity android:name=".profiles.ProfileGroupConfig" />
 
+        <activity android:name=".profiles.WifiTriggers" />
+
         <activity android:name=".profiles.NFCProfileWriter" />
 
         <activity android:name=".profiles.NFCProfileSelect" />
