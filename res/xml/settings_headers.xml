@@ -67,7 +67,7 @@
             android:title="@string/ctool_title">
         <intent
                 android:action="android.intent.action.MAIN"
-                android:targetClass="com.crom.settings.CRSettingsActivity"
+                android:targetClass="com.crom.settings.CrSettingsActivity"
                 android:targetPackage="com.crom.settings" />
     </header>
 
