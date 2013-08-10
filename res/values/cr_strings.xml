@@ -67,7 +67,7 @@
     <!-- C-RoM Links  -->
     <!-- Settings main menu category heading. [CHAR LIMIT=40] -->
     <string name="header_category_crom_links">C-RoM</string>
-    <string name="crom_fibers_title">C-Tool</string>
+    <string name="ctool_title">C-Tool</string>
 
     <!-- Launcher settings  -->
     <string name="launcher_settings_title">Launcher</string>
