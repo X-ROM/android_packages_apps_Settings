@@ -241,7 +241,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
         if (mLockAfter != null) {
             setupLockAfterPreference();
             updateLockAfterPreferenceSummary();
-        } else if (!mLockPatternUtils.isLockScreenDisabled() && isCmSecurity) {
+        } else if (!mLockPatternUtils.isLockScreenDisabled()) {
             addPreferencesFromResource(R.xml.security_settings_slide_delay_cyanogenmod);
 
             mSlideLockDelayToggle = (CheckBoxPreference) root
@@ -266,7 +266,6 @@ public class SecuritySettings extends SettingsPreferenceFragment
             mSlideLockScreenOffDelay.setOnPreferenceChangeListener(this);
         }
 
-        if (isCmSecurity) {
             // visible pattern
             mVisiblePattern = (CheckBoxPreference) root.findPreference(KEY_VISIBLE_PATTERN);
 
@@ -351,7 +350,6 @@ public class SecuritySettings extends SettingsPreferenceFragment
                     .getBoolean(com.android.internal.R.bool.config_disableHomeUnlockSetting)) {
                 mHomeUnlock.setEnabled(false);
             }
-        }
 
         // biometric weak liveliness
         mBiometricWeakLiveliness =
