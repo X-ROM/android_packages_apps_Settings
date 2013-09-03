@@ -701,4 +701,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <!-- Delete apn confirmation dialog message -->
     <string name="confirm_delete_apn">The APN will be deleted.</string>
 
+    <!-- C-RoM Stats -->
+    <string name="anonymous_statistics_title">C-RoM statistics</string>
+    <string name="anonymous_statistics_summary">Help make C-RoM better by opting into anonymous statistics reporting</string>
+
 </resources>
