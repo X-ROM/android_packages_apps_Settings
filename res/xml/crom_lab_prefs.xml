@@ -31,6 +31,13 @@
         android:icon="@drawable/ic_settings_halo"
         android:title="@string/halo_settings_title" />
 
+   <!-- Active display -->	
+   <PreferenceScreen	
+    	android:key="active_display"	
+	android:fragment="com.android.settings.crom.ActiveDisplaySettings"	
+    	android:title="@string/ad_settings_title"	
+    	android:summary="@string/ad_settings_summary" /> 
+
     <!-- Gesture Anywhere -->
     <PreferenceScreen
         android:key="gesture_anywhere"
