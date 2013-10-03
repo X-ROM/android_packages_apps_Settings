@@ -289,4 +289,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <!-- Screen off animation -->
     <string name="screen_off_animation">Screen-off animation</string>
 
+    <!-- Lockscreen battery ring -->
+    <string name="battery_around_lockscreen_ring">Battery around unlock ring</string>
+
 </resources>
