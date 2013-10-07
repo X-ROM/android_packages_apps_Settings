@@ -24,6 +24,13 @@
         android:icon="@drawable/ic_settings_halo"
         android:title="@string/halo_settings_title" />
 
+    <!-- Gesture Anywhere -->
+    <PreferenceScreen
+        android:key="gesture_anywhere"
+        android:fragment="com.android.settings.chameleonos.labs.gestureanywhere.GestureAnywhereSettings"
+        android:icon="@drawable/ic_settings_gesture_anywhere"
+        android:title="@string/gesture_anywhere_title" />
+
     <!-- ProgressBar -->
     <PreferenceScreen
         android:key="progressbar_settings"
