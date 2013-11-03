@@ -35,6 +35,19 @@
         android:title="@string/disp_anim_settings_title"
         android:fragment="com.android.settings.crom.DisplayAnimationsSettings" />
 
+    <!-- Screen state service -->
+    <PreferenceScreen
+        android:key="screen_state_service"
+        android:fragment="com.android.settings.crom.ScreenStateToggles"
+        android:title="@string/screen_state_toggles_title"
+        android:summary="@string/screen_state_toggles_summary" />
+
+    <PreferenceScreen
+        android:key="wakelock_blocker"
+        android:fragment="com.android.settings.crom.WakeLockBlocker"
+        android:title="@string/wakelock_blocker"
+        android:summary="@string/wakelock_blocker_header_summary" />
+
     <!-- SlimSizer -->
     <PreferenceScreen
         android:id="@+id/system_app_remover"
