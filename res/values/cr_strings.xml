@@ -285,4 +285,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="remove_blacklist_number_title">Remove number</string>
     <string name="remove_blacklist_entry">Do you want to remove this blacklist entry?</string>
     <string name="select_contact">Select contact</string>
+
+    <!-- Screen off animation -->
+    <string name="screen_off_animation">Screen-off animation</string>
+
 </resources>
