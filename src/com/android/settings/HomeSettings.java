@@ -16,6 +16,8 @@
 
 package com.android.settings;
 
+import java.util.ArrayList;
+
 import android.app.ActivityManager;
 import android.content.ComponentName;
 import android.content.Context;
@@ -37,16 +39,10 @@ import android.os.Handler;
 import android.preference.Preference;
 import android.preference.PreferenceGroup;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.RadioButton;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class HomeSettings extends SettingsPreferenceFragment {
     static final String TAG = "HomeSettings";
@@ -152,10 +148,6 @@ public class HomeSettings extends SettingsPreferenceFragment {
         ArrayList<ResolveInfo> homeActivities = new ArrayList<ResolveInfo>();
         ComponentName currentDefaultHome  = mPm.getHomeActivities(homeActivities);
 
-        Intent prefsIntent = new Intent(Intent.ACTION_MAIN);
-        prefsIntent.addCategory("com.cyanogenmod.category.LAUNCHER_PREFERENCES");
-        List<ResolveInfo> prefsActivities = mPm.queryIntentActivities(prefsIntent, 0);
-
         Context context = getActivity();
         mCurrentHome = null;
         mPrefGroup.removeAll();
@@ -165,23 +157,13 @@ public class HomeSettings extends SettingsPreferenceFragment {
         for (int i = 0; i < homeActivities.size(); i++) {
             final ResolveInfo candidate = homeActivities.get(i);
             final ActivityInfo info = candidate.activityInfo;
-            Intent resolvedPrefsIntent = null;
             ComponentName activityName = new ComponentName(info.packageName, info.name);
             mHomeComponentSet[i] = activityName;
-
-            for (ResolveInfo prefInfo : prefsActivities) {
-                if (info.packageName.equals(prefInfo.activityInfo.packageName)) {
-                    resolvedPrefsIntent = new Intent(prefsIntent);
-                    resolvedPrefsIntent.setPackage(info.packageName);
-                    break;
-                }
-            }
-
             try {
                 Drawable icon = info.loadIcon(mPm);
                 CharSequence name = info.loadLabel(mPm);
                 HomeAppPreference pref = new HomeAppPreference(context, activityName, prefIndex,
-                        icon, name, this, info, resolvedPrefsIntent);
+                        icon, name, this, info);
                 mPrefs.add(pref);
                 mPrefGroup.addPreference(pref);
                 pref.setEnabled(true);
@@ -213,8 +195,6 @@ public class HomeSettings extends SettingsPreferenceFragment {
 
         Bundle args = getArguments();
         mShowNotice = (args != null) && args.getBoolean(HOME_SHOW_NOTICE, false);
-
-        setHasOptionsMenu(true);
     }
 
     @Override
@@ -223,40 +203,19 @@ public class HomeSettings extends SettingsPreferenceFragment {
         buildHomeActivitiesList();
     }
 
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        HomeAppPreference selectedPref = null;
-
-        for (HomeAppPreference pref : mPrefs) {
-            if (pref.isChecked) {
-                selectedPref = pref;
-                break;
-            }
-        }
-
-        super.onCreateOptionsMenu(menu, inflater);
-
-        if (selectedPref != null && selectedPref.prefsIntent != null) {
-            menu.add(Menu.NONE, Menu.NONE, Menu.NONE, R.string.settings_label)
-                    .setIntent(selectedPref.prefsIntent)
-                    .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
-        }
-    }
-
     class HomeAppPreference extends Preference {
         ComponentName activityName;
         int index;
         HomeSettings fragment;
         final ColorFilter grayscaleFilter;
         boolean isChecked;
-        final Intent prefsIntent;
 
         boolean isSystem;
         String uninstallTarget;
 
         public HomeAppPreference(Context context, ComponentName activity,
                 int i, Drawable icon, CharSequence title,
-                HomeSettings parent, ActivityInfo info, Intent prefsIntent) {
+                HomeSettings parent, ActivityInfo info) {
             super(context);
             setLayoutResource(R.layout.preference_home_app);
             setIcon(icon);
@@ -264,7 +223,6 @@ public class HomeSettings extends SettingsPreferenceFragment {
             activityName = activity;
             fragment = parent;
             index = i;
-            this.prefsIntent = prefsIntent;
 
             ColorMatrix colorMatrix = new ColorMatrix();
             colorMatrix.setSaturation(0f);
@@ -329,7 +287,6 @@ public class HomeSettings extends SettingsPreferenceFragment {
             if (state != isChecked) {
                 isChecked = state;
                 notifyChanged();
-                getActivity().invalidateOptionsMenu();
             }
         }
     }
