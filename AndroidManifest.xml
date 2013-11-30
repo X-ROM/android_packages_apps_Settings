@@ -1645,7 +1645,6 @@
         />
 
         <!-- CyanogenMod activities Start -->
-        <activity android:name=".cyanogenmod.SystemUiSettings"/>
 
         <activity android:name=".crom.AutoBrightnessSetup"
                 android:excludeFromRecents="true"
