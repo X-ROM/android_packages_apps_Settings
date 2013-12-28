@@ -64,12 +64,13 @@
             android:targetClass="org.omnirom.omniswitch.SettingsActivity" />
      </PreferenceScreen>
 
-    <!-- Display and Animations -->
-    <PreferenceScreen
-        android:id="@+id/disp_anim_settings"
-        android:icon="@drawable/ic_settings_display_animations"
-        android:title="@string/disp_anim_settings_title"
-        android:fragment="com.android.settings.crom.DisplayAnimationsSettings" />
+    <!-- Animations -->
+  	<PreferenceScreen
+            android:id="@+id/interface_animation"
+            android:title="@string/interface_animation_title"
+            android:breadCrumbTitle="@string/interface_animation_title"
+            android:fragment="com.android.settings.crom.AnimationInterfaceSettings"
+            android:icon="@drawable/ic_rom_control_animations" />
 
     <!-- Screen state service -->
     <PreferenceScreen

@@ -25,8 +25,8 @@
 
     <LinearLayout
         android:layout_width="@dimen/header_icon_width"
-        android:layout_marginStart="6dip"
-        android:layout_marginEnd="6dip"
+        android:layout_marginStart="18dip"
+        android:layout_marginEnd="15dip"
         android:layout_height="wrap_content">
         <ImageView
             android:src="@drawable/ic_crom_download"
