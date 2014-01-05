@@ -527,8 +527,11 @@ public class Settings extends PreferenceActivity
         // uiOptions for fragments also defined as activities in manifest.
         if (WifiSettings.class.getName().equals(fragmentName) ||
                 WifiP2pSettings.class.getName().equals(fragmentName) ||
+<<<<<<< HEAD
                 WifiDisplaySettings.class.getName().equals(fragmentName) ||
                 BlacklistSettings.class.getName().equals(fragmentName) ||
+=======
+>>>>>>> android-4.4.1_r1
                 BluetoothSettings.class.getName().equals(fragmentName) ||
                 DreamSettings.class.getName().equals(fragmentName) ||
                 ProfilesSettings.class.getName().equals(fragmentName) ||
