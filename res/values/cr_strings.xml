@@ -158,12 +158,8 @@
     <string name="toggleWimax">WiMAX</string>
     <string name="toggleNfc">NFC</string>
 
-<<<<<<< HEAD
-    <!-- Sound volumes panel   -->
-=======
     <!-- Sound volumes panel -->
     <string name="volume_ring_only_description">Ringtone</string>
->>>>>>> 4006d2e... Settings: Forward port sound settings
     <string name="link_volume_ringtones">Link ringtone &amp; notifications volumes</string>
     <string name="link_volume_mutes">Silent mode affects notifications</string>
     <string name="volume_keys_control_ring_stream">Volume keys control ringtone volume</string>

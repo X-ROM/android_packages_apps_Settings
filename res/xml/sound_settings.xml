@@ -72,11 +72,8 @@
             android:key="vibrate_when_ringing"
             android:title="@string/vibrate_when_ringing_title" />
 
-<<<<<<< HEAD
-     <com.android.settings.crom.IncreasingRingPreference
-=======
-    <com.android.settings.carbon.IncreasingRingPreference
->>>>>>> 4006d2e... Settings: Forward port sound settings
+
+    <com.android.settings.crom.IncreasingRingPreference
             android:key="increasing_ring"
             android:title="@string/increasing_ring_title"
             android:dialogTitle="@string/increasing_ring_title"
