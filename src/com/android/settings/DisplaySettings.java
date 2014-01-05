@@ -116,7 +116,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         mFontSizePref = (FontDialogPreference) findPreference(KEY_FONT_SIZE);
         mFontSizePref.setOnPreferenceChangeListener(this);
         mFontSizePref.setOnPreferenceClickListener(this);
-<<<<<<< HEAD
 
         mDisplayManager = (DisplayManager)getActivity().getSystemService(
                 Context.DISPLAY_SERVICE);
@@ -150,21 +149,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             }
         } else {
             getPreferenceScreen().removePreference(lightPrefs);
-=======
-        mNotificationPulse = (CheckBoxPreference) findPreference(KEY_NOTIFICATION_PULSE);
-        if (mNotificationPulse != null
-                && getResources().getBoolean(
-                        com.android.internal.R.bool.config_intrusiveNotificationLed) == false) {
-            getPreferenceScreen().removePreference(mNotificationPulse);
-        } else {
-            try {
-                mNotificationPulse.setChecked(Settings.System.getInt(resolver,
-                        Settings.System.NOTIFICATION_LIGHT_PULSE) == 1);
-                mNotificationPulse.setOnPreferenceChangeListener(this);
-            } catch (SettingNotFoundException snfe) {
-                Log.e(TAG, Settings.System.NOTIFICATION_LIGHT_PULSE + " not found");
-            }
->>>>>>> android-4.4.1_r1
         }
     }
 
@@ -271,12 +255,10 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         updateAccelerometerRotationCheckbox();
         readFontSizePreference(mFontSizePref);
         updateScreenSaverSummary();
-<<<<<<< HEAD
         updateWifiDisplaySummary();
         updateLightPulseSummary();
         updateBatteryPulseSummary();
-=======
->>>>>>> android-4.4.1_r1
+
     }
 
     private void updateScreenSaverSummary() {
@@ -286,7 +268,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         }
     }
 
-<<<<<<< HEAD
     private void updateWifiDisplaySummary() {
         if (mWifiDisplayPreference != null) {
             switch (mWifiDisplayStatus.getFeatureState()) {
@@ -326,8 +307,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         }
     }
 
-=======
->>>>>>> android-4.4.1_r1
     private void updateAccelerometerRotationCheckbox() {
         if (getActivity() == null) return;
 
