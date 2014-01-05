@@ -58,18 +58,18 @@
         android:fragment="com.android.settings.WirelessSettings"
         android:icon="@drawable/empty_icon" />
 
-    <!-- C-RoM -->
+    <!-- C-ROM -->
     <header android:title="@string/header_category_crom" />
 
     <!-- C-RoM Customizations -->
     <header
         android:id="@+id/crom_tools"
-        android:icon="@drawable/empty_icon"
-        android:title="@string/radio_controls_title" >
+        android:icon="@drawable/ic_settings_crom_tools"
+        android:title="@string/crom_tools_title" >
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetPackage="com.crom.settings"
-            android:targetClass="com.crom.settings.SettingsActivity" />
+            android:targetPackage="com.crom.tools"
+            android:targetClass="com.crom.tools.SettingsActivity" />
     </header>
 
     <!-- Performance -->
