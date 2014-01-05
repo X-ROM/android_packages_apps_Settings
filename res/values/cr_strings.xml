@@ -313,9 +313,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="blacklist_policy_block_calls">Block incoming calls</string>
     <string name="blacklist_policy_block_messages">Block incoming messages</string>
 
-    <!-- Lockscreen battery ring -->
-    <string name="battery_around_lockscreen_ring">Battery around unlock ring</string>
-
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
     <string name="show_cpu_info">Show CPU info</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
