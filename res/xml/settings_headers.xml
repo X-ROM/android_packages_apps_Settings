@@ -61,6 +61,17 @@
     <!-- C-RoM -->
     <header android:title="@string/header_category_crom" />
 
+    <!-- C-RoM Customizations -->
+    <header
+        android:id="@+id/crom_tools"
+        android:icon="@drawable/empty_icon"
+        android:title="@string/radio_controls_title" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.crom.settings"
+            android:targetClass="com.crom.settings.SettingsActivity" />
+    </header>
+
     <!-- Performance -->
     <header
         android:id="@+id/performance_settings"
@@ -155,17 +166,6 @@
         android:fragment="com.android.settings.WirelessSettings"
         android:id="@+id/manufacturer_settings">
         <intent android:action="com.android.settings.MANUFACTURER_APPLICATION_SETTING" />
-    </header>
-
-    <!-- C-RoM Customizations -->
-    <header
-        android:id="@+id/ctools"
-        android:icon="@drawable/empty_icon"
-        android:title="@string/radio_controls_title" >
-        <intent
-            android:action="android.intent.action.MAIN"
-            android:targetPackage="com.crom.settings"
-            android:targetClass="com.crom.settings.SettingsActivity" />
     </header>
 
     <!-- Other device controls
