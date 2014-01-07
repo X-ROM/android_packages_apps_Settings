@@ -503,9 +503,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <!-- Launches Dev Tools -->
     <string name="development_tools_title">Launch Tools</string>
 
-    <!-- Advanced, Device specific (DeviceParts) settings  -->
-    <string name="advanced_settings_title">Advanced</string>
-
     <!-- Blacklist management -->
     <string name="add_blacklist_number">Add number</string>
     <string name="remove_blacklist_number_title">Remove number</string>
