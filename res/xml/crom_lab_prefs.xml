@@ -17,6 +17,13 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/crom_settings_title">
 
+    <Preference
+        android:key="misc_options"
+        android:fragment="com.android.settings.crom.MiscOptions"
+        android:layout="@layout/preference_miscoptions"
+        android:icon="@drawable/ic_crom_miscoptions"
+        android:title="@string/misc_options_title"/>
+
     <!-- HALO -->
    <PreferenceScreen
         android:id="@+id/halo_settings"
