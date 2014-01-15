@@ -4915,6 +4915,9 @@
     <string name="user_image_choose_photo" msgid="3746334626214970837">Choose photo from Gallery</string>
 
     <!-- Text to display in regulatory info screen (from device overlay). -->
+
     <string name="regulatory_info_text"></string>
+    <!-- OmniSwitch -->
+    <string name="omniswitch_settings_title">OmniSwitch</string>
 
 </resources>
