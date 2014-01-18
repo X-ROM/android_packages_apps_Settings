@@ -380,4 +380,16 @@
     <string name="xposed_mod_title">Module Repository</string>
     <string name="xposed_mod_summary">Browse and install modules to be used with Xposed Framework</string>
 
+    <!-- custom data usage period -->
+    <string name="daily_cycle_lenght">Daily</string>
+    <string name="weekly_cycle_length">Weekly</string>
+    <string name="monthly_cycle_length">Monthly</string>
+    <string name="weekday_sunday">Sunday</string>
+    <string name="weekday_monday">Monday</string>
+    <string name="weekday_tuesday">Tuesday</string>
+    <string name="weekday_wednesday">Wednesday</string>
+    <string name="weekday_thursday">Thursday</string>
+    <string name="weekday_friday">Friday</string>
+    <string name="weekday_saturday">Saturday</string>
+
 </resources>
