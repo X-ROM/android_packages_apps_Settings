@@ -24,6 +24,7 @@
 
     <!-- Display and Animations -->
     <string name="disp_anim_settings_title">Display and animations</string>
+    <string name="wakelock_blocker">Wakelock Blocker</string>
 
     <!-- ListView animation -->
     <string name="interface_settings_animation_title">Animation options</string>
@@ -49,5 +50,14 @@
     <string name="listview_overshoot_interpolator">Overshoot</string>
     <string name="listview_anticipate_overshoot_interpolator">Anticipate and overshoot</string>
     <string name="listview_bounce_interpolator">Bounce</string>
+
+    <!-- Wakelock blocker -->
+    <string name="wakelock_blocker_title">Enable</string>
+    <string name="wakelock_blocker_summary">Activate blocking for checked wakelocks</string>
+    <string name="wakelock_blocker_save">Save</string>
+    <string name="wakelock_list_header">Available Wakelocks</string>
+    <string name="wakelock_blocker_reload">Reload</string>
+    <string name="wakelock_blocker_warning_title">Proceed with Caution</string>
+    <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss.</string>
 
 </resources>
