@@ -35,10 +35,18 @@
         android:title="@string/disp_anim_settings_title"
         android:fragment="com.android.settings.crom.DisplayAnimationsSettings" />
 
+    <!-- WakeLock blocker -->
     <PreferenceScreen
         android:id="@+id/wakelock_blocker"
         android:icon="@drawable/ic_settings_wakelock_blocker"
         android:title="@string/wakelock_blocker"
         android:fragment="com.android.settings.crom.WakeLockBlocker" />
+
+    <!-- SlimSizer -->
+    <PreferenceScreen
+        android:id="@+id/system_app_remover"
+        android:icon="@drawable/ic_settings_slim_sizer"
+        android:title="@string/system_app_remover"
+        android:fragment="com.android.settings.slim.SystemappRemover" />
 
 </PreferenceScreen>
