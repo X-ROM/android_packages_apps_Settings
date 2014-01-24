@@ -44,6 +44,12 @@
             android:entryValues="@array/listview_interpolator_values"
             android:defaultValue="0" />
 
+        <PreferenceScreen
+            android:key="keyguard_style"
+            android:fragment="com.android.settings.slim.LockscreenStyle"
+            android:title="@string/lockscreen_style_title"/>
+
+
     </PreferenceCategory>
 
 </PreferenceScreen>
