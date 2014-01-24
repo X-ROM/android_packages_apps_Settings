@@ -72,6 +72,13 @@
             android:targetClass="com.crom.tools.SettingsActivity" />
     </header>
 
+    <!-- C-RoM Extras -->
+    <header
+        android:id="@+id/crom_settings"
+        android:fragment="com.android.settings.crom.CromSettings"
+        android:icon="@drawable/ic_settings_crom"
+        android:title="@string/crom_settings_title" />
+
     <!-- Dark UI -->
     <header
         android:id="@+id/theme_settings"
