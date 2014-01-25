@@ -79,6 +79,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private static final String KEY_LOCK_SOUNDS = Settings.System.LOCKSCREEN_SOUNDS_ENABLED;
     private static final String KEY_RINGTONE = "ringtone";
     private static final String KEY_NOTIFICATION_SOUND = "notification_sound";
+    private static final String KEY_ALARM_SOUND = "alarm_sound";
     private static final String KEY_CATEGORY_CALLS = "category_calls_and_notification";
     private static final String KEY_DOCK_CATEGORY = "dock_category";
     private static final String KEY_DOCK_AUDIO_SETTINGS = "dock_audio";
@@ -105,6 +106,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
 
     private static final int MSG_UPDATE_RINGTONE_SUMMARY = 1;
     private static final int MSG_UPDATE_NOTIFICATION_SUMMARY = 2;
+    private static final int MSG_UPDATE_ALARM_SUMMARY = 3;
 
     // Request code for power notification ringtone picker
     private static final int REQUEST_CODE_POWER_NOTIFICATIONS_RINGTONE = 1;
@@ -119,6 +121,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private Preference mRingtonePreference;
     private Preference mNotificationPreference;
     private PreferenceScreen mQuietHours;
+    private Preference mAlarmPreference;
 
     private Runnable mRingtoneLookupRunnable;
 
@@ -141,6 +144,9 @@ public class SoundSettings extends SettingsPreferenceFragment implements
                 break;
             case MSG_UPDATE_NOTIFICATION_SUMMARY:
                 mNotificationPreference.setSummary((CharSequence) msg.obj);
+                break;
+            case MSG_UPDATE_ALARM_SUMMARY:
+                mAlarmPreference.setSummary((CharSequence) msg.obj);
                 break;
             }
         }
@@ -213,6 +219,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
 
         mRingtonePreference = findPreference(KEY_RINGTONE);
         mNotificationPreference = findPreference(KEY_NOTIFICATION_SOUND);
+        mAlarmPreference = findPreference(KEY_ALARM_SOUND);
 
         Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
         if (vibrator == null || !vibrator.hasVibrator()) {
@@ -261,6 +268,10 @@ public class SoundSettings extends SettingsPreferenceFragment implements
                 if (mNotificationPreference != null) {
                     updateRingtoneName(RingtoneManager.TYPE_NOTIFICATION, mNotificationPreference,
                             MSG_UPDATE_NOTIFICATION_SUMMARY);
+                }
+                if (mAlarmPreference != null) {
+                    updateRingtoneName(RingtoneManager.TYPE_ALARM, mAlarmPreference,
+                            MSG_UPDATE_ALARM_SUMMARY);
                 }
             }
         };
