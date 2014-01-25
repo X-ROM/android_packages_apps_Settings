@@ -22,10 +22,10 @@
     <string name="crom_settings_title">C-RoM Extras</string>
     <string name="crom_settings_summary">C-RoM features</string>
 
-    <!-- Display and Animations -->
-    <string name="disp_anim_settings_title">Display and animations</string>
+    <!-- Animations -->
+    <string name="disp_anim_settings_title">Animations</string>
     <string name="wakelock_blocker">Wakelock Blocker</string>
-    <string name="system_app_remover">Systemapp Remover</string>
+    <string name="system_app_remover">System App Remover</string>
 
     <!-- ListView animation -->
     <string name="interface_settings_animation_title">Animation options</string>
