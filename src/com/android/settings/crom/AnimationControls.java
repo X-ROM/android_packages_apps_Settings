@@ -13,11 +13,14 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.widgets.AnimBarPreference;
 import com.android.settings.R;
 
-import com.android.internal.util.aokp.AwesomeAnimationHelper;
+import com.android.internal.util.crom.AnimationHelper;
 
 import java.util.Arrays;
 
-public class AnimationControls extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+public class AnimationControls extends SettingsPreferenceFragment
+        implements OnPreferenceChangeListener {
+
+    private static final String TAG = "AnimationControls";
 
     private static final String ACTIVITY_OPEN = "activity_open";
     private static final String ACTIVITY_CLOSE = "activity_close";
@@ -52,23 +55,24 @@ public class AnimationControls extends SettingsPreferenceFragment implements OnP
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTitle(R.string.title_animation_controls);
+
         // Load the preferences from an XML resource
-        addPreferencesFromResource(R.xml.prefs_animation_controls);
+        addPreferencesFromResource(R.xml.animation_controls);
 
         PreferenceScreen prefs = getPreferenceScreen();
-        mAnimations = AwesomeAnimationHelper.getAnimationsList();
+
+        mAnimations = AnimationHelper.getAnimationsList();
         int animqty = mAnimations.length;
         mAnimationsStrings = new String[animqty];
         mAnimationsNum = new String[animqty];
         for (int i = 0; i < animqty; i++) {
-            mAnimationsStrings[i] = AwesomeAnimationHelper.getProperName(mContext, mAnimations[i]);
+            mAnimationsStrings[i] = AnimationHelper.getProperName(mContext, mAnimations[i]);
             mAnimationsNum[i] = String.valueOf(mAnimations[i]);
         }
 
         mAnimNoOverride = (CheckBoxPreference) findPreference(ANIMATION_NO_OVERRIDE);
-        mAnimNoOverride.setChecked(Settings.AOKP.getBoolean(mContentRes,
-                Settings.System.ANIMATION_CONTROLS_NO_OVERRIDE, false));
+        mAnimNoOverride.setChecked(Settings.System.getInt(mContentRes,
+                Settings.System.ANIMATION_CONTROLS_NO_OVERRIDE, 0) == 1);
 
         mActivityOpenPref = (ListPreference) findPreference(ACTIVITY_OPEN);
         mActivityOpenPref.setOnPreferenceChangeListener(this);
@@ -136,85 +140,70 @@ public class AnimationControls extends SettingsPreferenceFragment implements OnP
         mAnimationDuration.setInitValue((int) (defaultDuration));
         mAnimationDuration.setOnPreferenceChangeListener(this);
     }
+
     @Override
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen,
-                                         Preference preference) {
-       if (preference == mAnimNoOverride) {
-            Settings.AOKP.putBoolean(mContentRes,
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        if (preference == mAnimNoOverride) {
+            Settings.System.putInt(mContentRes,
                     Settings.System.ANIMATION_CONTROLS_NO_OVERRIDE,
-                        mAnimNoOverride.isChecked());
+                    mAnimNoOverride.isChecked() ? 1 : 0);
             return true;
         }
         return false;
     }
+
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         boolean result = false;
-
         if (preference == mActivityOpenPref) {
-
             int val = Integer.parseInt((String) newValue);
             result = Settings.System.putInt(mContentRes,
                     Settings.System.ACTIVITY_ANIMATION_CONTROLS[0], val);
-
         } else if (preference == mActivityClosePref) {
-
             int val = Integer.parseInt((String) newValue);
             result = Settings.System.putInt(mContentRes,
                     Settings.System.ACTIVITY_ANIMATION_CONTROLS[1], val);
-
         } else if (preference == mTaskOpenPref) {
-
             int val = Integer.parseInt((String) newValue);
             result = Settings.System.putInt(mContentRes,
                     Settings.System.ACTIVITY_ANIMATION_CONTROLS[2], val);
-
         } else if (preference == mTaskClosePref) {
-
             int val = Integer.parseInt((String) newValue);
             result = Settings.System.putInt(mContentRes,
                     Settings.System.ACTIVITY_ANIMATION_CONTROLS[3], val);
-
         } else if (preference == mTaskMoveToFrontPref) {
-
             int val = Integer.parseInt((String) newValue);
             result = Settings.System.putInt(mContentRes,
                     Settings.System.ACTIVITY_ANIMATION_CONTROLS[4], val);
-
         } else if (preference == mTaskMoveToBackPref) {
-
             int val = Integer.parseInt((String) newValue);
             result = Settings.System.putInt(mContentRes,
                     Settings.System.ACTIVITY_ANIMATION_CONTROLS[5], val);
         } else if (preference == mWallpaperOpen) {
-
             int val = Integer.parseInt((String) newValue);
             result = Settings.System.putInt(mContentRes,
                     Settings.System.ACTIVITY_ANIMATION_CONTROLS[6], val);
         } else if (preference == mWallpaperClose) {
-
             int val = Integer.parseInt((String) newValue);
             result = Settings.System.putInt(mContentRes,
                     Settings.System.ACTIVITY_ANIMATION_CONTROLS[7], val);
         } else if (preference == mWallpaperIntraOpen) {
-
             int val = Integer.parseInt((String) newValue);
             result = Settings.System.putInt(mContentRes,
                     Settings.System.ACTIVITY_ANIMATION_CONTROLS[8], val);
         } else if (preference == mWallpaperIntraClose) {
-
             int val = Integer.parseInt((String) newValue);
             result = Settings.System.putInt(mContentRes,
                     Settings.System.ACTIVITY_ANIMATION_CONTROLS[9], val);
         } else if (preference == mAnimationDuration) {
             int val = Integer.parseInt((String) newValue);
             Settings.System.putInt(mContentRes,
-                    Settings.System.ANIMATION_CONTROLS_DURATION,
-                    val);
+                    Settings.System.ANIMATION_CONTROLS_DURATION, val);
         }
         preference.setSummary(getProperSummary(preference));
         return result;
     }
+
     private String getProperSummary(Preference preference) {
         String mString = "";
         if (preference == mActivityOpenPref) {
