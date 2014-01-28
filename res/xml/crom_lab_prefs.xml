@@ -65,3 +65,13 @@
         android:fragment="com.android.settings.slim.SystemappRemover" />
 
 </PreferenceScreen>
+
+   <PreferenceScreen
+            android:id="@+id/hfm"
+            android:layout="@layout/preference_hfm"
+            android:title="@string/hfm_title" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.crom.hfm"
+                android:targetClass="com.crom.hfm.MainActivity" />
+  </PreferenceScreen>
