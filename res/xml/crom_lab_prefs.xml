@@ -64,8 +64,7 @@
         android:title="@string/system_app_remover"
         android:fragment="com.android.settings.slim.SystemappRemover" />
 
-</PreferenceScreen>
-
+    <!-- C-RoM Blocker -->
    <PreferenceScreen
             android:id="@+id/hfm"
             android:layout="@layout/preference_hfm"
@@ -74,4 +73,5 @@
                 android:action="android.intent.action.MAIN"
                 android:targetPackage="com.crom.hfm"
                 android:targetClass="com.crom.hfm.MainActivity" />
-  </PreferenceScreen>
+
+</PreferenceScreen>
