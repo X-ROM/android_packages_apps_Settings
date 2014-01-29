@@ -18,14 +18,14 @@
         android:title="@string/crom_settings_title">
 
     <!-- HALO -->
-  <PreferenceScreen
+   <PreferenceScreen
         android:id="@+id/halo_settings"
         android:fragment="com.android.settings.paranoid.Halo"
         android:icon="@drawable/ic_settings_halo"
         android:title="@string/halo_settings_title" />
 
     <!-- OmniSwitch -->
-  <PreferenceScreen
+   <PreferenceScreen
         android:id="@+id/omniswitch"
         android:icon="@drawable/ic_settings_omniswitch"
         android:title="@string/omniswitch_settings_title" >
@@ -33,6 +33,17 @@
             android:action="android.intent.action.MAIN"
             android:targetPackage="org.omnirom.omniswitch"
             android:targetClass="org.omnirom.omniswitch.SettingsActivity" />
+     </PreferenceScreen>
+
+    <!-- C-RoM Blocker -->
+    <PreferenceScreen
+            android:id="@+id/hfm"
+            android:layout="@layout/preference_hfm"
+            android:title="@string/hfm_title" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.crom.hfm"
+                android:targetClass="com.crom.hfm.MainActivity" />
     </PreferenceScreen>
 
     <!-- Display and Animations -->
@@ -63,15 +74,5 @@
         android:icon="@drawable/ic_settings_slim_sizer"
         android:title="@string/system_app_remover"
         android:fragment="com.android.settings.slim.SystemappRemover" />
-
-    <!-- C-RoM Blocker -->
-   <PreferenceScreen
-            android:id="@+id/hfm"
-            android:layout="@layout/preference_hfm"
-            android:title="@string/hfm_title" >
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="com.crom.hfm"
-                android:targetClass="com.crom.hfm.MainActivity" />
 
 </PreferenceScreen>
