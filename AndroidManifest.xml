@@ -1913,14 +1913,6 @@
              android:name=".crom.CromSettings"
              android:label="@string/crom_settings_title" >
         </activity>
-        <activity
-             android:name=".crom.PowerSaverSettings"
-            android:label="@string/power_saver_settings_title" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SHORTCUT" />
-              </intent-filter>
-        </activity>
 
         <activity
             android:name=".crom.ScreenStateToggles"
