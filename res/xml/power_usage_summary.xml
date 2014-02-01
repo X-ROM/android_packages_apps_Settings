@@ -18,6 +18,7 @@
         android:title="@string/battery_since_unplugged"
         android:key="app_list">
     <com.android.settings.widget.PowerSaverPreference
+        android:summary="@string/power_saver_settings_summary"
         android:key="power_saver"
         android:defaultValue="false"
         android:fragment="com.android.settings.crom.PowerSaverSettings"
