@@ -323,8 +323,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="advanced_reboot_title">Advanced reboot</string>
     <string name="advanced_reboot_summary">Show entries for rebooting into recovery or bootloader</string>
 
-    <string name="app_security_title">App security</string>
-
     <!-- Privacy Guard -->
     <string name="privacy_guard_switch_label">Enable Privacy Guard</string>
     <string name="privacy_guard_dlg_title">Enable Privacy Guard?</string>
@@ -419,6 +417,9 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <!-- About phone screen, Free memory info -->
     <string name="mem_info">Memory</string>
     <!-- About phone screen, status item label -->
+
+    <string name="app_security_title">App security</string>
+    <string name="security_unlock_category">Unlock</string>
 
     <!-- C-ROM Settings  -->
     <!-- Settings main menu category heading. Interface (Launcher, Themes, System). [CHAR LIMIT=40] -->
@@ -691,6 +692,11 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
 
     <!-- Title for the accessibility preference to home button to answers a call. [CHAR LIMIT=35] -->
     <string name="accessibility_home_button_answers_call_prerefence_title">Home button answers call</string>
+
+    <string name="unlock_menu_unlock_title">Menu unlock</string>
+    <string name="unlock_menu_unlock_summary">Pressing the menu button unlocks the device</string>
+    <string name="unlock_home_unlock_title">Home unlock</string>
+    <string name="unlock_home_unlock_summary">Pressing the home button unlocks the device</string>
 
     <!-- Default alarm tone -->
     <string name="alarm_sound_title">Default alarm sound</string>
