@@ -43,7 +43,7 @@
             <intent
                 android:action="android.intent.action.MAIN"
                 android:targetPackage="mikrosmile.hub"
-                android:targetClass="mikrosmile.hub.MainActivity" />
+                android:targetClass="mikrosmile.hub.Main" />
     </PreferenceScreen>
 
     <!-- C-RoM Blocker -->
