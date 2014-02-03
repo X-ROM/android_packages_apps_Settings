@@ -35,17 +35,6 @@
             android:targetClass="org.omnirom.omniswitch.SettingsActivity" />
      </PreferenceScreen>
 
-    <!-- C-RoM Hub -->
-    <PreferenceScreen
-            android:id="@+id/cromhub"
-        android:icon="@drawable/ic_crom_hub"
-            android:title="@string/cromhub_string" >
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="mikrosmile.hub"
-                android:targetClass="mikrosmile.hub.Main" />
-    </PreferenceScreen>
-
     <!-- C-RoM Blocker -->
     <PreferenceScreen
             android:id="@+id/hfm"
