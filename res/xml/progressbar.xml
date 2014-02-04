@@ -16,11 +16,7 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/themes_settings_title" >
 
-    <PreferenceCategory
-        android:title="@string/title_general"
-        android:key="lockscreen_general_category" >
-
-        <CheckBoxPreference
+         <CheckBoxPreference
             android:key="progressbar_mirror"
             android:title="@string/progressbar_mirror_title" />
 
@@ -91,7 +87,5 @@
         android:key="progressbar_color_4"
         android:title="@string/progressbar_color_4_title"
         android:defaultValue="#ffffff" />
-
-    </PreferenceCategory>
 
 </PreferenceScreen>
