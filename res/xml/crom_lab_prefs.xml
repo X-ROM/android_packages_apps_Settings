@@ -28,6 +28,7 @@
     <PreferenceScreen
         android:key="progressbar_settings"
         android:fragment="com.android.settings.cyanogenmod.ProgressBar"
+        android:icon="@drawable/ic_crom_progressbar"
         android:title="@string/progressbar_title" >
     </PreferenceScreen>
 
