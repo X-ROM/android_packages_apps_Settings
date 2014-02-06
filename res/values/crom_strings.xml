@@ -318,4 +318,10 @@
     <string name="select_custom_activity_title">Select custom activity</string>
     <string name="select_custom_app_title">Select custom application</string>
 
+    <!--User preferences settings-->
+    <string name="personalization">Personalization</string>
+    <string name="reset_user_preferences_title">Reset preferences</string>
+    <string name="reset_user_preferences_summary">Restores user interface preferences to default values</string>
+    <string name="reset_user_preferences_dialog">Are you sure you want to reset your preferences?</string>
+
 </resources>
