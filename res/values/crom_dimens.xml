@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <dimen name="lockscreen_target_inset">30dp</dimen>
+    <dimen name="shortcut_picker_left_padding">70dip</dimen>
+
+    <!-- Minimal notification row height used to calculate max notification count -->
+    <dimen name="notification_row_min_height">70dp</dimen>
+
+</resources>
