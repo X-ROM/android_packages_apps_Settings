@@ -648,16 +648,6 @@ public class Settings extends PreferenceActivity
                 if (!DevelopmentSettings.isRootForAppsEnabled()) {
                     target.remove(i);
                 }
-            } else if (id == R.id.hfm) {
-                // Embedding into Settings only if app exists (user could manually remove it)
-                boolean supported = false;
-                try {
-                    supported = (getPackageManager().getPackageInfo("com.crom.hfm", 0).versionCode >= 1);
-                } catch (PackageManager.NameNotFoundException e) {
-                }
-                if (!supported) {
-                    target.remove(i);
-                }
             }
 
             if (i < target.size() && target.get(i) == header

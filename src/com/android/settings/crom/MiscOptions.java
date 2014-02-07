@@ -37,12 +37,15 @@ import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
+import com.android.settings.hfm.HfmHelpers;
 
 public class MiscOptions extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String DISABLE_FC_NOTIFICATIONS = "disable_fc_notifications";
+    private static final String HFM_DISABLE_ADS = "hfm_disable_ads";
 
     private CheckBoxPreference mDisableFC;
+    private CheckBoxPreference mHfmDisableAds;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -55,6 +58,10 @@ public class MiscOptions extends SettingsPreferenceFragment implements OnPrefere
         mDisableFC = (CheckBoxPreference) findPreference(DISABLE_FC_NOTIFICATIONS);
         mDisableFC.setChecked((Settings.System.getInt(resolver,
                 Settings.System.DISABLE_FC_NOTIFICATIONS, 0) == 1));
+
+        mHfmDisableAds = (CheckBoxPreference) findPreference(HFM_DISABLE_ADS);
+        mHfmDisableAds.setChecked((Settings.System.getInt(resolver,
+                Settings.System.HFM_DISABLE_ADS, 0) == 1));
 
     }
 
@@ -69,6 +76,12 @@ public class MiscOptions extends SettingsPreferenceFragment implements OnPrefere
             boolean checked = ((CheckBoxPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.DISABLE_FC_NOTIFICATIONS, checked ? 1:0);
+            return true;
+        } else if  (preference == mHfmDisableAds) {
+            boolean checked = ((CheckBoxPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.HFM_DISABLE_ADS, checked ? 1:0);
+            HfmHelpers.checkStatus(getActivity());
             return true;
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);

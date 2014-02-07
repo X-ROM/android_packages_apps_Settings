@@ -57,17 +57,6 @@
             android:targetClass="org.omnirom.omniswitch.SettingsActivity" />
      </PreferenceScreen>
 
-    <!-- C-RoM Blocker -->
-    <PreferenceScreen
-            android:id="@+id/hfm"
-            android:layout="@layout/preference_hfm"
-            android:title="@string/hfm_title" >
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="com.crom.hfm"
-                android:targetClass="com.crom.hfm.MainActivity" />
-    </PreferenceScreen>
-
     <!-- Display and Animations -->
     <PreferenceScreen
         android:id="@+id/disp_anim_settings"

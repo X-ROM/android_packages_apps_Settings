@@ -164,9 +164,6 @@
     <string name="app_halo_label_black">Blacklist from HALO</string>
     <string name="app_halo_label_white">Whitelist from HALO</string>
 
-    <!-- C-RoM Blocker -->
-    <string name="hfm_title">Hosts File Manager</string>
-
     <!-- Telo Radio -->
     <string name="telo_radio_settings_title">Connection manager</string>
     <string name="telo_radio_options_category">Screen on configuration</string>
@@ -318,12 +315,14 @@
     <string name="select_custom_activity_title">Select custom activity</string>
     <string name="select_custom_app_title">Select custom application</string>
 
-    <!-- Text for forcing expanded notifications -->
-    <string name="disable_fc_notifications_title">Diable FC Notifications</string>
-    <string name="disable_fc_notifications_summary">This will hide all force close notificaitons</string>
-
     <!-- Text for Misc Options entry -->
     <string name="misc_options_title">Misc. Options</string>
+    <string name="misc_options_system">System</string>
+    <string name="disable_fc_notifications_title">Disable FC Notifications</string>
+    <string name="disable_fc_notifications_summary">This will hide all force close notifications</string>
+    <string name="misc_tweaks_hfm">Hosts File Manager</string>
+    <string name="hfm_disable_ads_title">Disable Ads</string>
+    <string name="hfm_disable_ads_summary">Change hosts file to disable ads</string>
 
     <!--User preferences settings-->
     <string name="personalization">Personalization</string>
