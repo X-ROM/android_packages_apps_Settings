@@ -94,6 +94,13 @@
             android:summary="@string/enable_adb_summary"/>
 
         <CheckBoxPreference
+            android:key="adb_paranoid"
+            android:title="@string/adb_paranoid"
+            android:summary="@string/adb_paranoid_summary"
+            android:dependency="enable_adb"
+            android:persistent="false"/>
+
+        <CheckBoxPreference
             android:key="adb_notify"
             android:title="@string/adb_notify"
             android:summary="@string/adb_notify_summary"

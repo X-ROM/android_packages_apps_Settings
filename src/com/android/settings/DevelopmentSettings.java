@@ -95,6 +95,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     public static final String PREF_SHOW = "show";
 
     private static final String ENABLE_ADB = "enable_adb";
+    private static final String ADB_PARANOID = "adb_paranoid";
     private static final String ADB_NOTIFY = "adb_notify";
     private static final String CLEAR_ADB_KEYS = "clear_adb_keys";
     private static final String ENABLE_TERMINAL = "enable_terminal";
@@ -179,6 +180,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private boolean mDontPokeProperties;
 
     private CheckBoxPreference mEnableAdb;
+    private CheckBoxPreference mAdbParanoid;
     private CheckBoxPreference mAdbNotify;
     private Preference mClearAdbKeys;
     private CheckBoxPreference mEnableTerminal;
@@ -274,6 +276,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
                 findPreference(DEBUG_DEBUGGING_CATEGORY_KEY);
 
         mEnableAdb = findAndInitCheckboxPref(ENABLE_ADB);
+        mAdbParanoid = findAndInitCheckboxPref(ADB_PARANOID);
         mAdbNotify = findAndInitCheckboxPref(ADB_NOTIFY);
         mClearAdbKeys = findPreference(CLEAR_ADB_KEYS);
         if (!SystemProperties.getBoolean("ro.adb.secure", false)) {
@@ -300,6 +303,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
 
         if (!android.os.Process.myUserHandle().equals(UserHandle.OWNER)) {
             disableForUser(mEnableAdb);
+            disableForUser(mAdbParanoid);
             disableForUser(mClearAdbKeys);
             disableForUser(mEnableTerminal);
             disableForUser(mPassword);
@@ -530,6 +534,8 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         mHaveDebugSettings = false;
         updateCheckBox(mEnableAdb, Settings.Global.getInt(cr,
                 Settings.Global.ADB_ENABLED, 0) != 0);
+        mAdbParanoid.setChecked(Settings.Secure.getInt(cr,
+                Settings.Secure.ADB_PARANOID, 0) != 0);
         mAdbNotify.setChecked(Settings.Secure.getInt(cr,
                 Settings.Secure.ADB_NOTIFY, 1) != 0);
         if (mEnableTerminal != null) {
@@ -1417,6 +1423,10 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
                 mVerifyAppsOverUsb.setChecked(false);
                 updateBugreportOptions();
             }
+        } else if (preference == mAdbParanoid) {
+            Settings.Secure.putInt(getActivity().getContentResolver(),
+                        Settings.Secure.ADB_PARANOID,
+                        mAdbParanoid.isChecked() ? 1 : 0);
         } else if (preference == mAdbNotify) {
             Settings.Secure.putInt(getActivity().getContentResolver(),
                     Settings.Secure.ADB_NOTIFY,
