@@ -40,10 +40,12 @@ public final class HfmHelpers {
         File altHosts = new File("/etc/hosts.alt");
         File hosts = new File("/etc/hosts");
         try {
-            if (Settings.System.getInt(context.getContentResolver(), Settings.System.HFM_DISABLE_ADS, 0) == 1 && areFilesDifferent(hosts, altHosts)) {
-                linkFiles(altHosts, hosts);
-            } else if (Settings.System.getInt(context.getContentResolver(), Settings.System.HFM_DISABLE_ADS, 0) == 0 && areFilesDifferent(hosts, defHosts)) {
-                linkFiles(defHosts, hosts);
+            if (Settings.System.getInt(context.getContentResolver(), Settings.System.HFM_DISABLE_ADS, 0) == 1
+                    && areFilesDifferent(hosts, altHosts)) {
+                copyFiles(altHosts, hosts);
+            } else if (Settings.System.getInt(context.getContentResolver(), Settings.System.HFM_DISABLE_ADS, 0) == 0
+                    && areFilesDifferent(hosts, defHosts)) {
+                copyFiles(defHosts, hosts);
             }
         }
         catch(IOException e)
@@ -80,9 +82,14 @@ public final class HfmHelpers {
         os.flush();
     }
 
-    public static void linkFiles(File srcFile, File dstFile) throws IOException {
-        if (srcFile.exists()) {
-            RunAsRoot("mount -o rw,remount /system && rm -f " + dstFile.getAbsolutePath() + " && ln -s " + srcFile.getAbsolutePath() + " " + dstFile.getAbsolutePath() + " ; mount -o ro,remount /system");
+    public static void copyFiles(File srcFile, File dstFile) throws IOException {
+        if (srcFile.exists() && dstFile.exists()) {
+            String cmd = "mount -o rw,remount /system"
+                       + " && rm -f " + dstFile.getAbsolutePath()
+                       + " && cp -f " + srcFile.getAbsolutePath() + " " + dstFile.getAbsolutePath()
+                       + " && chmod 644 " + dstFile.getAbsolutePath()
+                       + " ; mount -o ro,remount /system";
+            RunAsRoot(cmd);
         }
     }
 }
