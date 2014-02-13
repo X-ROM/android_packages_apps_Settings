@@ -1795,7 +1795,7 @@
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@id/sound_settings" />
             <meta-data android:name="com.android.settings.PARENT_FRAGMENT_CLASS"
-                android:value="com.android.settings.Settings$SoundSettingsActivity" />
+                android:value="com.android.settings.crom.sounds.SoundSettingsActivity" />
         </activity>
 
 	<activity android:name=".crom.RamBar" />
