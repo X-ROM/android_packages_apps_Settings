@@ -1163,4 +1163,5 @@ public class Settings extends PreferenceActivity
     public static class ApnEditorActivity extends Settings { /* empty */ }
     public static class BlacklistSettingsActivity extends Settings { /* empty */ }
     public static class ASSRamBarActivity extends Settings { /* empty */ }
+    public static class SoundPackageSettingsActivity extends Settings { /* empty */ }
 }
