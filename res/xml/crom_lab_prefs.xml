@@ -87,6 +87,13 @@
         android:title="@string/wakelock_blocker"
         android:summary="@string/wakelock_blocker_header_summary" />
 
+    <Preference
+        android:key="download_center"
+        android:icon="@drawable/ic_crom_download"
+        android:fragment="com.android.settings.crom.Download"
+        android:layout="@layout/preference_download"
+        android:title="@string/download_category" />
+
     <!-- SlimSizer -->
     <PreferenceScreen
         android:id="@+id/system_app_remover"

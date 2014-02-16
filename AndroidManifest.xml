@@ -1947,6 +1947,7 @@
         </activity>
 
         <activity android:name=".crom.MiscOptions" />
+        <activity android:name=".crom.Download" />
 
         <activity
             android:name=".crom.WakeLockBlocker"
