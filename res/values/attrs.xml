@@ -105,8 +105,8 @@
     <declare-styleable name="SeekBarPreference">
         <attr name="minAD" format="integer" />
 	<attr name="smin" format="integer" />
-        <attr name="unitsLeft" format="string" />
-        <attr name="unitsRight" format="string" />
+        <attr name="unitsLeft" format="string|reference" />
+        <attr name="unitsRight" format="string|reference" />
 	<attr name="interval" format="integer" />
         <attr name="minimun" format="integer" />
     </declare-styleable>
