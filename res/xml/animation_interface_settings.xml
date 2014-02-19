@@ -22,7 +22,7 @@
 
     <PreferenceScreen
         android:key="interface_animation_system"
-        android:fragment="org.omnirom.omnigears.interfacesettings.SystemAnimationInterfaceSettings"
+        android:fragment="com.android.settings.crom.SystemAnimationInterfaceSettings"
         android:title="@string/bars_and_menus_category_system_title" />
 
     <PreferenceScreen
