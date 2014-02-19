@@ -724,4 +724,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="ram_bar_reset">Reset</string>
     <string name="ram_bar_reset_message">Reset RAM bar style to default?</string>	 
 
+    <!-- Volume pane timeout -->
+    <string name="volume_panel_timeout_title">Timeout</string>
+    <string name="volume_panel_timeout_summary">Time until the panel will be hidden</string>
+
 </resources>
