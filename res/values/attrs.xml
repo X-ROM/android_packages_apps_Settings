@@ -108,5 +108,6 @@
         <attr name="unitsLeft" format="string" />
         <attr name="unitsRight" format="string" />
 	<attr name="interval" format="integer" />
+        <attr name="minimun" format="integer" />
     </declare-styleable>
 </resources>
