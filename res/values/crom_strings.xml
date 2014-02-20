@@ -492,4 +492,7 @@
     <string name="ime_interpolator_title">Interpolator</string>
     <string name="ime_duration_title">IME Duration</string>
 
+    <!-- allow multiuser -->
+    <string name="multiuser_preference_title">Multiuser support</string>
+
 </resources>
