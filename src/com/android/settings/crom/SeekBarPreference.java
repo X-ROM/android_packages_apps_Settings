@@ -15,7 +15,7 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 import com.android.settings.R;
 
-public class SeekBarPreferenceCHOS extends Preference implements OnSeekBarChangeListener {
+public class SeekBarPreference extends Preference implements OnSeekBarChangeListener {
 
     private final String TAG = getClass().getName();
 
@@ -34,12 +34,12 @@ public class SeekBarPreferenceCHOS extends Preference implements OnSeekBarChange
 
     private TextView mStatusText;
 
-    public SeekBarPreferenceCHOS(Context context, AttributeSet attrs) {
+    public SeekBarPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
         initPreference(context, attrs);
     }
 
-    public SeekBarPreferenceCHOS(Context context, AttributeSet attrs, int defStyle) {
+    public SeekBarPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         initPreference(context, attrs);
     }
