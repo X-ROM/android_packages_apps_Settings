@@ -332,7 +332,7 @@
     <string name="xposed_mod_title">Module Repository</string>
     <string name="xposed_mod_summary">Browse and install modules to be used with Xposed Framework</string>
     <string name="google_camera_title">Google Camera</string>
-    <string name="google_camera_summary">Google Camera (flashable) with photosphere and HDR mode google_camera</string>
+    <string name="google_camera_summary">Google Camera (flashable) with photosphere and HDR mode</string>
 
     <!-- custom data usage period -->
     <string name="daily_cycle_lenght">Daily</string>
