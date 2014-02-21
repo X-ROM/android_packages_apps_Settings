@@ -2156,6 +2156,16 @@
 
         <service android:name=".hfm.CheckHosts" />
 
+        <receiver
+            android:name="com.android.settings.crom.BatterySaverReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"></action>
+                <action android:name="android.intent.action.TIME_CHANGED"></action>
+                <action android:name="android.intent.action.DATE_CHANGED"></action>
+                <action android:name="com.android.settings.crom.SCHEDULE_BATTERY_SAVER"/>
+            </intent-filter>
+        </receiver>
+
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="com.android.settings.files"

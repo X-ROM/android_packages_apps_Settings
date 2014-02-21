@@ -28,6 +28,7 @@ import com.android.settings.DisplaySettings;
 import com.android.settings.R;
 import com.android.settings.Utils;
 import com.android.settings.location.LocationSettings;
+import com.android.settings.crom.BatterySaverHelper;
 
 import java.util.Arrays;
 import java.util.List;
@@ -66,6 +67,10 @@ public class BootReceiver extends BroadcastReceiver {
             } else {
                 SystemProperties.set(KSM_SETTINGS_PROP, "false");
             }
+        }
+
+        if (BatterySaverHelper.deviceSupportsMobileData(ctx)) {
+            BatterySaverHelper.scheduleService(ctx);
         }
 
         DisplaySettings.restore(ctx);

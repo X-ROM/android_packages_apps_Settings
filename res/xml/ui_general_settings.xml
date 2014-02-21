@@ -30,6 +30,11 @@
         android:title="@string/power_menu_onthego_title"
         android:defaultValue="false" />
 
+    <PreferenceScreen
+        android:key="interface_battery_saver"
+        android:fragment="com.android.settings.crom.BatterySaverSettings"
+        android:title="@string/battery_saver_title" />
+
     <CheckBoxPreference
             android:key="custom_recent_mode"
             android:title="@string/custom_recent_title"
