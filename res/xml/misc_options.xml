@@ -23,6 +23,13 @@
         android:title="@string/misc_options_system">
     </PreferenceCategory>
 
+	<!-- Recents RAM bar -->
+    <PreferenceScreen
+        android:key="recents_ram_bar"
+        android:fragment="com.android.settings.crom.RamBar"
+        android:title="@string/ram_bar" />
+    </PreferenceScreen>
+
     <CheckBoxPreference
         android:key="disable_fc_notifications"
         android:title="@string/disable_fc_notifications_title"
