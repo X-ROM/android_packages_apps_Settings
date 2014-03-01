@@ -21,6 +21,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.os.BatteryManager;
 import android.os.BatteryStats;
 import android.os.Bundle;
 import android.os.Handler;
@@ -67,7 +68,8 @@ public class PowerUsageSummary extends PreferenceFragment implements
 
     private static final int MENU_STATS_TYPE = Menu.FIRST;
     private static final int MENU_STATS_REFRESH = Menu.FIRST + 1;
-    private static final int MENU_HELP = Menu.FIRST + 2;
+    private static final int MENU_STATS_RESET               = Menu.FIRST + 2;
+    private static final int MENU_HELP = Menu.FIRST + 9;
 
     private PreferenceGroup mAppListGroup;
     private Preference mBatteryStatusPref;
@@ -81,6 +83,7 @@ public class PowerUsageSummary extends PreferenceFragment implements
     private static final int MIN_POWER_THRESHOLD = 5;
     private static final int MAX_ITEMS_TO_LIST = 10;
 
+    private BatteryManager mBatteryService;
     private BatteryStatsHelper mStatsHelper;
 
     private BroadcastReceiver mBatteryInfoReceiver = new BroadcastReceiver() {
@@ -111,6 +114,7 @@ public class PowerUsageSummary extends PreferenceFragment implements
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         mStatsHelper.create(icicle);
+        mBatteryService = (BatteryManager) getActivity().getSystemService(Context.BATTERY_SERVICE);
 
         addPreferencesFromResource(R.xml.power_usage_summary);
         mAppListGroup = (PreferenceGroup) findPreference(KEY_APP_LIST);
@@ -163,6 +167,13 @@ public class PowerUsageSummary extends PreferenceFragment implements
             byte[] histData = hist.marshall();
             Bundle args = new Bundle();
             args.putByteArray(BatteryHistoryDetail.EXTRA_STATS, histData);
+            if (mBatteryService.isDockBatterySupported()) {
+                Parcel dockHist = Parcel.obtain();
+                mStatsHelper.getDockStats(getActivity()).writeToParcelWithoutUids(dockHist, 0);
+                byte[] dockHistData = dockHist.marshall();
+                args.putByteArray(BatteryHistoryDetail.EXTRA_DOCK_STATS, dockHistData);
+            }
+
             PreferenceActivity pa = (PreferenceActivity)getActivity();
             pa.startPreferencePanel(BatteryHistoryDetail.class.getName(), args,
                     R.string.history_details_title, null, null, 0);
@@ -193,6 +204,7 @@ public class PowerUsageSummary extends PreferenceFragment implements
         return false;
     }
 
+
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         if (DEBUG) {
@@ -204,6 +216,11 @@ public class PowerUsageSummary extends PreferenceFragment implements
                 .setIcon(R.drawable.ic_menu_refresh_holo_dark)
                 .setAlphabeticShortcut('r');
         refresh.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM |
+                MenuItem.SHOW_AS_ACTION_WITH_TEXT);
+        MenuItem reset = menu.add(0, MENU_STATS_RESET, 0, R.string.menu_stats_reset)
+                .setIcon(R.drawable.ic_menu_delete_holo_dark)
+                .setAlphabeticShortcut('d');
+        reset.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM |
                 MenuItem.SHOW_AS_ACTION_WITH_TEXT);
 
         String helpUrl;
@@ -225,6 +242,11 @@ public class PowerUsageSummary extends PreferenceFragment implements
                 refreshStats();
                 return true;
             case MENU_STATS_REFRESH:
+                mStatsHelper.clearStats();
+                refreshStats();
+                return true;
+            case MENU_STATS_RESET:
+                mStatsHelper.resetStatistics();
                 mStatsHelper.clearStats();
                 refreshStats();
                 return true;
@@ -255,7 +277,7 @@ public class PowerUsageSummary extends PreferenceFragment implements
         mBatteryStatusPref.setOrder(-2);
         mAppListGroup.addPreference(mBatteryStatusPref);
         BatteryHistoryPreference hist = new BatteryHistoryPreference(
-                getActivity(), mStatsHelper.getStats());
+                getActivity(), mStatsHelper.getStats(), mStatsHelper.getDockStats(getActivity()));
         hist.setOrder(-1);
         mAppListGroup.addPreference(hist);
 
@@ -264,8 +286,8 @@ public class PowerUsageSummary extends PreferenceFragment implements
             addNotAvailableMessage();
             return;
         }
-        mStatsHelper.refreshStats(false);
-        int sipperCount = 0;
+        mStatsHelper.refreshStats(getActivity(), false);
+
         List<BatterySipper> usageList = mStatsHelper.getUsageList();
         for (BatterySipper sipper : usageList) {
             if (sipper.getSortValue() < MIN_POWER_THRESHOLD) continue;
@@ -284,8 +306,7 @@ public class PowerUsageSummary extends PreferenceFragment implements
                 pref.setKey(Integer.toString(sipper.uidObj.getUid()));
             }
             mAppListGroup.addPreference(pref);
-            sipperCount++;
-            if (sipperCount >= MAX_ITEMS_TO_LIST) break;
+            if (mAppListGroup.getPreferenceCount() > (MAX_ITEMS_TO_LIST+1)) break;
         }
     }
 
