@@ -1522,4 +1522,8 @@
     <string name="trigger_bottom_title">Trigger height</string>
     <string name="trigger_bottom_summary">Adjust the height of the trigger area</string>
 
+    <!-- Custom Recent Settings -->
+    <string name="custom_recent_title">Enable Slim Recents</string>
+    <string name="custom_recent_summary">Tick this box to switch between Slim/Stock Recent Panels</string>
+
 </resources>
