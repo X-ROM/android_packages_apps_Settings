@@ -2440,4 +2440,8 @@ translation isn't needed -->
     <string name="clock_use_second">Use second clock</string>
     <string name="clock_use_second_summary">Show second in clock</string>
 
+    <!-- Custom Recent Settings -->
+    <string name="custom_recent_title">Switch Recents styles</string>
+    <string name="custom_recent_summary">Tick to Slim recents or untick for stock recents. TICKING OR UNTICKING THIS BOX WILL RESTART YOUR SYSTEMUI</string>
+
 </resources>
