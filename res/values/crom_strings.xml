@@ -1475,4 +1475,7 @@
     <string name="sensors_motors_title">Sensors &amp; motors</string>
     <string name="display_calibration_title">Display calibration</string>
 
+    <!-- Kenrel tweaker -->
+    <string name="kerneltweaker_settings_title">Kernel Tweaker</string>
+
 </resources>

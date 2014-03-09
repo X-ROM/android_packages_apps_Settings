@@ -121,6 +121,12 @@
     <PreferenceCategory
         android:title="@string/system_category">
 
+    <!-- KernelTweaker -->
+    <PreferenceScreen
+        android:key="kerneltweaker_start"
+        android:title="@string/kerneltweaker_settings_title"
+        android:icon="@drawable/ic_kernel_tweaker" />
+
     <!-- Animations -->
     <PreferenceScreen
             android:id="@+id/interface_animation"
