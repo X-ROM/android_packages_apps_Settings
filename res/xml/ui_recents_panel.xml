@@ -24,4 +24,10 @@
         android:entries="@array/clear_recents_entries"
         android:entryValues="@array/clear_recents_values" />
 
+	<!-- Recents RAM bar -->
+    <PreferenceScreen
+        android:key="recents_ram_bar"
+        android:fragment="com.android.settings.crom.RamBar"
+        android:title="@string/ram_bar" />
+
 </PreferenceScreen>
