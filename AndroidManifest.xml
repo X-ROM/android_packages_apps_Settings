@@ -1950,11 +1950,6 @@
         </activity>
 
         <activity
-             android:name=".crom.CromSettings"
-             android:label="@string/crom_settings_title" >
-        </activity>
-
-        <activity
             android:name=".crom.ScreenStateToggles"
             android:label="@string/screen_state_toggles_title" >
             <intent-filter>
