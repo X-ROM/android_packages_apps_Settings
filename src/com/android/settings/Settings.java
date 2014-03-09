@@ -74,6 +74,7 @@ import com.android.settings.applications.ProcessStatsUi;
 import com.android.settings.blacklist.BlacklistSettings;
 import com.android.settings.bluetooth.BluetoothEnabler;
 import com.android.settings.bluetooth.BluetoothSettings;
+import com.android.settings.crom.CtoolSettings;
 import com.android.settings.crom.PerformanceSettings;
 import com.android.settings.cyanogenmod.superuser.PolicyNativeFragment;
 import com.android.settings.deviceinfo.Memory;
@@ -368,6 +369,7 @@ public class Settings extends PreferenceActivity
         ApnSettings.class.getName(),
         HomeSettings.class.getName(),
         ProfilesSettings.class.getName(),
+        CtoolSettings.class.getName(),
         PerformanceSettings.class.getName(),
         PolicyNativeFragment.class.getName()
     };
