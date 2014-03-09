@@ -24,9 +24,9 @@
         android:icon="@drawable/ic_crom_about"
         android:title="@string/about_crom_title" >
         <intent
-            android:action="android.intent.action.MAIN"
-            android:targetPackage="com.crom.about"
-            android:targetClass="com.crom.about.activities.AboutActivity" />
+        android:action="android.intent.action.MAIN"
+        android:targetPackage="com.crom.about"
+        android:targetClass="com.crom.about.activities.AboutActivity" />
     </PreferenceScreen>
 
     <PreferenceCategory
@@ -34,44 +34,45 @@
 
     <!-- INTERFACE -->
     <PreferenceScreen
-            android:id="@+id/interface_settings"
-            android:icon="@drawable/ic_ctools_interface"
-            android:title="@string/user_interface"
-            android:fragment="com.android.settings.crom.fragments.sysui.InterfaceSettings" />
+        android:id="@+id/interface_settings"
+        android:icon="@drawable/ic_ctools_interface"
+        android:title="@string/user_interface"
+        android:fragment="com.android.settings.crom.fragments.sysui.InterfaceSettings" />
 
     <!-- STATUSBAR -->
     <PreferenceScreen
-            android:id="@+id/statusbar_settings"
-            android:title="@string/status_bar_title"
-            android:icon="@drawable/ic_ctools_sb"
-            android:fragment="com.android.settings.crom.fragments.statusbar.SbSettings" />
+        android:id="@+id/statusbar_settings"
+        android:title="@string/status_bar_title"
+        android:icon="@drawable/ic_ctools_sb"
+        android:fragment="com.android.settings.crom.fragments.statusbar.SbSettings" />
 
     <!-- PIE -->
-    <PreferenceScreen
-            android:id="@+id/pie_control"
-            android:title="@string/pie_crom_title"
-            android:icon="@drawable/ic_crom_pie"
-            android:fragment="com.android.settings.crom.fragments.pie.PieTab" />
+   <PreferenceScreen
+       android:id="@+id/pie_control"
+       android:title="@string/pie_crom_title"
+       android:icon="@drawable/ic_crom_pie"
+       android:fragment="com.android.settings.crom.fragments.pie.PieTab" />
 
     <!-- HALO -->
    <PreferenceScreen
-           android:id="@+id/halo_settings"
-           android:fragment="com.android.settings.paranoid.Halo"
-           android:icon="@drawable/ic_settings_halo"
-           android:title="@string/halo_settings_title" />
+       android:id="@+id/halo_settings"
+       android:fragment="com.android.settings.paranoid.Halo"
+       android:icon="@drawable/ic_settings_halo"
+       android:title="@string/halo_settings_title" />
 
     <!-- App sidebar -->
     <PreferenceScreen
-            android:key="app_sidebar"
-            android:fragment="com.android.settings.crom.AppSidebar"
-            android:title="@string/app_sidebar_title"/>
+        android:key="app_sidebar"
+        android:fragment="com.android.settings.crom.AppSidebar"
+        android:icon="@drawable/ic_crom_sidebar"
+        android:title="@string/app_sidebar_title"/>
 
     <!-- Gesture Anywhere -->
     <PreferenceScreen
-            android:key="gesture_anywhere"
-            android:fragment="com.android.settings.chameleonos.labs.gestureanywhere.GestureAnywhereSettings"
-            android:icon="@drawable/ic_settings_gesture_anywhere"
-            android:title="@string/gesture_anywhere_title" />
+        android:key="gesture_anywhere"
+        android:fragment="com.android.settings.chameleonos.labs.gestureanywhere.GestureAnywhereSettings"
+        android:icon="@drawable/ic_settings_gesture_anywhere"
+        android:title="@string/gesture_anywhere_title" />
 
     </PreferenceCategory>
 
@@ -79,16 +80,16 @@
         android:title="@string/button_category">
 
     <PreferenceScreen
-            android:id="@+id/button_settings"
-            android:icon="@drawable/ic_ctools_button"
-            android:title="@string/button_settings"
-            android:fragment="com.android.settings.crom.fragments.ButtonSettings" />
+        android:id="@+id/button_settings"
+        android:icon="@drawable/ic_ctools_button"
+        android:title="@string/button_settings"
+        android:fragment="com.android.settings.crom.fragments.ButtonSettings" />
 
     <PreferenceScreen
-            android:id="@+id/power_menu_settings"
-            android:title="@string/power_menu_title"
-            android:icon="@drawable/ic_ctools_power"
-            android:fragment="com.android.settings.crom.dslv.ButtonsListViewSettings" >
+        android:id="@+id/power_menu_settings"
+        android:title="@string/power_menu_title"
+        android:icon="@drawable/ic_ctools_power"
+        android:fragment="com.android.settings.crom.dslv.ButtonsListViewSettings" >
                 <extra android:name="buttonMode" android:value="5" />
                 <extra android:name="maxAllowedButtons" android:value="8" />
                 <extra android:name="disableLongpress" android:value="true" />
@@ -99,28 +100,28 @@
     </PreferenceScreen>
 
     <PreferenceScreen
-            android:id="@+id/navbar_settings"
-            android:icon="@drawable/ic_settings_navigation"
-            android:title="@string/navbar_cat"
-            android:fragment="com.android.settings.crom.fragments.navbar.NavbarTab" />
+        android:id="@+id/navbar_settings"
+        android:icon="@drawable/ic_settings_navigation"
+        android:title="@string/navbar_cat"
+        android:fragment="com.android.settings.crom.fragments.navbar.NavbarTab" />
 
     </PreferenceCategory>
 
     <PreferenceCategory
-            android:title="@string/lockscreen_category">
+        android:title="@string/lockscreen_category">
 
     <PreferenceScreen
-            android:id="@+id/keyguard_settings"
-            android:icon="@drawable/ic_ctools_keyguard"
-            android:title="@string/keyguard_title"
-            android:fragment="com.android.settings.crom.fragments.lockscreen.KeyguardSettings" />
+        android:id="@+id/keyguard_settings"
+        android:icon="@drawable/ic_ctools_keyguard"
+        android:title="@string/keyguard_title"
+        android:fragment="com.android.settings.crom.fragments.lockscreen.KeyguardSettings" />
 
    <!-- Active display -->	
    <PreferenceScreen	
     	   android:key="active_display"	
 	   android:fragment="com.android.settings.crom.ActiveDisplaySettings"	
     	   android:title="@string/ad_settings_title"
-           android:icon="@drawable/ic_settings_actived" />
+       android:icon="@drawable/ic_settings_actived" />
 
     </PreferenceCategory>
 
@@ -135,63 +136,63 @@
 
     <!-- Animations -->
     <PreferenceScreen
-            android:id="@+id/interface_animation"
-            android:title="@string/interface_animation_title"
-            android:breadCrumbTitle="@string/interface_animation_title"
-            android:fragment="com.android.settings.crom.AnimationInterfaceSettings"
-            android:icon="@drawable/ic_rom_control_animations" />
+        android:id="@+id/interface_animation"
+        android:title="@string/interface_animation_title"
+        android:breadCrumbTitle="@string/interface_animation_title"
+        android:fragment="com.android.settings.crom.AnimationInterfaceSettings"
+        android:icon="@drawable/ic_rom_control_animations" />
 
     <PreferenceScreen
-            android:key="misc_options"
-            android:fragment="com.android.settings.crom.MiscOptions"
-            android:layout="@layout/preference_miscoptions"
-            android:icon="@drawable/ic_crom_miscoptions"
-            android:title="@string/misc_options_title"/>
+        android:key="misc_options"
+        android:fragment="com.android.settings.crom.MiscOptions"
+        android:layout="@layout/preference_miscoptions"
+        android:icon="@drawable/ic_crom_miscoptions"
+        android:title="@string/misc_options_title"/>
 
     <!-- ProgressBar -->
     <PreferenceScreen
-            android:key="progressbar_settings"
-            android:fragment="com.android.settings.cyanogenmod.ProgressBar"
-            android:icon="@drawable/ic_crom_progressbar"
-            android:title="@string/progressbar_title" >
+        android:key="progressbar_settings"
+        android:fragment="com.android.settings.cyanogenmod.ProgressBar"
+        android:icon="@drawable/ic_crom_progressbar"
+        android:title="@string/progressbar_title" >
     </PreferenceScreen>
 
     <!-- Density changer -->
     <PreferenceScreen
-            android:id="@+id/density_changer"
-            android:title="@string/lcd_density_title"
-            android:icon="@drawable/ic_settings_density_changer"
-            android:fragment="com.android.settings.crom.DensityChanger" />
+        android:id="@+id/density_changer"
+        android:title="@string/lcd_density_title"
+        android:icon="@drawable/ic_settings_density_changer"
+        android:fragment="com.android.settings.crom.DensityChanger" />
 
     <!-- WakeLock blocker -->
     <PreferenceScreen
-            android:key="wakelock_blocker"
-            android:icon="@drawable/ic_wakelock_blocker"
-            android:fragment="com.android.settings.crom.WakeLockBlocker"
-            android:title="@string/wakelock_blocker"
-            android:summary="@string/wakelock_blocker_header_summary" />
+        android:key="wakelock_blocker"
+        android:icon="@drawable/ic_wakelock_blocker"
+        android:fragment="com.android.settings.crom.WakeLockBlocker"
+        android:title="@string/wakelock_blocker"
+        android:summary="@string/wakelock_blocker_header_summary" />
 
     <!-- Screen state service -->
     <PreferenceScreen
-            android:key="screen_state_service"
-            android:icon="@drawable/ic_screen_state"
-            android:fragment="com.android.settings.crom.ScreenStateToggles"
-            android:title="@string/screen_state_toggles_title"
-            android:summary="@string/screen_state_toggles_summary" />
+        android:key="screen_state_service"
+        android:icon="@drawable/ic_screen_state"
+        android:fragment="com.android.settings.crom.ScreenStateToggles"
+        android:title="@string/screen_state_toggles_title"
+        android:summary="@string/screen_state_toggles_summary" />
 
     <PreferenceScreen
-            android:key="download_center"
-            android:icon="@drawable/ic_crom_download"
-            android:fragment="com.android.settings.crom.Download"
-            android:layout="@layout/preference_download"
-            android:title="@string/download_category" />
+        android:key="download_center"
+        android:icon="@drawable/ic_crom_download"
+        android:fragment="com.android.settings.crom.Download"
+        android:layout="@layout/preference_download"
+        android:title="@string/download_category" />
 
     <!-- SlimSizer -->
     <PreferenceScreen
-            android:id="@+id/system_app_remover"
-            android:icon="@drawable/ic_settings_slim_sizer"
-            android:title="@string/system_app_remover"
-            android:fragment="com.android.settings.slim.SystemappRemover" />
+        android:id="@+id/system_app_remover"
+        android:icon="@drawable/ic_settings_slim_sizer"
+        android:title="@string/system_app_remover"
+        android:fragment="com.android.settings.slim.SystemappRemover" />
 
     </PreferenceCategory>
 
