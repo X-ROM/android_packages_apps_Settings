@@ -1959,6 +1959,7 @@
         <activity android:name="com.android.settings.crom.CtoolSettings"/>
         <activity android:name=".crom.MiscOptions" />
         <activity android:name=".crom.Download" />
+        <activity android:name=".crom.AppSidebar" />
 
         <activity
             android:name=".crom.WakeLockBlocker"
