@@ -931,8 +931,8 @@
     <string name="reset">Réinitialiser</string>
     <string name="dialog_color_picker">Sélectionneur couleur</string>
     <string name="press_color_to_apply">Appuyez sur la couleur ci-dessous pour appliquer</string>
-    <string name="arrow_right">?</string>
-    <string name="arrow_down">?</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
     <string name="hex">Hex:</string>
     <string name="hex_hint">#ff000000</string>
     <string name="set">Appliqué</string>
