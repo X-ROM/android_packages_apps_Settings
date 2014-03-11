@@ -4994,6 +4994,15 @@
     <string name="partition_info_sdext">/external-sd</string>
     <string name="partition_info_used_of">/</string>
 
+    <!-- Breathing Notifications -->
+    <string name="breathing_notifications_title">Breathing Notifications</string>
+    <string name="sms_breath">Breathing SMS</string>
+    <string name="sms_breath_summary">Will give your sms notifications a breathing effect in the statusbar</string>
+    <string name="title_missed_call_breath">Breathing Missed Call</string>
+    <string name="missed_call_breath_summary">Will give your missed call notifications a breathing effect in the statusbar</string>
+    <string name="title_voicemail_breath">Breathing Voicemail</string>
+    <string name="voicemail_breath_summary">Will give your voicemail notifications a breathing effect in the statusbar</string>
+
     <string name="status_bar_signal_text_title">Signal status style</string>
     <string name="status_bar_signal_style_icon">Icon</string>
     <string name="status_bar_signal_style_text">Text</string>
