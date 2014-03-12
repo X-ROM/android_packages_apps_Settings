@@ -2162,6 +2162,7 @@
                 <action android:name="android.intent.action.TIMEZONE_CHANGED"></action>
                 <action android:name="android.intent.action.TIME_CHANGED"></action>
                 <action android:name="android.intent.action.DATE_CHANGED"></action>
+                <action android:name="android.intent.action.BATTERY_SERVICES"></action>
                 <action android:name="com.android.settings.crom.SCHEDULE_BATTERY_SAVER"/>
             </intent-filter>
         </receiver>
