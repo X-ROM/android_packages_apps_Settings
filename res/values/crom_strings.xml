@@ -1123,18 +1123,6 @@
     <string name="google_camera_title">Google Camera</string>
     <string name="google_camera_summary">Google Camera (flashable) with photosphere and HDR mode</string>
 
-    <!-- custom data usage period -->
-    <string name="daily_cycle_lenght">Daily</string>
-    <string name="weekly_cycle_length">Weekly</string>
-    <string name="monthly_cycle_length">Monthly</string>
-    <string name="weekday_sunday">Sunday</string>
-    <string name="weekday_monday">Monday</string>
-    <string name="weekday_tuesday">Tuesday</string>
-    <string name="weekday_wednesday">Wednesday</string>
-    <string name="weekday_thursday">Thursday</string>
-    <string name="weekday_friday">Friday</string>
-    <string name="weekday_saturday">Saturday</string>
-
     <!-- Active Display Notifications -->
     <string name="ad_settings_title">Active display</string>
     <string name="ad_settings_summary">Change active display settings</string>
