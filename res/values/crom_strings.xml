@@ -2128,7 +2128,4 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="recents_background_title">Misc</string>
     <string name="recents_background_summary">Prior to selecting this option, please make sure you uncheck Slim recents because this option does not function while those are enabled.</string>
 
-    <!-- StatusBar Bold Clock -->
-    <string name="clock_use_bold_text">Use Bold Text</string>
-
 </resources>
