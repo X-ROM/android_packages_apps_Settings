@@ -2144,4 +2144,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="recent_panel_lefty_mode_title">Show on the left edge</string>
     <string name="recent_panel_lefty_mode_summary">Show recent apps panel on the left edge.</string>
 
+    <!-- Title for charging state simulation -->
+    <string name="charging_state_title">Charging state</string>
+    <string name="charging_state_dialog_title">Simulate a charging state</string>
+
 </resources>
