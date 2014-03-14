@@ -2170,4 +2170,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="battery_bar_animate_title">Charging animation</string>
     <string name="battery_bar_animate_summary">The charging animation may result in a poor user experience. Enable at your own discretion.</string>
 
+    <!-- Content description of the sync in progress icon for accessibility. [CHAR LIMIT=NONE] -->
+    <string name="accessibility_sync_in_progress">Sync in progress.</string>
+
 </resources>
