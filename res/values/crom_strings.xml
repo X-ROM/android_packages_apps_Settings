@@ -2176,4 +2176,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <!-- Content description of the sync in progress icon for accessibility. [CHAR LIMIT=NONE] -->
     <string name="accessibility_sync_in_progress">Sync in progress.</string>
 
+    <!-- On-the-Go -->
+    <string name="power_menu_onthego_title">On-The-Go Mode</string>
+
 </resources>
