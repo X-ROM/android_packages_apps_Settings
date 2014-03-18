@@ -809,7 +809,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         if (chargingState != null) {
             String currentValue = SystemProperties.get(CHARGING_STATE_PROPERTY);
             String[] values = getResources().getStringArray(R.array.charging_state_values);	
-            String[] summaries = getResources().getStringArray(R.array.charging_state_summaries)
+            String[] summaries = getResources().getStringArray(R.array.charging_state_summaries);
             int index = 0; // Defaults to not set
             for (int i = 0; i < values.length; i++) {
                 if (currentValue.equals(values[i])) {
