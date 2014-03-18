@@ -1958,6 +1958,12 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="app_security_title">App security</string>
     <string name="security_unlock_category">Unlock</string>
 
+    <!-- Keyguard allow rotation -->
+    <string name="lockscreen_rotation_title">Lockscreen rotation</string>
+    <string name="lockscreen_rotation_portrait">Portrait only</string>
+    <string name="lockscreen_rotation_landscape">Landscape only</string>
+    <string name="lockscreen_rotation_summary_extra">(display rotation dependant)</string>
+
     <!-- C-ROM Settings  -->
     <!-- Settings main menu category heading. Interface (Launcher, Themes, System). [CHAR LIMIT=40] -->
     <string name="header_category_crom">Personalization</string>
