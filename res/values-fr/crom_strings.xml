@@ -113,10 +113,12 @@
     <string name="home_wake_summary">Appuyer sur le bouton home réveillera votre téléphone</string>
     <string name="camera_wake_title">Réveil Bouton Appareil photo</string>
     <string name="camera_wake_summary">Appuyer sur le bouton appareil photo réveillera votre téléphone</string>
-    <string name="volume_wake_title">Reveil Bouton Volume</string>
-    <string name="volume_wake_summary">Appuyer sur le bouton volume réveillera votre téléphone</string>
+    <string name="camera_sleep_on_release_title">Coup d\'oeil à l\'écran</string>
+    <string name="camera_sleep_on_release_summary">Une demi pression gardera l\'écran allumé jusqu\'a que la touche soit relâchée</string>
     <string name="camera_music_controls_title">Commande de lecture</string>
     <string name="camera_music_controls_summary">Lorsque l\'écran est éteint, un appui long sur la touche de l\'appareil photo jouera ou mettra en pause la musique en cours</string>
+    <string name="volume_wake_title">Reveil Bouton Volume</string>
+    <string name="volume_wake_summary">Appuyer sur le bouton volume réveillera votre téléphone</string>
     <string name="volbtn_music_controls_title">Commande de lecture</string>
     <string name="volbtn_music_controls_summary">Lorsque l\'écran est éteint, un appui long sur le bouton volume cherchera un morceaux de musique</string>
     <string name="volbtn_cursor_control_title">Contrôle curseur clavier</string>
@@ -488,7 +490,7 @@
     <string name="privacy_mode_summary">Désactiver les notifications déjà affichées et supprimées. De cette façon, vous voyez juste les icônes de vos notifications.</string>
     <string name="excluded_apps_title">Applications exclues</string>
     <string name="excluded_apps_summary">Les notifications des applications exclues ne seront pas affichées sur le verrouillage d\'écran</string>
-	<string name="notification_color">Couleur d\'arrière-plan des notifications</string>
+    <string name="notification_color">Couleur d\'arrière-plan des notifications</string>
 
     <!-- Status bar color -->
     <string name="custom_status_bar_color_title">Couleurs personnalisées de la barre d\'état</string>
@@ -559,12 +561,12 @@
     <string name="lockscreen_buttons_playpause">Musique jouer/Pause</string>
     <string name="lockscreen_buttons_toggle_sound">Changer son</string>
     <string name="lockscreen_buttons_sleep">Mettre en veille</string>
-    <string name="unlock_camera_unlock_title">Camera unlock</string>
-    <string name="unlock_camera_unlock_summary">Pressing the camera button unlocks the device</string>
-    <string name="unlock_menu_unlock_title">Menu unlock</string>
-    <string name="unlock_menu_unlock_summary">Pressing the menu button unlocks the device</string>
-    <string name="unlock_home_unlock_title">Home unlock</string>
-    <string name="unlock_home_unlock_summary">Pressing the home button unlocks the device</string>
+    <string name="unlock_camera_unlock_title">Déverrouillage par bouton appareil photo</string>
+    <string name="unlock_camera_unlock_summary">L\'appui sur le bouton appareil photo déverrouille le dispositif</string>
+    <string name="unlock_menu_unlock_title">Déverrouillage par menu</string>
+    <string name="unlock_menu_unlock_summary">L\'appui sur le bouton de menu ouvre le dispositif</string>
+    <string name="unlock_home_unlock_title">Déverrouillage par accueil</string>
+    <string name="unlock_home_unlock_summary">L\'appui sur le bouton accueil déverrouille le dispositif</string>
 
     <!-- Lock screen battery status -->
     <string name="lockscreen_battery_status_title">État batterie</string>
@@ -763,6 +765,10 @@
     <string name="lockscreen_lock_color_summary">Couleur de la poignée de verrouillage</string>
     <string name="lockscreen_dots_color_title">Couleur des points</string>
     <string name="lockscreen_dots_color_summary">Couleur des points de la lueur</string>
+    <string name="lockscreen_targets_color_title">Couleur des objectifs</string>
+    <string name="lockscreen_targets_color_summary">Couleur des objectifs de défi</string>
+    <string name="lockscreen_misc_color_title">Couleur Diverse</string>
+    <string name="lockscreen_misc_color_summary">Couleur des éléments restants</string>
 
 	<!-- Pie Control -->
     <string name="pie_control_title">SlimPIE</string>
@@ -2126,5 +2132,20 @@ deux afin d\'insérer des points de commande supplémentaires. \'Supprimer\' Eff
     <string name="recents_background_title">Divers</string>
     <string name="recents_background_summary">Avant de choisir cette option, merci de vous assurez que vous avez décoché le mode SLIM recents car cette option ne fonctionne pas avec les deux.</string>
 
-	
+<!-- Recent panel -->
+    <string name="recent_panel_category">Panneau applications récentes</string>
+    <string name="recent_panel_scale_title">Taille</string>
+    <string name="recent_panel_scale_summary">Taille du panneau applications récentes en %.</string>
+    <string name="recent_panel_100">100% (défaut)</string>
+    <string name="recent_panel_85">85%</string>
+    <string name="recent_panel_70">70%</string>
+
+    <!-- ATTENTION: RTL languages need to replace left with right -->
+    <string name="recent_panel_lefty_mode_title">Montrer sur le bord gauche</string>
+    <string name="recent_panel_lefty_mode_summary">Afficher panneau applications récentes sur le bord gauche.</string>
+
+    <!-- Title for charging state simulation -->
+    <string name="charging_state_title">État de la charge</string>
+    <string name="charging_state_dialog_title">Simuler un état de charge</string>
+    
 </resources>
