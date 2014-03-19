@@ -1770,7 +1770,7 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.crom.CtoolSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
-                android:resource="@id/ctool_settings" />
+                android:resource="@id/crom_tools" />
         </activity>
 
         <activity android:name=".crom.CtoolSettings"

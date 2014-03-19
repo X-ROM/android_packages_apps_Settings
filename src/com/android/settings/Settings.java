@@ -176,7 +176,7 @@ public class Settings extends PreferenceActivity
             R.id.print_settings,
             R.id.nfc_payment_settings,
             R.id.home_settings,
-            R.id.ctool_settings,
+            R.id.crom_tools,
             R.id.privacy_settings_cyanogenmod
     };
 
