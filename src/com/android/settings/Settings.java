@@ -176,6 +176,7 @@ public class Settings extends PreferenceActivity
             R.id.print_settings,
             R.id.nfc_payment_settings,
             R.id.home_settings,
+            R.id.ctool_settings,
             R.id.privacy_settings_cyanogenmod
     };
 
@@ -1175,5 +1176,6 @@ public class Settings extends PreferenceActivity
     public static class ASSRamBarActivity extends Settings { /* empty */ }
     public static class AnimationInterfaceSettingsActivity extends Settings { /* empty */ }
     public static class SoundPackageSettingsActivity extends Settings { /* empty */ }
+    public static class CtoolSettingsActivity extends Settings { /* empty */ }
     public static class QuickSettingsConfigActivity extends Settings { /* empty */ }
 }

@@ -1757,7 +1757,29 @@
             android:theme="@style/CryptKeeperBlankTheme"
         />
 
-        <!-- CyanogenMod activities Start -->
+        <!-- C-RoM activities Start -->
+
+        <activity android:name="Settings$CtoolSettingsActivity"
+                android:label="@string/ctool_title"
+                android:taskAffinity=""
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.crom.CtoolSettings" />
+            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
+                android:resource="@id/ctool_settings" />
+        </activity>
+
+        <activity android:name=".crom.CtoolSettings"
+            android:label="CtoolSettings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
         <activity android:name="Settings$QuickSettingsConfigActivity"
                 android:label="@string/tile_picker_title"
@@ -2036,7 +2058,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.android.settings.crom.CtoolSettings"/>
         <activity android:name=".crom.MiscOptions" />
         <activity android:name=".crom.Download" />
         <activity android:name=".crom.AppSidebar" />
