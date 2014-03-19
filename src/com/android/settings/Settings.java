@@ -106,6 +106,8 @@ import com.android.settings.wifi.WifiEnabler;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 
+import com.android.settings.crom.fragments.statusbar.QuickSettingsTiles;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -373,7 +375,8 @@ public class Settings extends PreferenceActivity
         CtoolSettings.class.getName(),
         PerformanceSettings.class.getName(),
         PolicyNativeFragment.class.getName(),
-        com.android.settings.cyanogenmod.PrivacySettings.class.getName()
+        com.android.settings.cyanogenmod.PrivacySettings.class.getName(),
+        com.android.settings.crom.fragments.statusbar.QuickSettingsTiles.class.getName()
     };
 
     @Override
@@ -1172,4 +1175,5 @@ public class Settings extends PreferenceActivity
     public static class ASSRamBarActivity extends Settings { /* empty */ }
     public static class AnimationInterfaceSettingsActivity extends Settings { /* empty */ }
     public static class SoundPackageSettingsActivity extends Settings { /* empty */ }
+    public static class QuickSettingsConfigActivity extends Settings { /* empty */ }
 }
