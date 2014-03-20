@@ -12,13 +12,14 @@
     <string name="add">Ajouter</string>
     <string name="save">Sauvegarder</string>
     <string name="reset">Réinitialiser</string>
-	<string name="reset_message">réinitialiser toutes les entrées a défaut</string>
-	<string name="attention">Attention</string>
+    <string name="reset_message">réinitialiser toutes les entrées a défaut</string>
+    <string name="attention">Attention</string>
     <string name="empty">Vide</string>
     <string name="delete">Effacer</string>
     <string name="default_string">Défaut</string>
     <string name="menu_cancel">Décharger</string>
-	<string name="disabled">Désactivé</string>
+    <string name="disabled">Désactivé</string>
+    <string name="additional_options_title">Options additionnelles</string>
 
     <!-- Category -->
     <string name="interface_category">Interface</string>
@@ -621,6 +622,7 @@
     <string name="navbar_targets_title">Cercle cible</string>
     <string name="navbar_cat">Barre de navigation</string>
     <string name="navbar_dimensions_reset_message">Réinitialiser toutes les entrées par défaut?</string>
+    <string name="navigation_bar_warning_no_navigation_present">Aucun autre type de navigation est actuellement activé. La désactivation de la barre de navigation peut entraîner un dispositif inutilisable. Voulez-vous activer à la place des contrôles Pies?</string>
     <string name="navbar_button_style_reset_message">Réinitialiser tous les styles par défaut?</string>
 
     <!-- Navigation bar button style -->
@@ -803,7 +805,6 @@
     <string name="pie_style">Style et dimension</string>
     <string name="pie_style_title">Style</string>
     <string name="pie_dimens_title">Dimension</string>
-    <string name="pie_additional_options">Options additionnelles</string>
     <string name="pie_show_snap_title">Montrer point de synchronisation</string>
     <string name="pie_show_snap_summary">Montrer le point de synchronisation pour changer le coin du déclencheur dynamiquement</string>
     <string name="pie_show_text_title">Montrer le statut et l\'heure</string>
@@ -815,6 +816,9 @@
     <string name="pie_button_second_layer_summary">Changer les boutons de seconde couche</string>
     <string name="pie_button_style_summary">Changer le style des boutons pie</string>
     <string name="pie_style_reset_message">Réinitialiser entièrement par défaut?</string>
+    <string name="pie_trigger_warning">Au minimum l\'un des principaux déclencheurs (en bas, à gauche ou à droite) doit être activé.</string>
+    <string name="pie_disable_ime_triggers_title">Réduire la taille du déclencheur sur le clavier</string>
+    <string name="pie_disable_ime_triggers_summary">Réduit à gauche et à droite la taille de déclenchement si le clavier est actif</string>
     <string name="pie_crom_title">PIE</string>
     
     <string name="system_app_remover">Effaceur d\'applications système</string>
