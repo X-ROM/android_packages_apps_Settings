@@ -2152,4 +2152,15 @@ deux afin d\'insérer des points de commande supplémentaires. \'Supprimer\' Eff
     <string name="charging_state_title">État de la charge</string>
     <string name="charging_state_dialog_title">Simuler un état de charge</string>
     
+    <!-- Battery Bar -->
+    <string name="status_bar_battery_cat_title">Batterie</string>
+    <string name="battery_bar_title">Barre batterie</string>
+    <string name="battery_bar">Position barre Batterie</string>
+    <string name="battery_bar_color">Couleur barre Batterie</string>
+    <string name="battery_bar_cat">Style barre Batterie</string>
+    <string name="battery_bar_style_title">Alignement barre Batterie</string>
+    <string name="battery_bar_thickness_title">Épaisseur barre Batterie</string>
+    <string name="battery_bar_animate_title">Animation chargement</string>
+    <string name="battery_bar_animate_summary">L\'animation pendant la charge peut entraîner une mauvaise expérience utilisateur. Activer en connaissance de cause.</string>
+    
 </resources>
