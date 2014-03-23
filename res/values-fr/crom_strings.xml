@@ -2163,4 +2163,7 @@ deux afin d\'insérer des points de commande supplémentaires. \'Supprimer\' Eff
     <string name="battery_bar_animate_title">Animation chargement</string>
     <string name="battery_bar_animate_summary">L\'animation pendant la charge peut entraîner une mauvaise expérience utilisateur. Activer en connaissance de cause.</string>
     
+    <!-- Content description of the sync in progress icon for accessibility. [CHAR LIMIT=NONE] -->
+    <string name="accessibility_sync_in_progress">Synchro en cours.</string>
+    
 </resources>
