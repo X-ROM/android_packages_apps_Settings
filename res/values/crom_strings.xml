@@ -2277,4 +2277,10 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
     <string name="unlock_set_unlock_mode_gesture">Gesture</string>
 
+    <!-- Voice Wakeup -->
+    <string name="voice_wakeup_settings_title">Voice wakeup</string>
+    <string name="voice_wakeup_retrain_title">Retrain your voice</string>
+    <string name="voice_wakeup_activity_title">Activity to launch</string>
+    <string name="voice_wakeup_default_activity">Google Now</string>
+
 </resources>
