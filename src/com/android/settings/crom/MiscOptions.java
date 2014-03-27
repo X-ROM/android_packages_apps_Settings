@@ -63,11 +63,6 @@ public class MiscOptions extends SettingsPreferenceFragment implements OnPrefere
         mHfmDisableAds.setChecked((Settings.System.getInt(resolver,
                 Settings.System.HFM_DISABLE_ADS, 0) == 1));
 
-        mOnTheGoPowerMenu = (CheckBoxPreference) findPreference(POWER_MENU_ONTHEGO_ENABLED);
-        mOnTheGoPowerMenu.setChecked(Settings.System.getInt(resolver,
-                Settings.System.POWER_MENU_ONTHEGO_ENABLED, 0) == 1);
-        mOnTheGoPowerMenu.setOnPreferenceChangeListener(this);
-
     }
 
     @Override
