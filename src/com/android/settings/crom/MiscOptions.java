@@ -43,11 +43,9 @@ public class MiscOptions extends SettingsPreferenceFragment implements OnPrefere
 
     private static final String DISABLE_FC_NOTIFICATIONS = "disable_fc_notifications";
     private static final String HFM_DISABLE_ADS = "hfm_disable_ads";
-    private static final String POWER_MENU_ONTHEGO_ENABLED = "power_menu_onthego_enabled";
 
     private CheckBoxPreference mDisableFC;
     private CheckBoxPreference mHfmDisableAds;
-    private CheckBoxPreference mOnTheGoPowerMenu;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -89,11 +87,6 @@ public class MiscOptions extends SettingsPreferenceFragment implements OnPrefere
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.HFM_DISABLE_ADS, checked ? 1:0);
             HfmHelpers.checkStatus(getActivity());
-            return true;
-        } else if (preference == mOnTheGoPowerMenu) {
-            boolean checked = ((CheckBoxPreference)preference).isChecked();
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.POWER_MENU_ONTHEGO_ENABLED, checked ? 1:0);
             return true;
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
