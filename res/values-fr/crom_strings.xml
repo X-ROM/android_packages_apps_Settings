@@ -2166,4 +2166,8 @@ deux afin d\'insérer des points de commande supplémentaires. \'Supprimer\' Eff
     <!-- Content description of the sync in progress icon for accessibility. [CHAR LIMIT=NONE] -->
     <string name="accessibility_sync_in_progress">Synchro en cours.</string>
     
+    <!-- On-the-Go -->
+    <string name="power_menu_onthego_title">Mode OTG</string>
+
+    
 </resources>
