@@ -31,7 +31,10 @@ public class RecentsPanel extends SettingsPreferenceFragment implements
 
     private static final String CLEAR_RECENTS_BUTTON = "clear_recents_button";
 
+    private static final String CIRCLE_MEM_BUTTON = "circle_mem_button";
+
     private ListPreference mClearAllButton;
+    private ListPreference mCircleMemButton;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -47,6 +50,14 @@ public class RecentsPanel extends SettingsPreferenceFragment implements
         mClearAllButton.setValue(String.valueOf(clearStatus));
         mClearAllButton.setSummary(mClearAllButton.getEntry());
         mClearAllButton.setOnPreferenceChangeListener(this);
+
+        mCircleMemButton = (ListPreference) findPreference(CIRCLE_MEM_BUTTON);
+        int circleStatus = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.CIRCLE_MEM_BUTTON, 4);
+        mCircleMemButton.setValue(String.valueOf(clearStatus));
+        mCircleMemButton.setSummary(mCircleMemButton.getEntry());
+        mCircleMemButton.setOnPreferenceChangeListener(this);
+
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
@@ -56,6 +67,14 @@ public class RecentsPanel extends SettingsPreferenceFragment implements
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.CLEAR_RECENTS_BUTTON, value);
             mClearAllButton.setSummary(mClearAllButton.getEntries()[index]);
+            return true;
+
+        } else if (preference == mCircleMemButton) {
+            int value = Integer.valueOf((String) objValue);
+            int index = mCircleMemButton.findIndexOfValue((String) objValue);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.CIRCLE_MEM_BUTTON, value);
+            mCircleMemButton.setSummary(mCircleMemButton.getEntries()[index]);
             return true;
         }
 

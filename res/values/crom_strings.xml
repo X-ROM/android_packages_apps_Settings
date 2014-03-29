@@ -201,6 +201,13 @@
     <string name="clear_button_top_right">Top right</string>
     <string name="clear_button_bottom_left">Bottom left</string>
     <string name="clear_button_bottom_right">Bottom right</string>
+    <string name="clear_button_summary">Show a button in recents panel to kill all apps</string>
+    <string name="clear_button_location_title">Clear all button position</string>
+
+    <!-- Circle Ram Indicator -->
+    <string name="circle_memory_indicator_title">Circle Memory indicator</string>
+    <string name="circle_memory_indicator_summary">Show a memory indicator within the recent applications view</string>
+    <string name="circle_memory_indicator_location_title">Memory indicator position</string>
 
     <!-- Quick settings panel  -->
     <string name="quick_settings_panel_title">Quick Settings panel</string>

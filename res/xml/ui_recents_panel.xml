@@ -20,9 +20,20 @@
     <ListPreference
         android:key="clear_recents_button"
         android:title="@string/clear_button_title"
-        android:dialogTitle="@string/clear_button_title"
+        android:dialogTitle="@string/clear_button_location_title"
         android:entries="@array/clear_recents_entries"
-        android:entryValues="@array/clear_recents_values" />
+        android:entryValues="@array/clear_recents_values"
+        android:summary="@string/clear_button_summary"
+        android:defaultValue="0" />
+
+    <ListPreference
+        android:key="circle_mem_button"
+        android:title="@string/circle_memory_indicator_title"
+        android:dialogTitle="@string/circle_memory_indicator_location_title"
+        android:entries="@array/circle_recents_entries"
+        android:entryValues="@array/circle_recents_values"
+        android:summary="@string/circle_memory_indicator_summary"
+        android:defaultValue="0" />
 
 	<!-- Recents RAM bar -->
     <PreferenceScreen
