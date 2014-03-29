@@ -209,6 +209,10 @@
     <string name="tile_picker_summary">Voir, sélectionner ou modifier la disposition des tuiles affichées</string>
     <string name="tile_choose_title">Choisir une tuile</string>
 
+    <!-- QuickSettings haptic feedback -->
+    <string name="haptic_qs_tiles_title">Vibration a l\'appui</string>
+    <string name="haptic_qs_tiles_summary">Vibration a l\'appui tuiles</string>
+    
     <string name="title_tile_airplane">Mode avion</string>
     <string name="title_tile_battery">Stat batterie</string>
     <string name="title_tile_bluetooth">Bluetooth</string>
@@ -243,6 +247,7 @@
     <string name="title_tile_screenshot">Copie d\'écran</string>
     <string name="title_tile_immersive">Mode immersif</string>
     <string name="title_tile_theme">Changeur de thèmes</string>
+    <string name="title_tile_onthego">Mode OTG</string>
 
     <string name="title_dynamic_tiles">Tuiles Dynamiques</string>
     <string name="dynamic_tiles_note_title">Note</string>
@@ -310,6 +315,7 @@
 	
     <!-- StatusBar Battery Settings -->
     <string name="battery_icon_title">Batterie</string>
+    <string name="battery_status_hide">Caché</string>
     <string name="battery_status_icon">Icône</string>
     <string name="battery_status_percentage">Pourcentage</string>
     <string name="battery_status_icon_percentage">Icône avec pourcentage</string>
@@ -636,7 +642,9 @@
     <string name="navigation_bar_glow_tint_title">Couleur de l\'éclat des boutons</string>
 
     <!-- Button shorcut actions -->
-	<string name="shortcut_action_airplane">Mode avion</string>
+    <string name="shortcut_action_navbar">Barre de navigation</string>
+    <string name="shortcut_action_pie">Contrôles PIE</string>
+    <string name="shortcut_action_airplane">Mode avion</string>
     <string name="shortcut_action_expanded_desktop">Bureau étendu</string>
     <string name="shortcut_action_power_off">Éteindre</string>
     <string name="shortcut_action_reboot">Redémarrer</string>
@@ -816,6 +824,7 @@
     <string name="pie_button_second_layer_summary">Changer les boutons de seconde couche</string>
     <string name="pie_button_style_summary">Changer le style des boutons pie</string>
     <string name="pie_style_reset_message">Réinitialiser entièrement par défaut?</string>
+    <string name="pie_warning_no_navigation_present">Aucun autre type de navigation n\'est actuellement activé. La désactivation de la barre de navigation peut entraîner un téléphone inutilisable. Voulez-vous activer les contrôles PIE a la place?</string>
     <string name="pie_trigger_warning">Au minimum l\'un des principaux déclencheurs (en bas, à gauche ou à droite) doit être activé.</string>
     <string name="pie_disable_ime_triggers_title">Réduire la taille du déclencheur sur le clavier</string>
     <string name="pie_disable_ime_triggers_summary">Réduit à gauche et à droite la taille de déclenchement si le clavier est actif</string>
@@ -887,6 +896,8 @@
     <string name="halo_state_white">List blanche</string>
     <string name="halo_pause_title">Mettre en pause l\'appli en cours</string>
     <string name="halo_pause_summary">Lors de l\'ouverture d\'une application avec Halo, l\'appli en cours sera mise en pause</string>
+    <string name="halo_ninja_title">Mode ninja</string>
+    <string name="halo_ninja_summary">Halo disparaîtra complètement si vide</string>
     <string name="halo_notification_msgbox_title">Activer les fenêtres de messages</string>
     <string name="halo_notification_msgbox_summary">Afficher une boîte de message pour les notifications entrantes</string>
     <string name="halo_unlock_ping_title">Émettre un bruit au déverrouillage</string>
@@ -1143,6 +1154,10 @@
     <string name="ad_text_summary">Voir le texte de notification autour de l\'anneau</string>
     <string name="ad_content_title">Utilisez vue de notification personnalisée</string>
     <string name="ad_content_summary">Utilisez le style d\'affichage actif pour montrer les détails de notification, plutôt que le système</string>
+    <string name="ad_annoying_title">Diminution fréquence notifications</string>
+    <string name="ad_annoying_summary">Limiter la notification à une fois par période de temps</string>
+    <string name="ad_double_tap_title">Double appui pour veille</string>
+    <string name="ad_double_tap_summary">Éteindre l\'écran par un double appui</string>
     <string name="ad_all_notifications_title">notifications en cours</string>
     <string name="ad_all_notifications_summary">Montrer les notifications en cours et non-effaçables</string>
     <string name="ad_hide_low_priority_title">Cachez les priorités faibles</string>
@@ -2070,7 +2085,9 @@ deux afin d\'insérer des points de commande supplémentaires. \'Supprimer\' Eff
     <string name="lockscreen_disable_hints_summary">Désactive l\'ombre sur les bords qui entoure le widget sur l\'écran de verrouillage en mode portrait</string>
     <string name="lockscreen_use_widget_container_carousel_title">Activer le widget carrousel en mode portrait</string>
     <string name="lockscreen_use_widget_container_carousel_summary">Utilisez l\'animation carrousel en mode portrait lors de la commutation entre les pages widgets de l\'écran de verrouillage</string>
-
+    <string name="lockscreen_widget_frame_title">Désactiver le cadre de widgets</string>
+    <string name="lockscreen_widget_frame_summary">Désactiver l\'arriere plan des cadres de widgets</string>
+    
     <!-- Sizes for pattern lockscreen -->
     <string name="lock_pattern_size_3">3x3</string>
     <string name="lock_pattern_size_4">4x4</string>
