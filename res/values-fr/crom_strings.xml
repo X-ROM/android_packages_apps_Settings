@@ -2189,6 +2189,10 @@ deux afin d\'insérer des points de commande supplémentaires. \'Supprimer\' Eff
     <!-- Content description of the sync in progress icon for accessibility. [CHAR LIMIT=NONE] -->
     <string name="accessibility_sync_in_progress">Synchro en cours.</string>
     
+    <!-- Voice+ -->
+    <string name="voice_plus_title">Voice+</string>
+    <string name="voice_plus_summary">Permettre a toutes les applications d\'envoyer des messages SMS avec Google Voice</string>
+    
     <!-- On-the-Go -->
     <string name="power_menu_onthego_title">Mode OTG</string>
     
