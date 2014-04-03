@@ -145,6 +145,13 @@
         android:title="@string/kerneltweaker_settings_title"
         android:icon="@drawable/ic_kernel_tweaker" />
 
+    <!-- WakeLock -->
+    <PreferenceScreen
+        android:key="wakelock_blocker"
+        android:fragment="com.android.settings.crom.WakeLockBlocker"
+        android:title="@string/wakelock_blocker"
+        android:summary="@string/wakelock_blocker_header_summary" />
+
     <!-- Animations -->
     <PreferenceScreen
         android:id="@+id/interface_animation"
