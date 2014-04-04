@@ -18,6 +18,455 @@
         <item>4</item>
     </string-array>
 
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2012-2013 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi region code. -->
+    <string-array name="wifi_countrycode_entries">
+        <item>United States</item>
+        <item>Canada, Taiwan</item>
+        <item>Germany</item>
+        <item>Europe</item>
+        <item>Japan, Russia</item>
+        <item>Australia</item>
+        <item>China</item>
+        <item>Korea</item>
+        <item>Turkey</item>
+        <item>Singapore</item>
+        <item>Brazil</item>
+    </string-array>
+
+    <string-array name="wifi_countrycode_values" translatable="false">
+        <item>US</item>
+        <item>CA</item>
+        <item>DE</item>
+        <item>GB</item>
+        <item>JP</item>
+        <item>AU</item>
+        <item>CN</item>
+        <item>KR</item>
+        <item>TR</item>
+        <item>SG</item>
+        <item>BR</item>
+    </string-array>
+
+    <!-- Ascending ringtone increase intervals -->
+    <string-array name="increasing_ring_interval_entries" translatable="false">
+        <item>@string/increasing_ring_interval_eachring</item>
+        <item>@string/increasing_ring_interval_half_second</item>
+        <item>@string/increasing_ring_interval_1second</item>
+        <item>@string/increasing_ring_interval_2seconds</item>
+        <item>@string/increasing_ring_interval_3seconds</item>
+        <item>@string/increasing_ring_interval_5seconds</item>
+        <item>@string/increasing_ring_interval_10seconds</item>
+    </string-array>
+
+    <integer-array name="increasing_ring_interval_values" translatable="false">
+        <item>0</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>5000</item>
+        <item>10000</item>
+    </integer-array>
+
+    <!-- Ring mode options. -->
+    <string-array name="ring_mode_entries" translatable="false">
+        <item>@string/ring_mode_normal</item>
+        <item>@string/ring_mode_vibrate</item>
+        <item>@string/ring_mode_mute</item>
+    </string-array>
+
+    <!-- Values for Ring mode. Do not translate. -->
+    <string-array name="ring_mode_values" translatable="false">
+        <item>normal</item>
+        <item>vibrate</item>
+        <item>mute</item>
+    </string-array>
+
+    <!-- Profile mode options. -->
+    <string-array name="profile_entries">
+        <item>On</item>
+        <item>Off</item>
+        <item>No override</item>
+    </string-array>
+
+    <!-- Values for vibrate_entries matching constants in SoundSettings. Do not translate. -->
+    <string-array name="profile_values" translatable="false">
+        <item>OVERRIDE</item>
+        <item>SUPPRESS</item>
+        <item>DEFAULT</item>
+    </string-array>
+
+    <!-- Profile mode options. -->
+    <string-array name="profile_connection_entries">
+        <item>Disable</item>
+        <item>Enable</item>
+    </string-array>
+
+    <!-- Profile 2G-3G mode options. -->
+    <string-array name="profile_networkmode_entries" translatable="false">
+        <item>@string/profile_networkmode_2g</item>
+        <item>@string/profile_networkmode_3g</item>
+        <item>@string/profile_networkmode_2g3g</item>
+    </string-array>
+
+    <!-- Values for profile connections. Do not translate. -->
+    <string-array name="profile_connection_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!--  Values for profile Wi-Fi triggers -->
+    <string-array name="profile_trigger_wifi_options" translatable="false">
+        <item>@string/profile_trigger_connect</item>
+        <item>@string/profile_trigger_disconnect</item>
+        <item>@string/profile_trigger_notrigger</item>
+    </string-array>
+
+    <!--  Values for profile trigger types -->
+    <string-array name="profile_trigger_filters" translatable="false">
+        <item>@string/profile_trigger_filter_all</item>
+        <item>@string/profile_trigger_filter_wifi</item>
+        <item>@string/profile_trigger_filter_bluetooth</item>
+    </string-array>
+
+    <!-- Profile lock mode options. Do not translate. -->
+    <string-array name="profile_lockmode_entries" translatable="false">
+        <item>@string/profile_lockmode_default</item>
+        <item>@string/profile_lockmode_insecure</item>
+        <item>@string/profile_lockmode_disabled</item>
+    </string-array>
+
+    <!-- Profile lock mode summaries. Do not translate. -->
+    <string-array name="profile_lockmode_summaries" translatable="false">
+        <item>@string/profile_lockmode_default_summary</item>
+        <item>@string/profile_lockmode_insecure_summary</item>
+        <item>@string/profile_lockmode_disabled_summary</item>
+    </string-array>
+
+    <!-- Values for profile lock mode. Do not translate. -->
+    <string-array name="profile_lockmode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Volume Overlay options. -->
+    <string-array name="volume_overlay_entries" translatable="false">
+        <item>@string/volume_overlay_single</item>
+        <item>@string/volume_overlay_expandable</item>
+        <item>@string/volume_overlay_expanded</item>
+        <item>@string/volume_overlay_none</item>
+    </string-array>
+
+    <!-- Values for Volume Overlay. Do not translate. -->
+    <string-array name="volume_overlay_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <!-- Ring mode options. -->
+    <string-array name="ring_mode_entries" translatable="false">
+        <item>@string/ring_mode_normal</item>
+        <item>@string/ring_mode_vibrate</item>
+        <item>@string/ring_mode_mute</item>
+    </string-array>
+
+    <!-- Values for Ring mode. Do not translate. -->
+    <string-array name="ring_mode_values" translatable="false">
+        <item>normal</item>
+        <item>vibrate</item>
+        <item>mute</item>
+    </string-array>
+
+    <!-- Values for the notification light pulse spinners -->
+    <string-array name="notification_pulse_length_entries" translatable="false">
+        <item>@string/pulse_length_always_on</item>
+        <item>@string/pulse_length_very_short</item>
+        <item>@string/pulse_length_short</item>
+        <item>@string/pulse_length_normal</item>
+        <item>@string/pulse_length_long</item>
+        <item>@string/pulse_length_very_long</item>
+    </string-array>
+
+    <string-array name="notification_pulse_length_values" translatable="false">
+        <item>1</item>
+        <item>250</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2500</item>
+        <item>5000</item>
+    </string-array>
+
+    <string-array name="notification_pulse_speed_entries" translatable="false">
+        <item>@string/pulse_speed_very_fast</item>
+        <item>@string/pulse_speed_fast</item>
+        <item>@string/pulse_speed_normal</item>
+        <item>@string/pulse_speed_slow</item>
+        <item>@string/pulse_speed_very_slow</item>
+    </string-array>
+
+    <string-array name="notification_pulse_speed_values" translatable="false">
+        <item>250</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2500</item>
+        <item>5000</item>
+    </string-array>
+
+    <!-- Auto-brightness sensitivity -->
+    <string-array name="auto_brightness_sensitivity_entries" translatable="false">
+        <item>@string/auto_brightness_sensitivity_verylow</item>
+        <item>@string/auto_brightness_sensitivity_low</item>
+        <item>@string/auto_brightness_sensitivity_medium</item>
+        <item>@string/auto_brightness_sensitivity_high</item>
+        <item>@string/auto_brightness_sensitivity_veryhigh</item>
+    </string-array>
+
+    <integer-array name="auto_brightness_sensitivity_values" translatable="false">
+        <item>150</item>
+        <item>125</item>
+        <item>100</item>
+        <item>50</item>
+        <item>25</item>
+    </integer-array>
+
+    <!-- Phone blacklist management -->
+    <string-array name="blacklist_policy_unknown_entries" translatable="false">
+        <item>@string/blacklist_policy_block_calls</item>
+        <item>@string/blacklist_policy_block_messages</item>
+    </string-array>
+
+    <string-array name="blacklist_policy_unknown_values" translatable="false">
+        <item>1</item>
+        <item>16</item>
+    </string-array>
+
+    <string-array name="blacklist_policy_private_entries" translatable="false">
+        <item>@string/blacklist_policy_block_calls</item>
+    </string-array>
+
+    <string-array name="blacklist_policy_private_values" translatable="false">
+        <item>1</item>
+    </string-array>
+
+    <!-- Arrays for root access capability -->
+    <string-array name="root_access_entries" translatable="false">
+        <item>@string/root_access_none</item>
+        <item>@string/root_access_apps</item>
+        <item>@string/root_access_adb</item>
+        <item>@string/root_access_all</item>
+    </string-array>
+
+    <string-array name="root_access_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <!--- Sms security limit -->
+    <string-array name="sms_security_check_limit_entries" translatable="false">
+        <item>@string/sms_security_check_limit_none</item>
+        <item>5</item>
+        <item>10</item>
+        <item>@string/sms_security_check_limit_default</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+    </string-array>
+
+    <string-array name="sms_security_check_limit_values" translatable="false">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+    </string-array>
+
+    <!-- Low battery warning policy -->
+    <string-array name="pref_low_battery_warning_policy_entries">
+        <item>@string/low_battery_warning_policy_popup_sound</item>
+        <item>@string/low_battery_warning_policy_notif_sound</item>
+        <item>@string/low_battery_warning_policy_popup</item>
+        <item>@string/low_battery_warning_policy_notif</item>
+        <item>@string/low_battery_warning_policy_sound</item>
+        <item>@string/disabled</item>
+    </string-array>
+
+    <string-array name="pref_low_battery_warning_policy_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <!-- Random PIN lock view -->
+    <string-array name="lock_numpad_random_entries">
+        <item>@string/lock_numpad_random_off</item>
+        <item>@string/lock_numpad_random_always</item>
+        <item>@string/lock_numpad_random_on_request</item>
+    </string-array>
+
+    <string-array name="lock_numpad_random_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- MediaScanner behavior on boot -->
+    <string-array name="media_scanner_on_boot_entries">
+        <item>@string/media_scanner_on_boot_enabled</item>
+        <item>@string/media_scanner_on_boot_ask</item>
+        <item>@string/media_scanner_on_boot_disabled</item>
+    </string-array>
+
+    <string-array name="media_scanner_on_boot_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Screen recorder video sizes -->
+    <string-array name="screen_recorder_video_sizes">
+        <item>@string/screen_recorder_size_240x400</item>
+        <item>@string/screen_recorder_size_360x640</item>
+        <item>@string/screen_recorder_size_480x800</item>
+        <item>@string/screen_recorder_size_480x854</item>
+        <item>@string/screen_recorder_size_540x960</item>
+        <item>@string/screen_recorder_size_600x1024</item>
+        <item>@string/screen_recorder_size_720x1280</item>
+    </string-array>
+
+    <!-- Screen recorder bitrates -->
+    <string-array name="screen_recorder_bitrate_entries">
+        <item>@string/screen_recorder_bitrate_title_100000</item>
+        <item>@string/screen_recorder_bitrate_title_250000</item>
+        <item>@string/screen_recorder_bitrate_title_500000</item>
+        <item>@string/screen_recorder_bitrate_title_1000000</item>
+        <item>@string/screen_recorder_bitrate_title_2000000</item>
+        <item>@string/screen_recorder_bitrate_title_3000000</item>
+        <item>@string/screen_recorder_bitrate_title_4000000</item>
+        <item>@string/screen_recorder_bitrate_title_5000000</item>
+        <item>@string/screen_recorder_bitrate_title_10000000</item>
+        <item>@string/screen_recorder_bitrate_title_20000000</item>
+        <item>@string/screen_recorder_bitrate_title_50000000</item>
+        <item>@string/screen_recorder_bitrate_title_100000000</item>
+    </string-array>
+    <string-array name="screen_recorder_bitrate_values">
+        <item>@string/screen_recorder_bitrate_100000</item>
+        <item>@string/screen_recorder_bitrate_250000</item>
+        <item>@string/screen_recorder_bitrate_500000</item>
+        <item>@string/screen_recorder_bitrate_1000000</item>
+        <item>@string/screen_recorder_bitrate_2000000</item>
+        <item>@string/screen_recorder_bitrate_3000000</item>
+        <item>@string/screen_recorder_bitrate_4000000</item>
+        <item>@string/screen_recorder_bitrate_5000000</item>
+        <item>@string/screen_recorder_bitrate_10000000</item>
+        <item>@string/screen_recorder_bitrate_20000000</item>
+        <item>@string/screen_recorder_bitrate_50000000</item>
+        <item>@string/screen_recorder_bitrate_100000000</item>
+    </string-array>
+
+    <string-array name="quiet_hours_ringer_entries" translatable="false">
+        <item>@string/quiet_hours_ringer_allow_all</item>
+        <item>@string/quiet_hours_ringer_allow_starred</item>
+        <item>@string/quiet_hours_ringer_mute_all</item>
+    </string-array>
+
+    <string-array name="quiet_hours_ringer_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Themes -->
+    <string-array name="theme_auto_mode_entries">
+        <item>@string/theme_auto_mode_off</item>
+        <item>@string/theme_auto_mode_lightsensor</item>
+        <item>@string/theme_auto_mode_twilight</item>
+    </string-array>
+
+    <string-array name="theme_auto_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+
+    <!-- Stylus Gestures -->
+    <string-array name="gestures_entries" translatable="false">
+        <item>@string/gestures_action_empty</item>
+        <item>@string/gestures_action_home</item>
+        <item>@string/gestures_action_back</item>
+        <item>@string/gestures_action_menu</item>
+        <item>@string/gestures_action_search</item>
+        <item>@string/gestures_action_recent</item>
+    </string-array>
+
+    <string-array name="gestures_values" translatable="false">
+        <item>1000</item>
+        <item>1001</item>
+        <item>1002</item>
+        <item>1003</item>
+        <item>1004</item>
+        <item>1005</item>
+    </string-array>
+
+    <!-- Recents RAM bar-->
+    <string-array name="entries_ram_bar_mode">
+        <item>@string/ram_bar_none</item>
+        <item>@string/ram_bar_apps</item>
+        <item>@string/ram_bar_cache</item>
+        <item>@string/ram_bar_other</item>
+    </string-array>
+
+    <string-array name="values_ram_bar_mode" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array> 
+
+    <!-- Profile expanded desktop mode options. Do not translate. -->
+    <string-array name="profile_expanded_desktop_entries" translatable="false">
+        <item>@string/profile_lockmode_default</item>
+        <item>@string/connection_state_enabled</item>
+        <item>@string/connection_state_disabled</item>
+    </string-array>
+
+    <!-- Values for profile expanded desktop mode. Do not translate. -->
+    <string-array name="profile_expanded_desktop_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+</resources>
+
     <!-- Circle MEM recents -->
     <string-array name="circle_recents_entries" translatable="false">
         <item>@string/clear_button_off</item>
@@ -1260,6 +1709,25 @@
         <item>2</item>
         <item>3</item>
         <item>4</item>
+    </string-array>
+
+    <!-- Auto keyboard rotation -->
+    <string-array name="keyboard_rotation_timeout_entries" translatable="false">
+        <item>2s</item>
+        <item>5s</item>
+        <item>10s</item>
+        <item>20s</item>
+        <item>30s</item>
+        <item>60s</item>
+    </string-array>
+
+    <string-array name="keyboard_rotation_timeout_values" translatable="false">
+        <item>2000</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>20000</item>
+        <item>30000</item>
+        <item>60000</item>
     </string-array>
 
 </resources>
