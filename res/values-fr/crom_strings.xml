@@ -935,25 +935,6 @@
     <string name="app_halo_label_black">Liste noire pour HALO</string>
     <string name="app_halo_label_white">Liste blanche pour HALO</string>
 
-    <!-- Telo Radio -->
-    <string name="telo_radio_settings_title">Gestionnaire de connexion</string>
-    <string name="telo_radio_options_category">Écran de configuration</string>
-    <string name="telo_radio_lte_title">LTE</string>
-    <string name="telo_radio_lte_summary">Sélectionnez cette option si vous utilisez LTE (4G).</string>
-    <string name="telo_radio_2g_wifi_title">2G sur Wi-Fi</string>
-    <string name="telo_radio_2g_wifi_title_summary">Lorsque le Wi-Fi est utilisé,le mode réseau est mis en 2G.</string>
-    <string name="telo_radio_2g_screenoff_category">Configuration a l\'extinction écran</string>
-    <string name="telo_radio_2g_screenoff_title">2G avec l\'écran éteint</string>
-    <string name="telo_radio_2g_screenoff_summary">Le dispositif commutera en 2G lorsque l\'écran est éteint.</string>
-    <string name="telo_radio_2g_screenoff_timeout_title">Temps pour commuter en 2G</string>
-    <string name="telo_radio_2g_3min">3 minutes</string>
-    <string name="telo_radio_2g_5min">5 minutes</string>
-    <string name="telo_radio_2g_10min">10 minutes</string>
-    <string name="telo_radio_2g_15min">15 minutes</string>
-    <string name="telo_radio_2g_20min">20 minutes</string>
-    <string name="telo_radio_go_3g_unlock_title">3G au déverrouillage</string>
-    <string name="telo_radio_go_3g_unlock_summary">Lorsque le téléphone est déverrouillé, le mode réseau recommutera en 3G.</string>
-
     <!-- Sound themes -->
     <string name="sound_packages_title">Pack sonorisation</string>
     <string name="install_sound_pack_title">Installer le pack sonorisation</string>
@@ -1104,15 +1085,13 @@
     <!-- Powersaver settings -->
     <string name="power_saver_settings_title">Economie d\'énergie</string>
     <string name="power_saver_settings_summary">Optimiser l\'autonomie de la batterie</string>
-    <string name="power_saver_toggles_mobile_title">Réseaux mobiles</string>
     <string name="power_saver_toggles_location_title">Position</string>
     <string name="power_saver_toggles_performance_title">Performance</string>
     <string name="power_saver_toggles_gps_title">désactiver GPS</string>
     <string name="power_saver_toggles_gps_summary">Le service de localisation par GPS est désactivé a l\'extinction écran</string>
-    <string name="power_saver_toggles_mobile_data_title">Désactiver les données mobiles</string>
-    <string name="power_saver_toggles_mobile_data_summary">Données mobiles seront désactivés a l\'extinction écran</string>
     <string name="power_saver_toggles_cpu_title">Puissance CPU</string>
     <string name="power_saver_toggles_cpu_summary">Conserver la puissance CPU</string>
+    <string name="power_saver_toggles_mobile_title">Réseau Mobile</string>
     
     <!-- Volume Steps -->
     <string name="volume_steps_title">Étapes volume</string>
@@ -2262,6 +2241,48 @@ deux afin d\'insérer des points de commande supplémentaires. \'Supprimer\' Eff
 
     <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
     <string name="unlock_set_unlock_mode_gesture">Signe</string>
-
     
+    <!-- Battery saver mode -->
+    <string name="network_lte">LTE (recommandé)</string>
+    <string name="network_4G">4G (recommandé)</string>
+    <string name="network_3G_only">3G seulement</string>
+    <string name="network_3G_auto">2G/3G Auto</string>
+    <string name="network_3G">2G/3G Préféré</string>
+    <string name="network_2G">2G seulement</string>
+    <string name="network_1x">1x</string>
+    <string name="network_global">Global</string>
+    <string name="battery_saver_action_undefined">Non défini</string>
+    <string name="battery_saver_title">Mode économie batterie</string>
+    <string name="pref_battery_saver_enable_title">Économie batterie</string>
+    <string name="pref_battery_saver_enable_summary">Cela gère automatiquement l\'utilisation de la batterie de votre appareil et passe votre réseau dans le mode d\'économie d\'énergie que vous avez défini ou en mode normal, dépendant de l\'état de connexion des données mobiles et Wi-Fi</string>
+    <string name="pref_battery_saver_normal_mode_title">Mode réseau normal</string>
+    <string name="pref_battery_saver_power_saving_mode_title">Mode économie d\'énergie du réseau</string>
+    <string name="pref_battery_saver_screen_off_title">Quand l\'écran s\'éteint</string>
+    <string name="pref_battery_saver_screen_off_summary">Activez le mode d\'économie d\'énergie lorsque l\'écran s\'éteint</string>
+    <string name="pref_battery_saver_ignore_locked_title">Ignorer quand verrouillé</string>
+    <string name="pref_battery_saver_ignore_locked_summary">Lorsque l\'écran s\'allume, le mode d\'économie d\'énergie ne sera pas désactivé jusqu\'à ce que le clavier soit déverrouillé</string>
+    <string name="pref_battery_saver_mode_change_delay_title">Delai changement mode</string>
+    <string name="pref_battery_saver_mode_change_delay_summary">Le délai de changement en mode économie d\'énergie est spécifié en secondes</string>
+    <string name="pref_battery_saver_battery_title">Lorsque la batterie est faible</string>
+    <string name="pref_battery_saver_battery_summary">Activez le mode d\'économie d\'énergie lorsque la batterie est faible</string>
+    <string name="pref_battery_saver_mode_battery_level_title">Niveau batterie</string>
+    <string name="pref_battery_saver_mode_battery_level_summary">Passez en mode d\'économie d\'énergie à: </string>
+    <string name="pref_battery_saver_data_title">Désactiver les données mobiles</string>
+    <string name="pref_battery_saver_data_summary">Désactiver la connexion de données mobile lorsque l\'économie d\'énergie est activée</string>
+    <string name="pref_battery_saver_enable_no_mobiledata_summary">Cela gère automatiquement l\'utilisation de la batterie de votre l\'appareil pour l\'utilisateur défini</string>
+    <string name="pref_battery_saver_wifi_title">Désactiver le Wi-Fi</string>
+    <string name="pref_battery_saver_wifi_summary">Désactiver le Wi-Fi lorsque l\'économie d\'énergie est activée</string>
+    <string name="pref_battery_saver_network_title">Changement de réseau intelligent</string>
+    <string name="pref_battery_saver_network_summary">Permettre de changer le mode réseau en normal avec un intervalle de temps spécifique après que l\'écran soit éteint et que le mode d\'économie d\'énergie soit activé</string>
+    <string name="pref_battery_saver_nosignal_title">Signal du réseau intelligent</string>
+    <string name="pref_battery_saver_nosignal_summary">Activer le mode Avion lorsqu\'il n\'y a pas de signal réseau après 5 minutes</string>
+    <string name="pref_battery_saver_toast_title">Montrer une fenêtre d\'information</string>
+    <string name="pref_battery_saver_toast_summary">Permettre l\'affichage d\une fenêtre d\'information lorsque l\'économiseur d\'énergie change la configuration de l\'appareil</string>
+    <string name="battery_saver_battery_title">Options batterie</string>
+    <string name="battery_saver_radio_title">Options radio</string>
+    <string name="battery_saver_network_title">Autres options réseau</string>
+    <string name="battery_saver_network_gsm_title">Réseau GSM</string>
+    <string name="battery_saver_network_cdma_title">Réseau CDMA</string>
+    <string name="battery_saver_system_title">Options systèmes</string>
+
 </resources>
