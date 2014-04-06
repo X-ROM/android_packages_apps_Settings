@@ -328,4 +328,5 @@ public class SettingsPreferenceFragment extends PreferenceFragment implements Di
     public void setTitle(int resId) {
         getActivity().setTitle(resId);
     }
+
 }
