@@ -1794,6 +1794,12 @@
     <string name="cyanogenmod_waiver_title">Waiver</string>
     <string name="cyanogenmod_waiver_body">Changing this setting may be against your state or government laws.\n\nIn selecting \'OK\' below, you acknowledge this warning and waive, indemnify and hold harmless CyanogenMod and its contributors from all legal liabilities.</string>
 
+    <!-- WhisperPush -->
+    <string name="whisperpush_title">WhisperPush</string>
+    <string name="whisperpush_registration_title">Register</string>
+    <string name="whisperpush_registration_summary">Register for WhisperPush to enable encrypted SMS.</string>
+    <string name="whisperpush_identitykey_title">Review identity keys</string>
+
     <!-- Automatic brightness customization -->
     <string name="auto_brightness_setup_title">Automatic brightness</string>
     <string name="auto_brightness_adjustment_title">Brightness adjustment</string>
