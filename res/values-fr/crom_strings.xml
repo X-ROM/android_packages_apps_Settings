@@ -1432,9 +1432,19 @@
     <!-- Stylus gestures -->
     <string name="stylus_app_not_installed">%s n\'est pas installé</string>
 
-    <!-- IME switcher notifcation -->
-    <string name="ime_switcher_notify">Selecteur de notifications</string>
-    <string name="ime_switcher_notify_summary">Afficher la méthode de saisie du selecteur de notifications</string>
+    <!-- Advanced IME settings -->
+    <string name="title_keyboard_input">Options avancées</string>
+    <string name="ime_switcher_notify">Sélecteur de notifications</string>
+    <string name="ime_switcher_notify_summary">Afficher la méthode de saisie du sélecteur de notifications</string>
+    <string name="disable_fullscreen_keyboard_title">Désactiver clavier plein écran</string>
+    <string name="disable_fullscreen_keyboard_summary">Le clavier en mode paysage ne prendra pas tout l\'écran</string>
+    <string name="keyboard_rotation_toggle_title">Rotation automatique du clavier</string>
+    <string name="keyboard_rotation_toggle_summary">Forcer la rotation auto du clavier lorqu\'il est affiché</string>
+    <string name="keyboard_rotation_timeout_title">Délai de rotation auto</string>
+    <string name="keyboard_rotation_timeout_summary">Désactive capteur auto-rotation <xliff:g id="rotate_timeout">%1$s</xliff:g> seconde après que le clavier est caché</string>
+    <string name="keyboard_rotation_dialog">Cette fonction force l\'auto rotation a fonctionner temporairement lorsque le clavier est affiché .Elle n\'a pas d\'effets lorsque la rotation automatique est déjà activée.</string>
+    <string name="show_enter_key_title">Afficher la touche Entrée</string>
+    <string name="show_enter_key_summary">Force le clavier a afficher la touche entrée a la place de la touche emoticone</string>
 
     <!-- Title for the accessibility preference to home button to answers a call. [CHAR LIMIT=35] -->
     <string name="accessibility_home_button_answers_call_prerefence_title">Réponse aux appel par le bouton Home</string>
@@ -1557,6 +1567,16 @@
     <string name="wifi_setting_priority_title">Priorité Wi-Fi</string>
     <!-- Wi-Fi settings screen, setting summary for setting the Wi-Fi priority-->
     <string name="wifi_setting_priority_summary">Spécifier la priorité du réseau Wi-Fi</string>
+    
+    <!--  Title for PreferenceScreen to change encryption password [CHAR LIMIT=22]  -->
+    <string name="change_crypt_password_title">Changer le mot de passe</string>
+
+    <!--  Summary for PreferenceScreen to change encryption password [CHAR LIMIT=45]  -->
+    <string name="change_crypt_password_summary">Changer le mot de passe utilisé pour le chiffrement du téléphone</string>
+
+    <!-- Header on first screen of choose encryption password [CHAR LIMIT=30] -->
+    <string name="encryptionpassword_choose_your_password_header">Définir le mot de passe de chiffrement</string>
+    
     <!-- WiFi forget all networks -->
     <string name="wifi_menu_forget_all">Oublier tous les réseaux</string>
 
