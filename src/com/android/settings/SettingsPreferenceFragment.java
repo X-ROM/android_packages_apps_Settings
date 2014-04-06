@@ -51,10 +51,6 @@ public class SettingsPreferenceFragment extends PreferenceFragment implements Di
 
     private String mHelpUrl;
 
-    protected Context mContext;
-
-    protected ContentResolver mContentRes;
-
     // Cache the content resolver for async callbacks
     private ContentResolver mContentResolver;
 
@@ -341,9 +337,5 @@ public class SettingsPreferenceFragment extends PreferenceFragment implements Di
         }
 
         return true;
-    }
-
-    public void setTitle(int resId) {
-        getActivity().setTitle(resId);
-    }
+     }
 }

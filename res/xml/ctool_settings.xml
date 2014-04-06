@@ -175,22 +175,6 @@
         android:icon="@drawable/ic_settings_density_changer"
         android:fragment="com.android.settings.crom.DensityChanger" />
 
-    <!-- WakeLock blocker -->
-    <PreferenceScreen
-        android:key="wakelock_blocker"
-        android:icon="@drawable/ic_wakelock_blocker"
-        android:fragment="com.android.settings.crom.WakeLockBlocker"
-        android:title="@string/wakelock_blocker"
-        android:summary="@string/wakelock_blocker_header_summary" />
-
-    <!-- Screen state service -->
-    <PreferenceScreen
-        android:key="screen_state_service"
-        android:icon="@drawable/ic_screen_state"
-        android:fragment="com.android.settings.crom.ScreenStateToggles"
-        android:title="@string/screen_state_toggles_title"
-        android:summary="@string/screen_state_toggles_summary" />
-
     <PreferenceScreen
         android:key="download_center"
         android:icon="@drawable/ic_crom_download"
