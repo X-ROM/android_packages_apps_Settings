@@ -882,12 +882,6 @@
     <string name="wakelock_blocker_warning_title">Procéder avec précaution</string>
     <string name="wakelock_blocker_warning">Bloquer les programmes residents peut etre une source d\'instabilité, plantage ou perte de données.</string>
 
-    <!-- WhisperPush -->
-    <string name="whisperpush_title">WhisperPush</string>
-    <string name="whisperpush_registration_title">Enregistrer</string>
-    <string name="whisperpush_registration_summary">S\'enregistrer sur WhisperPush pour activer les SMS cryptés.</string>
-    <string name="whisperpush_identitykey_title">Revoir la clé d\'identification</string>
-
     <!-- Halo -->
     <string name="halo_enabled_title">Activer HALO</string>
     <string name="halo_enabled_summary">Activer ou désactiver complètement HALO</string>
@@ -1800,6 +1794,12 @@
     <string name="cyanogenmod_waiver_title">Renonciation</string>
     <string name="cyanogenmod_waiver_body">La modification de ce paramètre peut être non conforme aux lois de votre pays.\n\nIn Sélectionner \'OK\' au-dessous, vous fait accepter cet avertissement et renoncer a toutes attaques juridiques contre CyanogenMod et ses collaborateurs.</string>
 
+    <!-- WhisperPush -->
+    <string name="whisperpush_title">WhisperPush</string>
+    <string name="whisperpush_registration_title">Enregistrer</string>
+    <string name="whisperpush_registration_summary">S\'enregistrer sur WhisperPush pour activer les SMS cryptés.</string>
+    <string name="whisperpush_identitykey_title">Revoir la clé d\'identification</string>
+    
     <!-- Automatic brightness customization -->
     <string name="auto_brightness_setup_title">Luminosité automatique</string>
     <string name="auto_brightness_adjustment_title">Ajustement luminosité</string>
@@ -2283,5 +2283,10 @@ deux afin d\'insérer des points de commande supplémentaires. \'Supprimer\' Eff
     <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
     <string name="unlock_set_unlock_mode_gesture">Signe</string>
 
+    <!-- Voice Wakeup -->
+    <string name="voice_wakeup_settings_title">Réveil par voix</string>
+    <string name="voice_wakeup_retrain_title">Recycler votre voix</string>
+    <string name="voice_wakeup_activity_title">Activité a lancer</string>
+    <string name="voice_wakeup_default_activity">Google Now</string>
     
 </resources>
