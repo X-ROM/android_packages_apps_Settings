@@ -2282,6 +2282,21 @@ deux afin d\'insérer des points de commande supplémentaires. \'Supprimer\' Eff
 
     <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
     <string name="unlock_set_unlock_mode_gesture">Signe</string>
+    
+    <!-- Battery Info screen. Units shown after a value. Used for diagnostic info screens, precise
+translation isn't needed -->
+    <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
+    <!-- Battery Info screen. Units shown after a value. Used for diagnostic info screens, precise
+translation isn't needed -->
+    <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>
+    <!-- Menu label for reset the battery stats -->
+    <string name="menu_stats_reset">Réinitialiser</string>
+
+    <!-- Voice Wakeup -->
+    <string name="voice_wakeup_settings_title">Réveil a la voix</string>
+    <string name="voice_wakeup_retrain_title">Reconditionnement du réveil vocal</string>
+    <string name="voice_wakeup_activity_title">Activité a lancer</string>
+    <string name="voice_wakeup_default_activity">Google Now</string>
 
     
 </resources>
