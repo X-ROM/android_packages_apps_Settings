@@ -440,7 +440,7 @@ public class SecuritySettings extends RestrictedSettingsFragment
 
         // WhisperPush
         // Only add if device has telephony support and has WhisperPush installed.
-+        if (pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY)
+        if (pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY)
                 && isPackageInstalled("org.whispersystems.whisperpush")) {
             addPreferencesFromResource(R.xml.security_settings_whisperpush);
         }
