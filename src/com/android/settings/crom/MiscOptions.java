@@ -60,7 +60,6 @@ import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
-import com.android.settings.hfm.HfmHelpers;
 import com.android.settings.crom.tools.AppMultiSelectListPreference;
 import com.android.internal.util.slim.DeviceUtils;
 
@@ -73,12 +72,10 @@ import java.util.Arrays;
 public class MiscOptions extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String DISABLE_FC_NOTIFICATIONS = "disable_fc_notifications";
-    private static final String HFM_DISABLE_ADS = "hfm_disable_ads";
     private static final String PREF_INCLUDE_APP_CIRCLE_BAR_KEY = "app_circle_bar_included_apps";
 
     private AppMultiSelectListPreference mIncludedAppCircleBar;
     private CheckBoxPreference mDisableFC;
-    private CheckBoxPreference mHfmDisableAds;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -92,10 +89,6 @@ public class MiscOptions extends SettingsPreferenceFragment implements OnPrefere
         mDisableFC = (CheckBoxPreference) findPreference(DISABLE_FC_NOTIFICATIONS);
         mDisableFC.setChecked((Settings.System.getInt(resolver,
                 Settings.System.DISABLE_FC_NOTIFICATIONS, 0) == 1));
-
-        mHfmDisableAds = (CheckBoxPreference) findPreference(HFM_DISABLE_ADS);
-        mHfmDisableAds.setChecked((Settings.System.getInt(resolver,
-                Settings.System.HFM_DISABLE_ADS, 0) == 1));
 
         mIncludedAppCircleBar = (AppMultiSelectListPreference) prefSet.findPreference(PREF_INCLUDE_APP_CIRCLE_BAR_KEY);
         Set<String> includedApps = getIncludedApps();
@@ -115,12 +108,6 @@ public class MiscOptions extends SettingsPreferenceFragment implements OnPrefere
             boolean checked = ((CheckBoxPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.DISABLE_FC_NOTIFICATIONS, checked ? 1:0);
-            return true;
-        } else if  (preference == mHfmDisableAds) {
-            boolean checked = ((CheckBoxPreference)preference).isChecked();
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.HFM_DISABLE_ADS, checked ? 1:0);
-            HfmHelpers.checkStatus(getActivity());
             return true;
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);

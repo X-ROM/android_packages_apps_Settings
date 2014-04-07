@@ -43,11 +43,10 @@
         android:title="@string/misc_tweaks_hfm">
     </PreferenceCategory>
 
-    <CheckBoxPreference
-        android:key="hfm_disable_ads"
-        android:title="@string/hfm_disable_ads_title"
-        android:summary="@string/hfm_disable_ads_summary"
-        android:persistent="false" />
+        <PreferenceScreen
+            android:key="hfm_settings"
+            android:fragment="com.android.settings.crom.hfm.HfmSettings"
+            android:title="@string/hfm_pref_screen_title" />
 
     <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
         android:key="status_bar_custom_header"
