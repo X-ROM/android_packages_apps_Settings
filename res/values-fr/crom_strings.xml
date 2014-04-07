@@ -2282,6 +2282,22 @@ deux afin d\'insérer des points de commande supplémentaires. \'Supprimer\' Eff
 
     <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
     <string name="unlock_set_unlock_mode_gesture">Signe</string>
+    
+    <!-- Battery Info screen. Units shown after a value. Used for diagnostic info screens, precise
+translation isn't needed -->
+    <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
+    <!-- Battery Info screen. Units shown after a value. Used for diagnostic info screens, precise
+translation isn't needed -->
+    <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>
+    <!-- Menu label for reset the battery stats -->
+    <string name="menu_stats_reset">Réinitialiser</string>
+
+	<!-- Circle App Launcher -->
+    <string name="category_app_circle_bar_title">Lanceur circulaire applications</string>
+    <string name="app_circle_bar_title">Barre circulaire d\'applications</string>
+    <string name="app_circle_bar_summary">Afficher le lanceur d\'applications circulaire après avoir touché le côté droit de l\'écran</string>
+    <string name="app_circle_bar_included_apps_title">Applications incluses</string>
+    <string name="app_circle_bar_included_apps_summary">Les applications seront affichées dans le cercle</string>
 
     
 </resources>
