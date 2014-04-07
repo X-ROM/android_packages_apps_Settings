@@ -32,6 +32,20 @@
             android:title="@string/app_circle_bar_included_apps_title"
             android:dependency="enable_app_circle_bar" />
 
+        <PreferenceCategory
+            android:key="category_app_circle_bar"
+            android:title="@string/category_app_circle_bar_title"/>
+
+        <com.android.settings.cyanogenmod.SystemCheckBoxPreference
+            android:key="enable_app_circle_bar"
+            android:title="@string/app_circle_bar_title" />
+
+        <com.android.settings.crom.tools.AppMultiSelectListPreference
+            android:key="app_circle_bar_included_apps"
+            android:persistent="false"
+            android:title="@string/app_circle_bar_included_apps_title"
+            android:dependency="enable_app_circle_bar" />
+
     <CheckBoxPreference
         android:key="disable_fc_notifications"
         android:title="@string/disable_fc_notifications_title"
