@@ -18,10 +18,19 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/misc_options" >
 
-    <PreferenceCategory
-        android:key="misc_options_system"
-        android:title="@string/misc_options_system">
-    </PreferenceCategory>
+        <PreferenceCategory
+            android:key="category_app_circle_bar"
+            android:title="@string/category_app_circle_bar_title"/>
+
+        <com.android.settings.crom.tools.SystemCheckBoxPreference
+            android:key="enable_app_circle_bar"
+            android:title="@string/app_circle_bar_title" />
+
+        <com.android.settings.crom.tools.AppMultiSelectListPreference
+            android:key="app_circle_bar_included_apps"
+            android:persistent="false"
+            android:title="@string/app_circle_bar_included_apps_title"
+            android:dependency="enable_app_circle_bar" />
 
     <CheckBoxPreference
         android:key="disable_fc_notifications"
