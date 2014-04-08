@@ -317,5 +317,6 @@ public class SettingsPreferenceFragment extends PreferenceFragment implements Di
                     + "given Fragment (name: " + fragmentClass + ", requestCode: " + requestCode
                     + ")");
             return false;
-     }
+        }
+    }
 }
