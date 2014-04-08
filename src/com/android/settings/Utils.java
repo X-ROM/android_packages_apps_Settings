@@ -540,39 +540,6 @@ public class Utils {
         return new File(fname).canWrite();
     }
 
-    public static String fileReadOneLine(String fname) {
-        BufferedReader br;
-        String line = null;
-
-        try {
-            br = new BufferedReader(new FileReader(fname), 512);
-            try {
-                line = br.readLine();
-            } finally {
-                br.close();
-            }
-        } catch (Exception e) {
-            Log.e(TAG, "IO Exception when reading /sys/ file", e);
-        }
-        return line;
-    }
-
-    public static boolean fileWriteOneLine(String fname, String value) {
-        try {
-            FileWriter fw = new FileWriter(fname);
-            try {
-                fw.write(value);
-            } finally {
-                fw.close();
-            }
-        } catch (IOException e) {
-            String Error = "Error writing to " + fname + ". Exception: ";
-            Log.e(TAG, Error, e);
-            return false;
-        }
-        return true;
-    }
-
     /* Used by UserSettings as well. Call this on a non-ui thread. */
     public static boolean copyMeProfilePhoto(Context context, UserInfo user) {
         Uri contactUri = Profile.CONTENT_URI;
