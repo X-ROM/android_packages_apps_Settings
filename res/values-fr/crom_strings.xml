@@ -234,7 +234,6 @@
     <string name="title_tile_lte">LTE</string>
     <string name="title_tile_mobiledata">Données mobiles</string>
     <string name="title_tile_profile">Profil</string>
-    <string name="title_tile_performance_profile">Profil de performance</string>
     <string name="title_tile_autorotate">Orientation</string>
     <string name="title_tile_settings">Paramètres</string>
     <string name="title_tile_sound">Son</string>
@@ -410,7 +409,7 @@
     <string name="lock_screen_title">Curseur des objectifs et raccourcis</string>
     <string name="lock_screen_summary">Afficher ou modifier le curseur des objectifs et raccourcis</string>
 
-    <!-- Lock Screen Shortcuts -->
+    <!-- Lock Screen Targets -->
     <string name="lockscreen_target_info">Faites glisser curseur vers la cible pour assigner des raccourcis</string>
     <string name="lockscreen_target_title">Curseur de raccourcis</string>
     <string name="lockscreen_target_summary">Afficher ou modifier les raccourcis personnalisés de l\'écran de verrouillage</string>
@@ -448,6 +447,7 @@
     <string name="icon_picker_googleplus">Google+</string>
     <string name="icon_picker_googletalk">Hangouts</string>
     <string name="icon_picker_maps">Maps</string>
+    <string name="icon_picker_sms">Message</string>
     <string name="icon_picker_movie">Film</string>
     <string name="icon_picker_music">Musique</string>
     <string name="icon_picker_nav_normal">Navigation</string>
@@ -455,7 +455,6 @@
     <string name="icon_picker_podcast">Podcast</string>
     <string name="icon_picker_rss">Rss</string>
     <string name="icon_picker_search">Recherche</string>
-    <string name="icon_picker_sms">Message</string>
     <string name="icon_picker_twitter">Twitter</string>
 
     <!--Lockscreen See Through-->
@@ -857,31 +856,6 @@
     <string name="sizer_message_filefail">Impossible de créer le profil.</string>
     <string name="sizer_message_noselect">Rien n\'est sélectionné.</string>
 
-    <!-- Screen state service -->
-    <string name="screen_state_toggles_summary">@null</string>
-    <string name="screen_state_toggles_title">Actions suspensives</string>
-    <string name="screen_state_toggles_enable_title">Activé</string>
-    <string name="screen_state_toggles_enable_summary">Les actions seront exécutées a l\'extinction écran. A l\'allumage l\'état sera remis a l\'initial.</string>
-    <string name="screen_state_toggles_mobile_title">Réseau mobile</string>
-    <string name="screen_state_toggles_location_title">Position</string>
-    <string name="screen_state_toggles_twog">Commuter en 2G</string>
-    <string name="screen_state_toggles_twog_summary">Le mode réseau sera commuter en 2G a l\'extinction écran</string>
-    <string name="screen_state_toggles_gps">Désactivé le GPS</string>
-    <string name="screen_state_toggles_gps_summary">Le GPS sera désactivé a l\'extinction écran</string>
-    <string name="screen_state_toggles_mobile_data">Désactiver la connexion de données</string>
-    <string name="screen_state_toggles_mobile_data_summary">La connexion de données sera désactivée a l\'extinction écran</string>
-
-    <!-- Wakelock blocker -->
-    <string name="wakelock_blocker_header_summary">@null</string>
-    <string name="wakelock_blocker">Bloqueur de programme résident</string>
-    <string name="wakelock_blocker_title">Activé</string>
-    <string name="wakelock_blocker_summary">Activer le blocage pour les programme résident sélectionnés</string>
-    <string name="wakelock_blocker_save">Sauvegarder</string>
-    <string name="wakelock_list_header">Programmes résidents actifs</string>
-    <string name="wakelock_blocker_reload">Recharger</string>
-    <string name="wakelock_blocker_warning_title">Procéder avec précaution</string>
-    <string name="wakelock_blocker_warning">Bloquer les programmes residents peut etre une source d\'instabilité, plantage ou perte de données.</string>
-
     <!-- WhisperPush -->
     <string name="whisperpush_title">WhisperPush</string>
     <string name="whisperpush_registration_title">Enregistrer</string>
@@ -1100,19 +1074,6 @@
     <!-- ADB Paranoia settings -->
     <string name="adb_paranoid">ADB mode Paranoïa</string>
     <string name="adb_paranoid_summary">Redémarrer immédiatement si un ordinateur inconnu est connecté alors que le dispositif est verrouillé</string>
-
-    <!-- Powersaver settings -->
-    <string name="power_saver_settings_title">Economie d\'énergie</string>
-    <string name="power_saver_settings_summary">Optimiser l\'autonomie de la batterie</string>
-    <string name="power_saver_toggles_mobile_title">Réseaux mobiles</string>
-    <string name="power_saver_toggles_location_title">Position</string>
-    <string name="power_saver_toggles_performance_title">Performance</string>
-    <string name="power_saver_toggles_gps_title">désactiver GPS</string>
-    <string name="power_saver_toggles_gps_summary">Le service de localisation par GPS est désactivé a l\'extinction écran</string>
-    <string name="power_saver_toggles_mobile_data_title">Désactiver les données mobiles</string>
-    <string name="power_saver_toggles_mobile_data_summary">Données mobiles seront désactivés a l\'extinction écran</string>
-    <string name="power_saver_toggles_cpu_title">Puissance CPU</string>
-    <string name="power_saver_toggles_cpu_summary">Conserver la puissance CPU</string>
     
     <!-- Volume Steps -->
     <string name="volume_steps_title">Étapes volume</string>
@@ -1981,56 +1942,7 @@ deux afin d\'insérer des points de commande supplémentaires. \'Supprimer\' Eff
     <string name="themes_settings_title">Thèmes</string>
 
     <!-- Performance settings  -->
-    <string name="performance_settings_title">Performance</string>
-
-    <!-- Performance Settings : Warning dialog  -->
-    <string name="performance_settings_warning_title">Utiliser avec précaution</string>
-    <string name="performance_settings_warning">Ces paramètres sont inclus pour l\'expérimentation et les modifications apportées ont le potentiel de provoquer des défaillances , instabilité, accidents, perte de données ou de matériel.\n\nNous vous demandons de ne pas déposer des rapports de bugs si l\'un de ces paramètres ont été modifiés par rapport aux valeurs par défaut.</string>
-
-    <!-- Performance Settings : Set on boot option -->
-    <string name="performance_set_on_boot">Forcer au démarrage</string>
-    <string name="performance_set_on_boot_summary">Restaurer les paramètres au démarrage</string>
-
-    <!-- Performance Settings : Processor Settings -->
-    <!-- Performance Settings : Processor settings title -->
-    <string name="processor_title">Processeur</string>
-
-    <!-- Performance Settings : Processor settings sub items -->
-    <string name="cpu_cur_freq_title">Fréquence actuelle CPU</string>
-    <string name="cpu_governors_title">Gouverneur CPU</string>
-    <string name="cpu_governors_summary" translatable="false">%S</string>
-    <string name="cpu_min_freq_title">Fréquence minimum CPU</string>
-    <string name="cpu_min_freq_summary" translatable="false">%s</string>
-    <string name="cpu_max_freq_title">Fréquence maximum CPU</string>
-    <string name="cpu_max_freq_summary" translatable="false">%s</string>
-
-    <!-- Performance Settings : I/O scheduler settings title -->
-    <string name="io_scheds_title">I/O scheduler</string>
-
-    <!-- Performance Settings : I/O scheduler settings sub items -->
-    <string name="io_sched_title">I/O scheduler</string>
-    <string name="io_sched_summary" translatable="false">%S</string>
-
-    <!-- Performance Settings : Performance profile settings -->
-    <string name="perf_profile_title">Profil</string>
-    <string name="perf_profile_summary" translatable="false">%s</string>
-
-    <!-- Memory Management -->
-    <string name="memory_management_title">Gestion mémoire</string>
-    <!-- KSM -->
-    <string name="pref_ksm_title">Kernel samepage merging</string>
-    <string name="pref_ksm_summary">KSM réduit les besoins en mémoire physique et améliore les performances</string>
-    <!-- Purgeable Assets -->
-    <string name="pref_purgeable_assets_title">Permettre la purge des actifs</string>
-    <string name="pref_purgeable_assets_summary">La purge des actifs de mémoire bitmap permet la libération de plus de RAM en cas de besoin (nécessite un redémarrage)</string>
-
-    <!-- Performance Settings : 16bpp Alpha -->
-    <string name="pref_use_16bpp_alpha_title">Transparence 16bit</string>
-    <string name="pref_use_16bpp_alpha_summary">Meilleure performance graphique, mais la qualité sera inférieure et peut provoquer des artefacts visuels (nécessite un redémarrage)</string>
-
-    <!-- Performance : Force high-end graphics -->
-    <string name="pref_force_highend_gfx_title">Forcer graphiques "haut de gamme"</string>
-    <string name="pref_force_highend_gfx_summary">Permet des effets visuels haut de gamme tels que transparent de la barre d\'état / de navigation (nécessite un redémarrage)</string>
+    <string name="performance_settings">Performance</string>
 
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Bouton retour tuer les applications</string>
@@ -2140,15 +2052,6 @@ deux afin d\'insérer des points de commande supplémentaires. \'Supprimer\' Eff
     <string name="usb_mass_storage_summary">Vous permet de transférer des fichiers entre votre ordinateur et votre carte SD en le montant comme un périphérique USB</string>
     <string name="storage_rescan_media">Rescanner les médias du volume de stockage</string>
     <string name="storage_rescan_media_complete">Scan fini</string>
-
-    <!-- Breathing Notifications -->
-    <string name="breathing_notifications_title">Notifications dynamique</string>
-    <string name="sms_breath">SMS dynamique</string>
-    <string name="sms_breath_summary">Donnera à vos notifications SMS un effet de mouvement dans la barre d\'état</string>
-    <string name="title_missed_call_breath">Appel manqué dynamique</string>
-    <string name="missed_call_breath_summary">Donnera à vos notifications d\'appels manqués un effet de mouvement dans la barre d\'état</string>
-    <string name="title_voicemail_breath">Message vocale dynamique</string>
-    <string name="voicemail_breath_summary">Donnera à vos notifications de messages vocales un effet de mouvement dans la barre d\'état</string>
 
     <string name="status_bar_signal_text_title">Style de statut de signal</string>
     <string name="status_bar_signal_style_icon">Icône</string>
@@ -2299,5 +2202,16 @@ translation isn't needed -->
     <string name="app_circle_bar_included_apps_title">Applications incluses</string>
     <string name="app_circle_bar_included_apps_summary">Les applications seront affichées dans le cercle</string>
 
-    
+    <!-- Wakelock blocker -->
+    <string name="wakelock_blocker_header_summary">@null</string>
+    <string name="wakelock_blocker">Bloqueur de programme résident</string>
+    <string name="wakelock_blocker_title">Activé</string>
+    <string name="wakelock_blocker_summary">Activer le blocage pour les programme résident sélectionnés</string>
+    <string name="wakelock_blocker_save">Sauvegarder</string>
+    <string name="wakelock_list_header">Programmes résidents actifs</string>
+    <string name="wakelock_blocker_reload">Recharger</string>
+    <string name="wakelock_blocker_warning_title">Procéder avec précaution</string>
+    <string name="wakelock_blocker_warning">Bloquer les programmes résidents peut être une source d\'instabilité, plantage ou perte de données.</string>
+
+	
 </resources>
