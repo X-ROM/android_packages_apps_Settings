@@ -16,7 +16,6 @@
 
 package com.android.settings.crom;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -25,7 +24,6 @@ import android.os.SystemService;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
-import android.provider.Settings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -315,10 +313,6 @@ public class Processor extends SettingsPreferenceFragment implements
                         }
                     }.start();
                 }
-                    // We need update value
-                    if (Settings.System.getInt(getActivity().getContentResolver(), Settings.System.POWER_SAVER_CPU, 1) != 0) {
-                        Settings.System.putString(getActivity().getContentResolver(), Settings.System.POWER_SAVER_CPU_DEFAULT, (String) newValue);
-                    }
                 if (preference == mGovernorPref) {
                     mGovernorPref.setSummary(String.format(mGovernorFormat, newValue));
                 } else if (preference == mMinFrequencyPref) {

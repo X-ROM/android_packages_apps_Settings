@@ -2116,15 +2116,6 @@
         </activity>
 
         <activity
-             android:name=".crom.PowerSaverSettings"
-            android:label="@string/power_saver_settings_title" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SHORTCUT" />
-              </intent-filter>
-        </activity>
-
-        <activity
             android:name=".slim.themes.ThemeSettings"
             android:label="@string/theme_settings_title" >
         </activity>
