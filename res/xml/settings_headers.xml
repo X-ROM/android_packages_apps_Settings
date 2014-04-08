@@ -88,10 +88,10 @@
 
     <!-- Performance -->
     <header
-        android:id="@+id/performance_settings"
+        android:id="@+id/performance_controls"
         android:fragment="com.brewcrewfoo.performance.activities.MainActivity"
         android:icon="@drawable/ic_settings_performance"
-        android:title="@string/performance_settings_title" />
+        android:title="@string/performance_settings" />
 
     <!-- Themes -->
     <header

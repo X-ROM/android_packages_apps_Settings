@@ -647,7 +647,7 @@ public class Settings extends PreferenceActivity
                 if (!showDev) {
                     target.remove(i);
                 }
-            } else if (id == R.id.performance_settings) {
+            } else if (id == R.id.performance_controls) {
                 if (!showDev) {
                     target.remove(i);
                 }

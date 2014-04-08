@@ -1942,7 +1942,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="themes_settings_title">Themes</string>
 
     <!-- Performance settings  -->
-    <string name="performance_settings_title">Performance</string>
+    <string name="performance_settings">Performance</string>
 
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Kill app back button</string>
