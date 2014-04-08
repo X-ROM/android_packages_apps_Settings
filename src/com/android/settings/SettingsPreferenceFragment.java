@@ -58,10 +58,6 @@ public class SettingsPreferenceFragment extends PreferenceFragment implements Di
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-  mContext = getActivity().getApplicationContext();
-
-  mContentRes = getActivity().getContentResolver();
-
         // Prepare help url and enable menu if necessary
         int helpResource = getHelpResource();
         if (helpResource != 0) {
@@ -321,21 +317,5 @@ public class SettingsPreferenceFragment extends PreferenceFragment implements Di
                     + "given Fragment (name: " + fragmentClass + ", requestCode: " + requestCode
                     + ")");
             return false;
-        }
-    }
-
-    public boolean isPackageInstalled(String packageName) {
-        if (packageName != null) {
-            try {
-                PackageInfo pi = getPackageManager().getPackageInfo(packageName, 0);
-                if (!pi.applicationInfo.enabled) {
-                    return false;
-                }
-            } catch (NameNotFoundException e) {
-                return false;
-            }
-        }
-
-        return true;
      }
 }
