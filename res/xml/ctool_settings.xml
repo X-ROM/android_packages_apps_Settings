@@ -142,6 +142,7 @@
     <PreferenceScreen
         android:key="interface_battery_saver"
         android:title="@string/battery_saver_title"
+        android:icon="@drawable/ic_battery_saver"
         android:fragment="com.android.settings.omni.BatterySaverSettings" />
 
     <!-- KernelTweaker -->
@@ -155,6 +156,7 @@
         android:key="wakelock_blocker"
         android:fragment="com.android.settings.crom.WakeLockBlocker"
         android:title="@string/wakelock_blocker"
+        android:icon="@drawable/ic_wakelock_blocker"
         android:summary="@string/wakelock_blocker_header_summary" />
 
     <!-- Animations -->
