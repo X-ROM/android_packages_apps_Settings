@@ -1934,6 +1934,8 @@ deux afin d\'insérer des points de commande supplémentaires. \'Supprimer\' Eff
 
     <!-- Launches Dev Tools -->
     <string name="development_tools_title">Ouvrir outils</string>
+    <!-- Whether to allow mock SMS -->
+    <string name="allow_mock_sms">Permettre la simulation de SMS</string>
 
     <!-- Privacy Settings Header item -->
     <string name="privacy_settings_cyanogenmod_title">Privé</string>
