@@ -1920,7 +1920,18 @@ deux afin d\'insérer des points de commande supplémentaires. \'Supprimer\' Eff
     <string name="crom_tools_title">C-Tool</string>
 
     <!-- Themes settings -->
+    <!-- Settings main menu entry -->
     <string name="themes_settings_title">Thèmes</string>
+    
+    <!-- The following are entries under the themes menu -->
+    <string name="themepacks_settings_title">Packs de thèmes </string>
+    <string name="styles_settings_title">Styles</string>
+    <string name="icons_settings_title">Icônes</string>
+    <string name="fonts_settings_title">Polices</string>
+    <string name="wallpaper_settings_title">Fonds d\'écran</string>
+    <string name="lockscreen_wallpaper_settings_title">Fonds d\'écran de l\'écran de verrouillage</string>
+    <string name="bootanim_settings_title">Animations de redémarrage</string>
+    <string name="soundpack_settings_title">Packs de sons</string>
 
     <!-- Performance settings  -->
     <string name="performance_settings">Performance</string>
