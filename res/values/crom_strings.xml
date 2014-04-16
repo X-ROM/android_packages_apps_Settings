@@ -2432,4 +2432,7 @@ translation isn't needed -->
     <!-- Priority subscription settings -->
     <string name="priority_sub_title">Priority subscription</string>
 
+    <!-- Force fast charge -->
+    <string name="pref_force_fast_charge_title">Force fast charge</string>
+
 </resources>

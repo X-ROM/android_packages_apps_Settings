@@ -50,4 +50,8 @@
         android:title="@string/pref_force_highend_gfx_title"
         android:summary="@string/pref_force_highend_gfx_summary" />
 
+    <CheckBoxPreference
+        android:key="pref_force_fast_charge"
+        android:title="@string/pref_force_fast_charge_title" />
+
 </PreferenceScreen>

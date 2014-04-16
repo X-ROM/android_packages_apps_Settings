@@ -34,6 +34,7 @@ import android.text.TextUtils;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.Utils;
 
 /**
  * Performance Settings
@@ -50,9 +51,13 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements
     private static final String FORCE_HIGHEND_GFX_PREF = "pref_force_highend_gfx";
     private static final String FORCE_HIGHEND_GFX_PERSIST_PROP = "persist.sys.force_highendgfx";
 
+    public static final String KEY_FORCE_FAST_CHARGE = "pref_force_fast_charge";
+    public static final String FAST_CHARGE_PATH = fastchargePath();
+
     private ListPreference mPerfProfilePref;
     private CheckBoxPreference mUse16bppAlphaPref;
     private CheckBoxPreference mForceHighEndGfx;
+    private CheckBoxPreference mForceFastCharge;
 
     private String[] mPerfProfileEntries;
     private String[] mPerfProfileValues;
@@ -114,6 +119,13 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements
             prefSet.removePreference(findPreference(FORCE_HIGHEND_GFX_PREF));
         }
 
+        mForceFastCharge = (CheckBoxPreference) prefSet.findPreference(KEY_FORCE_FAST_CHARGE);
+        if (FAST_CHARGE_PATH == null) {
+            prefSet.removePreference(mForceFastCharge);
+        } else {
+            mForceFastCharge.setChecked("1".equals(Utils.fileReadOneLine(FAST_CHARGE_PATH)));
+        }
+
         /* Display the warning dialog */
         alertDialog = new AlertDialog.Builder(getActivity()).create();
         alertDialog.setTitle(R.string.performance_settings_warning_title);
@@ -157,6 +169,9 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements
         } else if (preference == mForceHighEndGfx) {
             SystemProperties.set(FORCE_HIGHEND_GFX_PERSIST_PROP,
                     mForceHighEndGfx.isChecked() ? "true" : "false");
+        } else if (preference == mForceFastCharge) {
+            Utils.fileWriteOneLine(FAST_CHARGE_PATH,
+                    mForceFastCharge.isChecked() ? "1" : "0");
         } else {
             // If we didn't handle it, let preferences handle it.
             return super.onPreferenceTreeClick(preferenceScreen, preference);
@@ -206,5 +221,17 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements
             value = mPerfProfileDefaultEntry;
         }
         return value;
+    }
+
+    private static String fastchargePath() {
+        if (Utils.fileExists("/sys/kernel/fast_charge/force_fast_charge")) {
+            return "/sys/kernel/fast_charge/force_fast_charge";
+        } else if (Utils.fileExists("/sys/module/msm_otg/parameters/fast_charge")) {
+            return "/sys/module/msm_otg/parameters/fast_charge";
+        } else if (Utils.fileExists("/sys/devices/platform/htc_battery/fast_charge")) {
+            return "/sys/devices/platform/htc_battery/fast_charge";
+        } else {
+            return null;
+        }
     }
 }
