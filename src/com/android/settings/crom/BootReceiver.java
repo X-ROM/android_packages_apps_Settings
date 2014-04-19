@@ -33,5 +33,6 @@ public class BootReceiver extends BroadcastReceiver {
 
         DisplaySettings.restore(ctx);
         LocationSettings.restore(ctx);
+        VibratorIntensity.restore(ctx);
     }
 }
