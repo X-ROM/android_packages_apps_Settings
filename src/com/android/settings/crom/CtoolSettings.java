@@ -32,6 +32,7 @@ public class CtoolSettings extends SettingsPreferenceFragment
     private static final String TAG = "CtoolSettings";
 
     private static final String KERNELTWEAKER_START = "kerneltweaker_start";
+    private static final String CROMOTA_START = "crom_ota_start";
 
     // Package name of the kernel tweaker app
     public static final String KERNELTWEAKER_PACKAGE_NAME = "com.dsht.kerneltweaker";
@@ -39,7 +40,14 @@ public class CtoolSettings extends SettingsPreferenceFragment
     public static Intent INTENT_KERNELTWEAKER = new Intent(Intent.ACTION_MAIN)
             .setClassName(KERNELTWEAKER_PACKAGE_NAME, KERNELTWEAKER_PACKAGE_NAME + ".MainActivity");
 
+    // Package name of the C-RoM Ota app
+    public static final String CROMOTA_PACKAGE_NAME = "com.crom.cromota";
+    // Intent for launching the C-RoM ota main actvity
+    public static Intent INTENT_CROMOTA = new Intent(Intent.ACTION_MAIN)
+            .setClassName(CROMOTA_PACKAGE_NAME, CROMOTA_PACKAGE_NAME + ".MainActivity");
+
     private Preference mKernelTweaker;
+    private Preference mCromOta;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -52,6 +60,9 @@ public class CtoolSettings extends SettingsPreferenceFragment
 
         mKernelTweaker = (Preference)
                 prefSet.findPreference(KERNELTWEAKER_START);
+
+        mCromOta = (Preference)
+                prefSet.findPreference(CROMOTA_START);
 
     }
 
@@ -71,8 +82,11 @@ public class CtoolSettings extends SettingsPreferenceFragment
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if (preference == mKernelTweaker){
+        if (preference == mKernelTweaker) {
             startActivity(INTENT_KERNELTWEAKER);
+            return true;
+        } else if (preference == mCromOta) {
+            startActivity(INTENT_CROMOTA);
             return true;
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);

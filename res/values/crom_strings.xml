@@ -30,6 +30,8 @@
     <string name="button_category">Button</string>
     <string name="system_category">System</string>
 
+    <!-- C-ROM OTA -->
+    <string name="crom_ota_settings_title">C-RoM OTA</string>
 
     <!-- Activity titles defined in AndroidManifest.xml -->
     <string name="title_clipboard_share">Copy to Clipboard</string>
