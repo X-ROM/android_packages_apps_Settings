@@ -71,17 +71,17 @@ public class Download extends SettingsPreferenceFragment implements OnPreference
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if (preference == mMultiDPIGapps) {
-            Uri uri = Uri.parse("http://goo.gl/EMDpJp");
+            Uri uri = Uri.parse("http://goo.gl/b1k3Ba");
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
             return true;
         } else if (preference == mPAGapps) {
-            Uri uri = Uri.parse("http://goo.gl/ZNrc2G");
+            Uri uri = Uri.parse("http://goo.gl/Lvnz6P");
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
             return true;
         } else if (preference == mTBOGapps) {
-            Uri uri = Uri.parse("http://goo.gl/z3poqc");
+            Uri uri = Uri.parse("http://goo.gl/EZ1CAM");
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
             return true;
@@ -96,7 +96,7 @@ public class Download extends SettingsPreferenceFragment implements OnPreference
             startActivity(intent);
             return true;
         } else if (preference == mGoogleCamera) {
-            Uri uri = Uri.parse("http://goo.gl/PM7W6t");
+            Uri uri = Uri.parse("http://goo.gl/9ADfbH");
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
             return true;
