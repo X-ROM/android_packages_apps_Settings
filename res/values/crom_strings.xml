@@ -2384,4 +2384,8 @@ translation isn't needed -->
     <string name="time_ten_to">Ten till</string>
     <string name="time_five_to">Five till</string>
 
+    <!-- Set Subscription screen: label no sim -->
+    <string name="sub_no_sim">No SIM</string>
+    <string name="multi_sim_entry_format" translatable="false"><xliff:g id="operator">%1$s</xliff:g>-<xliff:g id="index">%2$d</xliff:g></string>
+
 </resources>
