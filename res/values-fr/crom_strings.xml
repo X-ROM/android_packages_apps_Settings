@@ -30,6 +30,8 @@
     <string name="button_category">Bouton</string>
     <string name="system_category">Système</string>
     
+    <!-- C-ROM OTA -->
+    <string name="crom_ota_settings_title">C-RoM OTA</string>
     
     <!-- Activity titles defined in AndroidManifest.xml -->
     <string name="title_clipboard_share">Copier en mémoire</string>
@@ -128,6 +130,8 @@
     <string name="volbtn_cursor_control_on_reverse">Volume haut/bas bouge curseur droit/gauche</string>
     <string name="swap_volume_buttons_title">Inverser le bouton volume</string>
     <string name="swap_volume_buttons_summary">Inverser le bouton volume quand l\'écran est tourné</string>
+    
+    <string name="unlock_buttons_disabled_by_security">L\'écran de verrouillage est sécurisé</string>
 
     <!--  Other device settings -->
     <string name="more_device_controls_title">Personnalisation téléphone</string>
@@ -1046,11 +1050,17 @@
     <string name="misc_options">Divers</string>
     <string name="misc_options_title">Options diverses</string>
     <string name="misc_options_system">Système</string>
-    <string name="disable_fc_notifications_title">Désactiver les notifications de plantages</string>
-    <string name="disable_fc_notifications_summary">Cela permet de masquer toutes les notifications de plantages appli.</string>
-    <string name="misc_tweaks_hfm">Gestionnaire de fichiers hôtes</string>
+    <string name="disable_fc_notifications_title">Désactiver les notifications d\'erreurs</string>
+    <string name="disable_fc_notifications_summary">Cela permet de masquer toutes les notifications d\'erreurs appli.</string>
     <string name="hfm_disable_ads_title">Désactiver les pubs</string>
     <string name="hfm_disable_ads_summary">Modifier le fichier hosts pour désactiver les pubs</string>
+    <string name="hfm_pref_screen_title">Bloqueur de pub</string>
+    <string name="hfm_update_hosts">Fichier hosts de mise à jour</string>
+    <string name="hfm_update_hosts_summary">Télécharger et appliquer les nouveaux hosts</string>
+    <string name="hfm_dialog_wait">Working, please wait...</string>
+    <string name="hfm_dialog_failed">La mise à jour du fichier hosts a échouée. Merci d\'essayer à nouveau.</string>
+    <string name="hfm_dialog_success">/4 sources hosts appliquées avec succès !</string>
+    <string name="hfm_dialog_conn_error">Erreur: pas de connexion réseau</string>
     
     <!-- ADB Paranoia settings -->
     <string name="adb_paranoid">ADB mode Paranoïa</string>
@@ -2083,6 +2093,11 @@ deux afin d\'insérer des points de commande supplémentaires. \'Supprimer\' Eff
     <string name="recent_panel_100">100% (défaut)</string>
     <string name="recent_panel_85">85%</string>
     <string name="recent_panel_70">70%</string>
+    <string name="recent_panel_expanded_mode_title">Mode étendu</string>
+    <string name="recent_panel_expanded_mode_summary">Prévisualisation taches récentes en mode étendu</string>
+    <string name="recent_panel_expanded_mode_auto">Auto (défaut)</string>
+    <string name="recent_panel_expanded_mode_always">Toujours</string>
+    <string name="recent_panel_expanded_mode_never">Jamais</string>
 
     <!-- ATTENTION: RTL languages need to replace left with right -->
     <string name="recent_panel_lefty_mode_title">Montrer sur le bord gauche</string>
