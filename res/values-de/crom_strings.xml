@@ -1244,7 +1244,7 @@ Mittels \"Entfernen\" kann die ausgewählte Stützstelle aus dem Helligkeitsverl
     <string name="shortcuts_text_color_title">Textfarbe</string>
     <string name="shortcuts_color_title">Icon-Farbe</string>
     <string name="shortcuts_color_mode_title">Icon Farb Modus</string>
-    <string name="shortcuts_color_mode_summary">Verknüpfungs-Icons Farmodus ändern</string>
+    <string name="shortcuts_color_mode_summary">Verknüpfungs-Icons Farbmodus ändern</string>
 
     <!-- Lock Screen ASS -->
     <string name="lock_screen_title">Bildschirmsperre</string>
