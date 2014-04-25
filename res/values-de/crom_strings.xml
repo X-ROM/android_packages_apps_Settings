@@ -958,7 +958,6 @@ Mittels \"Entfernen\" kann die ausgewählte Stützstelle aus dem Helligkeitsverl
     <string name="title_dynamic_tiles">Dynamische Kacheln</string>
 
     <string name="title_general">General</string>
-    <string name="title_quick_pulldown">Quick pulldown</string>
     <string name="title_quick_pulldown">Schnelles Öffnen</string>
     <string name="summary_quick_pulldown">Herunterziehen der Benachrichtigungsleiste öffnet die Schnelleinstellungen: %1$s</string>
     <string name="quick_pulldown_off">Deaktiviert</string>
