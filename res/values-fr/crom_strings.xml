@@ -1918,7 +1918,8 @@ deux afin d\'insérer des points de commande supplémentaires. \'Supprimer\' Eff
     <string name="cpu_info">CPU</string>
     <!-- About phone screen, Free memory info -->
     <string name="mem_info">Mémoire</string>
-    <!-- About phone screen, status item label -->
+    <!-- About phone screen, service state -->
+    <string name="phone_service_state">Vocal: <xliff:g id="voice_state">%1$s</xliff:g>, données: <xliff:g id="data_state">%2$s</xliff:g></string>
 
     <string name="app_security_title">Sécurité des Applis</string>
     <string name="security_unlock_category">Débloquer</string>
@@ -2298,5 +2299,94 @@ translation isn't needed -->
     <string name="battery_saver_network_gsm_title">Réseau GSM</string>
     <string name="battery_saver_network_cdma_title">Réseau CDMA</string>
     <string name="battery_saver_system_title">Options systèmes</string>
+    
+    <!-- Driving mode -->
+    <!-- require add space in the end of string -->
+    <string name="voice_tts_new_call">Appel entrant de </string>
+    <!-- require add space in the end of string -->
+    <string name="voice_tts_new_sms">Nouveau message texte de </string>
+    <!-- require add space in the end of string -->
+    <string name="voice_tts_new_notif">Nouvelle notification de </string>
+    <string name="voice_tts_title">Mode conduite</string>
+    <string name="voice_tts_summary">Activer le mode de conduite et choisissez ce que dont vous voulez parler en conduisant</string>
+    <string name="tts_settings_reset_message">Réinitialiser tous les réglages par défaut?</string>
+    <string name="voice_tts_notification_title">Mode conduite</string>
+    <string name="voice_tts_notification_summary_on">Activer le mode conduite</string>
+    <string name="voice_tts_notification_summary_off">Désactiver le mode conduite</string>
+    <string name="voice_tts_volume_title">Volume</string>
+    <string name="voice_tts_volume_summary">Régler le volume pour parler</string>
+    <string name="voice_tts_call_title">Appel entrant</string>
+    <string name="voice_tts_call_summary">Activer / désactiver la voix pour les appels entrants</string>
+    <string name="voice_tts_sms_title">Nouveau message</string>
+    <string name="voice_tts_sms_summary">Activer / désactiver la voix pour les nouveaux messages</string>
+    <string name="voice_tts_sms_read_title">Lire les nouveaux messages</string>
+    <string name="voice_tts_sms_read_summary">Activer / désactiver la voix pour lire les nouveaux messages</string>
+    <string name="voice_tts_charge_full_title">Indicateur de batterie pleine</string>
+    <string name="voice_tts_charge_full_summary">Activer parler / désactiver la voix pour la batterie complètement chargée</string>
+    <string name="voice_tts_charge_on_title">Connectez chargeur</string>
+    <string name="voice_tts_charge_on_summary">Activer parler / désactiver la voix pour la connexion chargeur</string>
+    <string name="voice_tts_charge_off_title">Débranchez le chargeur</string>
+    <string name="voice_tts_charge_off_summary">Activer parler / désactiver la voix pour la déconnexion chargeur</string>
+    <string name="voice_tts_clock_title">Heure</string>
+    <string name="voice_tts_clock_summary">Activer / désactiver la voix pour l\'horloge après l\'allumage de l\'écran</string>
+    <string name="voice_tts_date_title">Date</string>
+    <string name="voice_tts_date_summary">Activer / désactiver la voix pour la date après l\'allumage de l\'écran</string>
+    <string name="voice_tts_notif_title">Notification</string>
+    <string name="voice_tts_notif_summary">Activer / désactiver la voix pour les nouvelles notifications</string>
+    <string name="voice_tts_notif_read_title">Lire les nouvelles notifications</string>
+    <string name="voice_tts_notif_read_summary">Activer / désactiver la voix pour lire les nouveaux messages des notifications</string>
+    <string name="voice_tts_whitelist_title">Applications incluses</string>
+    <string name="voice_tts_whitelist_summary">Quelles applications ont la permissions voix pour de nouvelles notifications</string>
+    <string name="voice_tts_music_title">Morceau de musique</string>
+    <string name="voice_tts_music_summary">Activer / désactiver la voix pour le nom de la chanson</string>
+    <string name="voice_tts_annoy_notif_title">Notifications vocal les moins fréquentes</string>
+    <string name="voice_tts_annoy_notif_summary">Limiter la notification vocale de chaque application pour une seule fois par période de temps définie</string>
+    <string name="voice_tts_annoy_notif_default">Comportement par défaut</string>
+    <string name="voice_tts_annoy_notif_3s">3 secondes</string>
+    <string name="voice_tts_annoy_notif_5s">5 secondes</string>
+    <string name="voice_tts_annoy_notif_10s">10 secondes</string>
+    <string name="voice_tts_annoy_notif_15s">15 secondes</string>
+    <string name="voice_tts_annoy_notif_30s">30 secondes</string>
+    <string name="voice_tts_annoy_notif_45s">45 seconds</string>
+    <string name="voice_tts_annoy_notif_1m">1 minute</string>
+    <string name="voice_tts_annoy_notif_2m">2 minutes</string>
+    <string name="voice_tts_annoy_notif_5m">5 minutes</string>
+    <string name="voice_tts_charge_full">Batterie entièrement chargée</string>
+    <string name="voice_tts_charge_on">Démarrage de la charge</string>
+    <string name="voice_tts_charge_off">Arrêt de la charge</string>
+    <string name="voice_tts_time">L\'heure est</string>
+    <string name="voice_tts_date">La date est</string>
+    <string name="voice_tts_music">Jouer maintenant</string>
+    <string name="voice_tts_engine_started">Mode conduite prêt</string>
+    <string name="unknown_tts">Inconnu</string>
+    <string name="unknown_number_tts">Numero inconnu</string>
+    <string name="time_one">Une</string>
+    <string name="time_two">Deux</string>
+    <string name="time_three">Trois</string>
+    <string name="time_four">Quatre</string>
+    <string name="time_five">Cinq</string>
+    <string name="time_six">Six</string>
+    <string name="time_seven">Sept</string>
+    <string name="time_eight">Huit</string>
+    <string name="time_nine">Neuf</string>
+    <string name="time_ten">Dix</string>
+    <string name="time_eleven">Onze</string>
+    <string name="time_twelve">Douze</string>
+    <string name="time_oclock">Heure</string>
+    <string name="time_five_past">Cinq</string>
+    <string name="time_ten_past">Dix</string>
+    <string name="time_quarter_past">Quinze</string>
+    <string name="time_twenty_past">Vingt</string>
+    <string name="time_twenty_five_past">Vingt cinq</string>
+    <string name="time_half_past">Trente</string>
+    <string name="time_twenty_five_to">Trente cinq</string>
+    <string name="time_twenty_to">Quarante</string>
+    <string name="time_quarter_to">Quarante cinq</string>
+    <string name="time_ten_to">Cinquante</string>
+    <string name="time_five_to">Cinquante cinq</string>
+
+    <!-- Set Subscription screen: label no sim -->
+    <string name="sub_no_sim">Pas de SIM</string>
+    <string name="multi_sim_entry_format" translatable="false"><xliff:g id="operator">%1$s</xliff:g>-<xliff:g id="index">%2$d</xliff:g></string>
 	
 </resources>
