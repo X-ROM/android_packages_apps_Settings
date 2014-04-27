@@ -142,7 +142,7 @@ public class SbGeneralSettings extends SettingsPreferenceFragment implements OnP
         mSignalStyle.setSummary(mSignalStyle.getEntry());
         mSignalStyle.setOnPreferenceChangeListener(this);
 
-        if (Utils.isWifiOnly(getActivity()))
+        if (Utils.isWifiOnly(getActivity())
                 || (MSimTelephonyManager.getDefault().isMultiSimEnabled())) {
             prefSet.removePreference(mSignalStyle);
         }
