@@ -1894,10 +1894,14 @@
         </activity>
 
         <!-- PerformanceControl activities -->
+
         <activity android:name="com.brewcrewfoo.performance.activities.MainActivity"/>
         <activity android:name="com.brewcrewfoo.performance.activities.MemUsageActivity"/>
         <activity android:name="com.brewcrewfoo.performance.activities.PCSettings"/>
         <activity android:name="com.brewcrewfoo.performance.activities.PackActivity"/>
+        <activity android:name="com.brewcrewfoo.performance.activities.FlasherActivity"/>
+        <activity android:name="com.brewcrewfoo.performance.activities.FileChooser"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
         <activity android:name="com.brewcrewfoo.performance.activities.HideTabs"/>
         <activity android:name="com.brewcrewfoo.performance.activities.TouchScreenSettings"/>
         <activity android:name="com.brewcrewfoo.performance.activities.KSMActivity"
@@ -1924,7 +1928,6 @@
             android:configChanges="keyboardHidden|orientation|screenSize"/>
         <activity android:name="com.brewcrewfoo.performance.activities.SysctlEditor"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
-
         <receiver android:name="com.brewcrewfoo.performance.service.BootReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
