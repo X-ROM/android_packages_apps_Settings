@@ -13,14 +13,14 @@ import android.widget.RelativeLayout;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
-import com.android.settings.R;
+import com.android.settigs.R;
 
 public class SeekBarPreference extends Preference implements OnSeekBarChangeListener {
 
     private final String TAG = getClass().getName();
 
     private static final String ANDROIDNS = "http://schemas.android.com/apk/res/android";
-    private static final String SETTINGS = "http://schemas.android.com/apk/res/com.carbon.fibers";
+    private static final String SETTINGS = "http://schemas.android.com/apk/res/com.android.settings";
     private static final int DEFAULT_VALUE = 50;
 
     private int mMaxValue      = 100;
@@ -68,7 +68,7 @@ public class SeekBarPreference extends Preference implements OnSeekBarChangeList
         if (id > 0) {
             mUnitsLeft = getContext().getResources().getString(id);
         }
-        
+
         try {
             String newInterval = attrs.getAttributeValue(SETTINGS, "interval");
             if(newInterval != null)
