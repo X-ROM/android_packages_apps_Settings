@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.omni;
+package com.android.settings.omni.batterysaver;
 
 import android.app.Activity;
 import android.content.ContentResolver;

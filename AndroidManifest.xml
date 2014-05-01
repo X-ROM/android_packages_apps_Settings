@@ -2181,6 +2181,16 @@
         </receiver>
 
         <!-- Battery Saver -->
+
+       <activity
+            android:name=".omni.batterysaver.BatterySaverSettings"
+            android:label="@string/battery_saver_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+        </activity>
         <receiver
             android:name="com.android.settings.omni.batterysaver.BootReceiver">
             <intent-filter>

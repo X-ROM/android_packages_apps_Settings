@@ -16,7 +16,7 @@
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.android.settings.omni;
+package com.android.settings.omni.batterysaver;
 
 import android.app.AlertDialog;
 import android.app.Fragment;
