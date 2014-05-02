@@ -46,8 +46,8 @@ import com.android.internal.util.slim.DeviceUtils;
 import com.android.internal.util.slim.DeviceUtils.FilteredDeviceFeaturesArray;
 import com.android.internal.util.slim.HwKeyHelper;
 import com.android.settings.R;
-import com.android.settings.Utils;
 import com.android.settings.crom.fragments.navbar.ShortcutPickerHelper;
+import com.android.settings.Utils;
 import com.android.settings.SettingsPreferenceFragment;
 
 import java.util.HashMap;
