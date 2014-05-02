@@ -79,6 +79,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
 
+import com.android.settings.crom.tools.IconPreferenceScreen;
+
 public class Utils {
 
     private static final String TAG = "Utils";
