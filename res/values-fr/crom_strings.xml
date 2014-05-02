@@ -20,6 +20,7 @@
     <string name="menu_cancel">Décharger</string>
     <string name="disabled">Désactivé</string>
     <string name="additional_options_title">Options additionnelles</string>
+    <string name="note">Remarques</string>
 
     <!-- Category -->
     <string name="interface_category">Interface</string>
@@ -516,6 +517,15 @@
     <string name="excluded_apps_title">Applications exclues</string>
     <string name="excluded_apps_summary">Les notifications des applications exclues ne seront pas affichées sur le verrouillage d\'écran</string>
     <string name="notification_color">Couleur d\'arrière-plan des notifications</string>
+    
+    <string name="notifications_on_lockscreen">Notifications de l\'écran de verrouillage</string>
+    <string name="notifications_on_lockscreen_summary">Choisir la méthode d\'affichage des notifications sur l\'écran de verrouillage</string>
+    <string name="notifications_on_lockscreen_warning_summary">Chaque mode de notifications de l\'écran de verrouillage (PEEK (Furtif) ou/et Notifications standards )va automatiquement désactiver l\'autre. N\'oubliez pas de vérifier après désactivation de l\'un d\'eux si vous souhaitez continuer encore a utiliser une des fonctions. </string>
+
+    <!--Notification peek-->
+    <string name="notification_peek_title">Notification furtive (Peek)</string>
+    <string name="notification_peek_summary">Montre les dernières notifications après avoir repris votre téléphone</string>
+
 
     <!-- Status bar color -->
     <string name="custom_status_bar_color_title">Couleurs personnalisées de la barre d\'état</string>
