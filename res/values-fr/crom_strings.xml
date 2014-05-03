@@ -520,7 +520,7 @@
     
     <string name="notifications_on_lockscreen">Notifications de l\'écran de verrouillage</string>
     <string name="notifications_on_lockscreen_summary">Choisir la méthode d\'affichage des notifications sur l\'écran de verrouillage</string>
-    <string name="notifications_on_lockscreen_warning_summary">Chaque mode de notifications de l\'écran de verrouillage (PEEK (Furtif) ou/et Notifications standards )va automatiquement désactiver l\'autre. N\'oubliez pas de vérifier après désactivation de l\'un d\'eux si vous souhaitez continuer encore a utiliser une des fonctions. </string>
+    <string name="notifications_on_lockscreen_warning_summary">La sélection d\'un mode de notifications de l\'écran de verrouillage (Peek (Furtif)ou notifications standards )désactive automatiquement l\'autre. Pour conserver un de ces modes, après désactivation, n\'oubliez pas de le sélectionner.</string>
 
     <!--Notification peek-->
     <string name="notification_peek_title">Notification furtive (Peek)</string>
