@@ -525,8 +525,12 @@
     <!--Notification peek-->
     <string name="notification_peek_title">Notification furtive (Peek)</string>
     <string name="notification_peek_summary">Montre les dernières notifications après avoir repris votre téléphone</string>
-
-
+    <string name="peek_pickup_timeout_title">Délai mise en route Peek </string>
+    <string name="peek_pickup_10seconds">10 secondes (défaut)</string>
+    <string name="peek_pickup_30seconds">30 secondes</string>
+    <string name="peek_pickup_45seconds">45 secondes</string>
+    <string name="peek_pickup_60seconds">1 minute</string>
+    <string name="peek_pickup_120seconds">2 minutes</string>
     <!-- Status bar color -->
     <string name="custom_status_bar_color_title">Couleurs personnalisées de la barre d\'état</string>
     <string name="status_bar_opaque_color">Couleur opaque</string>
@@ -683,12 +687,15 @@
     <string name="shortcut_action_recent">Récents</string>
     <string name="shortcut_action_lastapp">Dernière applications</string>
     <string name="shortcut_action_search">Recherche</string>
+    <string name="shortcut_action_search">Chercher dans l\'appli</string>
+    <string name="shortcut_action_voice_search">Recherche vocale</string>
     <string name="shortcut_action_screenshot">Copie d\'écran</string>
-	<string name="shortcut_action_screen_record">Enregistrement écran</string>
+    <string name="shortcut_action_screen_record">Enregistrement écran</string>
     <string name="shortcut_action_menu">Menu</string>
     <string name="shortcut_action_ime">Ouvrir le commutateur IME</string>
     <string name="shortcut_action_kill">Fermer l\'application</string>
-    <string name="shortcut_action_power">Teindre l\'écran</string>
+    <string name="shortcut_action_power">Éteindre l\'écran</string>
+    <string name="shortcut_action_theme_switch">Changeur de thèmes</string>
     <string name="shortcut_action_notifications">Notifications</string>
     <string name="shortcut_action_menu_big">Menu</string>
     <string name="shortcut_action_qs">Panneau paramètres rapides</string>
