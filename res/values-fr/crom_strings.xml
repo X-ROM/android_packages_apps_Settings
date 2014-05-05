@@ -338,10 +338,12 @@
     <string name="battery_status_icon">Icône</string>
     <string name="battery_status_percentage">Pourcentage</string>
     <string name="battery_status_icon_percentage">Icône avec pourcentage</string>
+    <string name="battery_status_icon_percentage_jb">Icône avec pourcentage (style JB)</string>
     <string name="battery_status_circle">Cercle</string>
     <string name="battery_status_circle_percentage">Cercle avec pourcentage</string>
     <string name="battery_status_dotted_circle_percentage">Cercle en pointillés avec pourcentage</string>
     <string name="battery_status_dotted_circle">Cercle en pointillés</string>
+    <string name="battery_status_gone">Pas de batterie</string>
     <string name="battery_color_title">Couleur Batterie</string>
     <string name="circle_battery_animation_speed">Vitesse animation cercle</string>
     <string name="circle_battery_animation_speed_none">Sans</string>
@@ -349,8 +351,9 @@
     <string name="circle_battery_animation_speed_stock">Normal</string>
     <string name="circle_battery_animation_speed_fast">rapide</string>
     <string name="battery_text_color">Couleur texte pourcentage</string>
-    <string name="battery_bolt_color">Couleur en gras charge</string>
-    <string name="battery_text_charging_color">Couleur texte pourcentage en charge</string>
+    <string name="battery_bolt_color">Couleur de l\'éclair de charge</string>
+    <string name="battery_text_charging_color">Couleur en charge du texte pourcentage</string>
+    <string name="battery_circle_charging_color">Couleur en charge du cercle</string>
     <string name="battery_style_reset_message">réinitialiser les couleurs batterie ?</string>
 
     <!-- Status bar | Clock -->
@@ -525,12 +528,7 @@
     <!--Notification peek-->
     <string name="notification_peek_title">Notification furtive (Peek)</string>
     <string name="notification_peek_summary">Montre les dernières notifications après avoir repris votre téléphone</string>
-    <string name="peek_pickup_timeout_title">Délai mise en route Peek </string>
-    <string name="peek_pickup_10seconds">10 secondes (défaut)</string>
-    <string name="peek_pickup_30seconds">30 secondes</string>
-    <string name="peek_pickup_45seconds">45 secondes</string>
-    <string name="peek_pickup_60seconds">1 minute</string>
-    <string name="peek_pickup_120seconds">2 minutes</string>
+    
     <!-- Status bar color -->
     <string name="custom_status_bar_color_title">Couleurs personnalisées de la barre d\'état</string>
     <string name="status_bar_opaque_color">Couleur opaque</string>
