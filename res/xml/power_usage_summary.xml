@@ -20,7 +20,7 @@
 
     <PreferenceScreen
         android:key="pref_battery_saver"
-        android:fragment="com.android.settings.omni.BatterySaverSettings"
+        android:fragment="com.android.settings.omni.batterysaver.BatterySaverSettings"
         android:title="@string/battery_saver_title" />
 
     <PreferenceCategory
