@@ -2389,13 +2389,7 @@ translation isn't needed -->
     <string name="time_twenty_to">Twenty till</string>
     <string name="time_quarter_to">Quarter till</string>
     <string name="time_ten_to">Ten till</string>
-    <string name="time_five_to">Five till</string>
-
-    <!-- Set Subscription screen: label no sim -->
-    <string name="sub_no_sim">No SIM</string>
-    <string name="multi_sim_entry_format" translatable="false"><xliff:g id="operator">%1$s</xliff:g>-<xliff:g id="index">%2$d</xliff:g></string>
-
-    <!-- Telo Radio -->
+    <string name="time_five_to">Five till</string>    <!-- Telo Radio -->
     <string name="telo_radio_settings_title">Connection manager</string>
     <string name="telo_radio_options_category">Screen on configuration</string>
     <string name="telo_radio_lte_title">LTE</string>
@@ -2413,5 +2407,12 @@ translation isn't needed -->
     <string name="telo_radio_2g_20min">20 minutes</string>
     <string name="telo_radio_go_3g_unlock_title">3G Unlock</string>
     <string name="telo_radio_go_3g_unlock_summary">When device is unlocked network mode switches to 3G again.</string>
+
+    <!-- Set Subscription screen: label no sim -->
+    <string name="sub_no_sim">No SIM</string>
+    <string name="multi_sim_entry_format" translatable="false"><xliff:g id="operator">%1$s</xliff:g>-<xliff:g id="index">%2$d</xliff:g></string>
+
+    <!-- Main settings screen, Multi Sim settings title for item to go into the Multi settings -->
+    <string name="multi_sim_settings_title">Multi SIM</string>
 
 </resources>
