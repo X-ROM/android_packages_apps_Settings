@@ -2435,4 +2435,7 @@ translation isn't needed -->
     <!-- Force fast charge -->
     <string name="pref_force_fast_charge_title">Force fast charge</string>
 
+    <!-- CPUFreq Tile -->
+    <string name="title_tile_cpufreq">CPUFreq</string>
+
 </resources>
