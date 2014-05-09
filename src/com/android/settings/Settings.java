@@ -383,7 +383,8 @@ public class Settings extends PreferenceActivity
         com.android.settings.crom.QuietHours.class.getName(),
         BatterySaverSettings.class.getName(),
         BatterySaverHelper.class.getName(),
-        BatteryCpuSettings.class.getName()
+        BatteryCpuSettings.class.getName(),
+        ThemeSettings.class.getName()
     };
 
     @Override
