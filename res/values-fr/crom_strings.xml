@@ -526,8 +526,14 @@
     <string name="notifications_on_lockscreen_warning_summary">La sélection d\'un mode de notifications de l\'écran de verrouillage (Peek (Furtif)ou notifications standards )désactive automatiquement l\'autre. Pour conserver un de ces modes, après désactivation, n\'oubliez pas de le sélectionner.</string>
 
     <!--Notification peek-->
-    <string name="notification_peek_title">Notification furtive (Peek)</string>
-    <string name="notification_peek_summary">Montre les dernières notifications après avoir repris votre téléphone</string>
+    <string name="notification_peek_title">Notification économe (Peek)</string>
+    <string name="notification_peek_summary">Montre les notifications si votre téléphone bouge au bout d\'un certain délai</string>
+    <string name="peek_pickup_timeout_title">Délai de scrutation mouvement</string>
+    <string name="peek_pickup_10seconds">10 secondes (défaut)</string>
+    <string name="peek_pickup_30seconds">30 secondes</string>
+    <string name="peek_pickup_45seconds">45 secondes</string>
+    <string name="peek_pickup_60seconds">1 minute</string>
+    <string name="peek_pickup_120seconds">2 minutes</string>
     
     <!-- Status bar color -->
     <string name="custom_status_bar_color_title">Couleurs personnalisées de la barre d\'état</string>
