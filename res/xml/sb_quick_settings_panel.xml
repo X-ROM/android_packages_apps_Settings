@@ -63,6 +63,13 @@
             android:title="@string/quicksettings_tiles_style"
             android:summary="@string/summary_quicksettings_tiles_style" />
 
+        <ListPreference
+            android:key="screenshot_delay"
+            android:dialogTitle="@string/pref_screenshot_delay_title"
+            android:title="@string/pref_screenshot_delay_title"
+            android:entries="@array/screenshot_delay_entries"
+            android:entryValues="@array/screenshot_delay_values" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
