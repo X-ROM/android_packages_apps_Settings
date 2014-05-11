@@ -145,11 +145,6 @@
     <PreferenceCategory
         android:title="@string/system_category">
 
-    <PreferenceScreen
-        android:key="interface_battery_saver"
-        android:title="@string/battery_saver_title"
-        android:fragment="com.android.settings.omni.BatterySaverSettings" />
-
     <!-- KernelTweaker -->
     <PreferenceScreen
         android:key="kerneltweaker_start"
