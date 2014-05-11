@@ -149,7 +149,7 @@
         android:key="interface_battery_saver"
         android:title="@string/battery_saver_title"
         android:icon="@drawable/ic_battery_saver"
-        android:fragment="com.android.settings.omni.batterysaver.BatterySaverSettings" />
+        android:fragment="com.android.settings.omni.BatterySaverSettings" />
 
     <!-- KernelTweaker -->
     <PreferenceScreen
