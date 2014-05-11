@@ -1211,5 +1211,4 @@ public class Settings extends PreferenceActivity
     public static class CtoolSettingsActivity extends Settings { /* empty */ }
     public static class QuickSettingsConfigActivity extends Settings { /* empty */ }
     public static class QuietHoursSettingsActivity extends Settings { /* empty */ }
-    public static class PerformanceSettingsActivity extends Settings { /* empty */ }
 }

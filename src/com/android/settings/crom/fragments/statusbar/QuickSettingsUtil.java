@@ -238,6 +238,11 @@ public class QuickSettingsUtil {
         if (!QSUtils.deviceSupportsCamera()) {
             removeTile(TILE_CAMERA);
         }
+
+        // Don't show the performance profiles tile if is not available for the device
+        if (!QSUtils.deviceSupportsPerformanceProfiles(context)) {
+            removeTile(TILE_PERFORMANCE_PROFILE);
+        }
     }
 
     private static synchronized void refreshAvailableTiles(Context context) {
