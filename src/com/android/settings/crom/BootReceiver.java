@@ -181,6 +181,5 @@ public class BootReceiver extends BroadcastReceiver {
 
         Utils.fileWriteOneLine(PerformanceSettings.FAST_CHARGE_PATH, charge ? "1" : "0");
         Log.d(TAG, "Fast Charge settings restored.");
-    }
   }
 }
