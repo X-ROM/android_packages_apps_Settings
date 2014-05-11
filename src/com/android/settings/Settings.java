@@ -110,7 +110,6 @@ import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 
 import com.android.settings.crom.fragments.statusbar.QuickSettingsTiles;
-import com.android.settings.omni.batterysaver.*;
 
 import java.util.ArrayList;
 import java.util.Collections;
