@@ -51,7 +51,6 @@ import static com.android.internal.util.cm.QSConstants.TILE_WIFIAP;
 import static com.android.internal.util.cm.QSConstants.TILE_QUICKRECORD;
 import static com.android.internal.util.cm.QSConstants.TILE_THEME;
 import static com.android.internal.util.cm.QSConstants.TILE_ONTHEGO;
-import static com.android.internal.util.cm.QSConstants.TILE_BATTERYSAVER;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -179,9 +178,6 @@ public class QuickSettingsUtil {
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_ONTHEGO, R.string.title_tile_onthego,
                 "com.android.systemui:drawable/ic_qs_onthego"));
-        registerTile(new QuickSettingsUtil.TileInfo(
-                TILE_BATTERYSAVER, R.string.quick_settings_battery_saver_label,
-                "com.android.systemui:drawable/ic_qs_battery_saver_on"));
     }
 
     private static void registerTile(QuickSettingsUtil.TileInfo info) {
