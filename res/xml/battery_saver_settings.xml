@@ -26,7 +26,7 @@
         android:title="@string/pref_battery_saver_enable_title"
         android:summary="@string/pref_battery_saver_enable_summary"  />
 
-    <com.android.settings.crom.TimeRangePreference
+    <com.android.settings.cyanogenmod.TimeRangePreference
         android:key="pref_battery_saver_timerange"
         android:dependency="pref_battery_saver_enable" />
 
