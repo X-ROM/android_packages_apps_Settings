@@ -2389,7 +2389,9 @@ translation isn't needed -->
     <string name="time_twenty_to">Twenty till</string>
     <string name="time_quarter_to">Quarter till</string>
     <string name="time_ten_to">Ten till</string>
-    <string name="time_five_to">Five till</string>    <!-- Telo Radio -->
+    <string name="time_five_to">Five till</string>
+
+    <!-- Telo Radio -->
     <string name="telo_radio_settings_title">Connection manager</string>
     <string name="telo_radio_options_category">Screen on configuration</string>
     <string name="telo_radio_lte_title">LTE</string>
