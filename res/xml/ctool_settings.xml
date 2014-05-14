@@ -80,6 +80,12 @@
         android:icon="@drawable/ic_settings_gesture_anywhere"
         android:title="@string/gesture_anywhere_title" />
 
+    <PreferenceScreen
+         android:id="@+id/installer_settings"
+         android:title="@string/installer_title"
+         android:icon="@drawable/ic_rom_control_installer"
+         android:fragment="com.android.settings.crom.installer.InstallerSettingsFragment" />
+
     <!-- OmniSwitch -->
   <PreferenceScreen
         android:id="@+id/omniswitch"
