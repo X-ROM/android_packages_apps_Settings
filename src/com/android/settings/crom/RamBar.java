@@ -243,7 +243,6 @@ public class RamBar extends SettingsPreferenceFragment implements OnPreferenceCh
         boolean recentsStyle = Settings.System.getBoolean(getActivity().getContentResolver(),
                Settings.System.CUSTOM_RECENT_TOGGLE, false);
         if (recentsStyle) {
-            mRecentClearAll.setEnabled(false);
             mRamBarMode.setEnabled(false);
             mRamBarAppMemColor.setEnabled(false);
             mRamBarCacheMemColor.setEnabled(false);
