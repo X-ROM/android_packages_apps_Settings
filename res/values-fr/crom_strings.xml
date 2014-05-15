@@ -874,7 +874,7 @@
 
     <!-- SlimSizer  -->
     <string name="listsystem">liste</string>
-    <string name="sizer_title">Effaceur d\'applications systèmes</string>
+    <string name="sizer_title">Suppression d\'applications systèmes</string>
     <string name="caution">Attention!</string>
     <string name="sizer_message_startup">Cet outil vous permet d\'effacer les applications systèmes. À utiliser avec précaution et supprimer seulement les applications connues pour pouvoir être retirées sans problème.</string>
     <string name="cancel">Abandon</string>
@@ -999,13 +999,13 @@
     <string name="lcd_density_summary">Inconnu</string>
     <string name="current_lcd_density">"Densité LCD en cours: "</string>
     <string name="lcd_density_wizard">Assistant densité LCD</string>
-    <string name="follow_through_title">Soyez informer : appuyer pour télécharger</string>
+    <string name="follow_through_title">Informations : appuyer pour télécharger</string>
     <string name="follow_through_summary">Il est recommandé d\'utiliser un Market Multi DPI pour éviter les problèmes après avoir modifié la densité.</string>
     <string name="stock_density_title">Changer la densité LCD au valeurs standard</string>
     <string name="stock_density_summary">Les tablettes et anciens téléphones utilisent 160. La plupart des téléphones utilisent 240. Le Galaxy Nexus utilise 320 par défaut.</string>
     <string name="stock_density_changed_summary">"Densité a mettre a: "</string>
     <string name="reboot_title">Redémarrer !</string>
-    <string name="reboot_summary">Et profitez</string>
+    <string name="reboot_summary">Et que du plaisir !!</string>
     <string name="clear_market_data_title">3. Effacer toutes les données pertinentes du Market.</string>
     <string name="clear_market_data_summary">Cette étape efface les données du Market, Google Play services et des frameworks Google services.</string>
     <string name="clear_market_data_cleared">Les données ont été effacées avec succès</string>
@@ -1026,14 +1026,14 @@
     <string name="custom_density_dialog_button_reboot">Redémarrer maintenant</string>
 
     <!-- Gesture Anywhere -->
-    <string name="gesture_anywhere_title">Commande globale par gestuelle</string>
-    <string name="gesture_anywhere_enabled_title">Gestuelle globale</string>
-    <string name="gesture_anywhere_enabled_summary">Activer la gestuelle globale</string>
+    <string name="gesture_anywhere_title">Commande par signe</string>
+    <string name="gesture_anywhere_enabled_title">Signe</string>
+    <string name="gesture_anywhere_enabled_summary">Activer la commande par signe</string>
     <string name="gesture_anywhere_position_title">Position</string>
     <string name="gesture_anywhere_position_left">Angle gauche</string>
     <string name="gesture_anywhere_position_right">Angle droit</string>
     <string name="gesture_anywhere_gestures_title">Gestuelle</string>
-    <string name="gesture_anywhere_gestures_summary">Ajouter, supprimer, et editer la gestuelle</string>
+    <string name="gesture_anywhere_gestures_summary">Ajouter, supprimer, et editer la cde par signe</string>
     <!-- Label, button used to add a gesture -->
     <string name="ga_button_add">Ajouter un signe</string>
     <!-- Label, button used to reload all gestures -->
@@ -1535,10 +1535,6 @@
     <string name="trigger_top_summary">Ajuster la postion verticale de la zone de déclenchement</string>
     <string name="trigger_bottom_title">Hauteur de déclenchement</string>
     <string name="trigger_bottom_summary">Ajuster la hauteur de la zone de déclenchement</string>
-    
-    <!-- Custom Recent Settings -->
-    <string name="custom_recent_title">Activer le mode SLIM Applis récentes</string>
-    <string name="custom_recent_summary">Cochez cette case pour basculer entre le panneau Slim / standard</string>
 
     <!-- General strings -->
     <string name="enabled">Activé</string>
@@ -2435,5 +2431,10 @@ translation isn't needed -->
 
     <!-- Force fast charge -->
     <string name="pref_force_fast_charge_title">Forcer charge rapide</string>
+    
+    	    <!-- Custom Recent Settings -->
+    <string name="custom_recent_title">Changer le style Récents</string>
+    <string name="custom_recent_summary">Changer le mode d\'affichage des applis récentes Slim ou standard. Cocher ou décocher la case va faire redémarrer le SYSTEMUI</string>
+
 
 </resources>
