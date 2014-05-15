@@ -28,7 +28,7 @@ import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.WindowManagerGlobal;
-import com.android.settings.util.Helpers;
+
 import com.android.settings.R;
 import com.android.settings.Utils;
 import com.android.settings.SettingsPreferenceFragment;
@@ -42,12 +42,10 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
     private static final String CATEGORY_NAVBAR = "navigation_bar";
     private static final String KEY_POWER_CRT_MODE = "system_power_crt_mode";
     private static final String KEY_SCREEN_GESTURE_SETTINGS = "touch_screen_gesture_settings";
-    private static final String CUSTOM_RECENT_MODE = "custom_recent_mode";
 
     private ListPreference mCrtMode;
     private ListPreference mExpandedDesktopPref;
     private CheckBoxPreference mExpandedDesktopNoNavbarPref;
-    private CheckBoxPreference mRecentsCustom;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -58,13 +56,8 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
 
         // Expanded desktop
         mExpandedDesktopPref = (ListPreference) findPreference(KEY_EXPANDED_DESKTOP);
-        mExpandedDesktopNoNavbarPref = (CheckBoxPreference) findPreference(KEY_EXPANDED_DESKTOP_NO_NAVBAR);
-
-        boolean enableRecentsCustom = Settings.System.getBoolean(getContentResolver(),
-                                      Settings.System.CUSTOM_RECENT, false);
-        mRecentsCustom = (CheckBoxPreference) findPreference(CUSTOM_RECENT_MODE);
-        mRecentsCustom.setChecked(enableRecentsCustom);
-        mRecentsCustom.setOnPreferenceChangeListener(this);
+        mExpandedDesktopNoNavbarPref =
+                (CheckBoxPreference) findPreference(KEY_EXPANDED_DESKTOP_NO_NAVBAR);
 
         int expandedDesktopValue = Settings.System.getInt(getContentResolver(),
                 Settings.System.EXPANDED_DESKTOP_STYLE, 0);
@@ -123,12 +116,6 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
         } else if (preference == mExpandedDesktopNoNavbarPref) {
             boolean value = (Boolean) objValue;
             updateExpandedDesktop(value ? 2 : 0);
-            return true;
-        } else if (preference == mRecentsCustom) { // Enable||disbale Slim Recent
-            Settings.System.putBoolean(getActivity().getContentResolver(),
-                    Settings.System.CUSTOM_RECENT,
-                    ((Boolean) objValue) ? true : false);
-            Helpers.restartSystemUI();
             return true;
         }
 
