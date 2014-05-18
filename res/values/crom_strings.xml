@@ -2472,4 +2472,11 @@ translation isn't needed -->
     <string name="persist_file_xposed">Persist Xposed</string>
     <string name="persist_file_xposed_summary">Persist file app_process for Xposed framework</string>
 
+    <!-- Automatic performance profiles -->
+    <string name="autoperf_title">Enable per-app profiles</string>
+    <string name="autoperf_summary">Automatically choose an appropriate performance profile for various applications</string>
+
+    <!-- Performance menu, graphics options category -->
+    <string name="graphics_title">Graphics and rendering</string>
+
 </resources>
