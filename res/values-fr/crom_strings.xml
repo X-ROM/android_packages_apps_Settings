@@ -322,6 +322,11 @@
     <string name="collapse_on_dismiss_if_empty_summary">Fermer après avoir enlevé la dernière notification</string>
     <string name="collapse_on_dismiss_if_no_clearable_summary">Fermer après avoir enlevé la dernière notification non effacable</string>
 
+    <string name="notification_carrier_label_title">Nom d\'opérateur</string>
+    <string name="notification_custom_carrier_label_title">Nom d\'opérateur personnalisé</string>
+    <string name="notification_custom_carrier_label_explain">Merci d\'entrer un nouveau nom. Une entrée vide enregistre l\'opérateur par défaut.</string>
+    <string name="notification_custom_carrier_label_notset">Nom d\'opérateur personnalisé non enregistré</string>
+
     <!-- Quick access ribbon -->
     <string name="category_quick_access">Ruban accés rapide</string>
     <string name="title_quick_access">Montrer dans le panneau</string>
@@ -530,12 +535,18 @@
     <string name="notification_peek_title">Notification économe (Peek)</string>
     <string name="notification_peek_summary">Montre les notifications si votre téléphone bouge au bout d\'un certain délai</string>
     <string name="peek_pickup_timeout_title">Délai de scrutation mouvement</string>
+    <string name="peek_pickup_timeout_title">Délai de reprise Peek</string>
     <string name="peek_pickup_10seconds">10 secondes (défaut)</string>
     <string name="peek_pickup_30seconds">30 secondes</string>
     <string name="peek_pickup_45seconds">45 secondes</string>
     <string name="peek_pickup_60seconds">1 minute</string>
     <string name="peek_pickup_120seconds">2 minutes</string>
-    
+    <string name="peek_wake_3seconds">3 seconds</string>
+    <string name="peek_wake_5seconds">5 seconds (default)</string>
+    <string name="peek_wake_10seconds">10 seconds</string>
+    <string name="peek_wake_20seconds">20 seconds</string>
+    <string name="peek_wake_30seconds">30 seconds</string>
+
     <!-- Status bar color -->
     <string name="custom_status_bar_color_title">Couleurs personnalisées de la barre d\'état</string>
     <string name="status_bar_opaque_color">Couleur opaque</string>
@@ -558,15 +569,6 @@
     <string name="system_power_crt_mode_vertical">Fermeture verticale</string>
     <string name="system_power_crt_mode_both">Orientation de la fermeture dépendante</string>
     <string name="system_power_crt_mode_scale">Réduire</string>
-
-    <!-- Custom Carrier Label Options -->
-    <string name="carrier_label_title">Options Affichage opérateur</string>
-    <string name="custom_carrier_label_title">Dénomination personnalisée</string>
-    <string name="custom_carrier_label_explain">Entrer une nouvelle dénomination. Une désignation vide permet de revenir a celle d\'origine.</string>
-    <string name="custom_carrier_label_notset">L\'étiquette personnalisée n\'est actuellement définie</string>
-    <string name="hide_carrier_title">Masquer l\'affichage opérateur</string>
-    <string name="notification_show_wifi_ssid_title">Monter le nom du réseau WIFI</string>
-    <string name="notification_show_wifi_ssid_summary">Masquer le nom du réseau WIFI actuellement connecté</string>
 
     <!-- Show 4G icon instead of LTE. User defined settings -->
     <string name="show_lte_or_fourgee_title">Afficher le réseau 4G</string>
@@ -704,6 +706,7 @@
     <string name="shortcut_action_notifications">Notifications</string>
     <string name="shortcut_action_menu_big">Menu</string>
     <string name="shortcut_action_qs">Panneau paramètres rapides</string>
+    <string name="shortcut_action_smart">Déroulement élégant</string>
     <string name="shortcut_action_none">Sans</string>
     <string name="shortcut_action_power_menu">Menu Power</string>
     <string name="shortcut_action_torch">Lampe torche</string>
@@ -725,14 +728,14 @@
 
     <string name="shortcut_action_help_shortcut">Raccourcis</string>
     <string name="shortcut_action_help_button">Bouton</string>
-	<string name="shortcuts_text_color_title">Couleur du texte</string>
+    <string name="shortcuts_text_color_title">Couleur du texte</string>
     <string name="shortcuts_color_mode_title">Icône mode couleur</string>
     <string name="shortcuts_color_mode_summary">Changer le raccourci de l\'icône mode couleur</string>
     <string name="shortcuts_color_title">Couleur de l\'icône</string>
     <string name="shortcut_action_help_icon">, la sélection de  l\'icône fera apparaître des options de personnalisation</string>
     <string name="shortcut_action_help_main">Pour ajouter %1$s, sélectionner l\'ajout d\'icône.  Une fois que %1$s est ajoutée, sélectionner la ligne va changer la cible%2$s\n\nPour supprimer a %1$s, glisser la ligne horizontalement à gauche ou à droite.  réordonner un %1$s dans la liste en faisant glisser verticalement l\'ancrage à gauche.\n\nPour effacer ou réinitialiser par défaut , sélectionner l\'icône réinitialiser.</string>
     <string name="shortcut_action_help_delete_last_entry">Supprimer tout %1$s dans la liste désactive la fonction complètement.</string>
-	<string name="shortcut_action_help_pie_second_layer_delete_last_entry">Supprimer tout %1$s dans la liste désactive entièrement la seconde couche de pie.</string>
+    <string name="shortcut_action_help_pie_second_layer_delete_last_entry">Supprimer tout %1$s dans la liste désactive entièrement la seconde couche de pie.</string>
     <string name="shortcut_action_help">Aide</string>
 
     <string name="icon_color_mode_all_icons">Toutes les icônes</string>
@@ -2153,9 +2156,10 @@ deux afin d\'insérer des points de commande supplémentaires. \'Supprimer\' Eff
     <string name="smart_pulldown_title">Menu déroulant malin</string>
     <string name="smart_pulldown_summary">Ouvrez les paramètres rapides quand il n\'y a pas %1$s de notifications actuelles</string>
     <string name="smart_pulldown_off">Éteint</string>
-    <string name="smart_pulldown_dismissable">Révocable</string>
-    <string name="smart_pulldown_persistent">Persistant</string>
-	
+    <string name="smart_pulldown_dismissable">Non Révocable</string>
+    <string name="smart_pulldown_persistent">Non Persistant</string>
+    <string name="smart_pulldown_all">Non Révocable ou persistant</string>
+
 	<!-- Data Usage -->
     <!-- Subtitle of dialog for editing data usage cycle reset date. [CHAR LIMIT=32] -->
     <string name="data_usage_cycle_editor_subtitle_cm">Date de chaque cycle:</string>
@@ -2432,9 +2436,19 @@ translation isn't needed -->
     <!-- Force fast charge -->
     <string name="pref_force_fast_charge_title">Forcer charge rapide</string>
     
-    	    <!-- Custom Recent Settings -->
+    <!-- Custom Recent Settings -->
     <string name="custom_recent_title">Changer le style Récents</string>
     <string name="custom_recent_summary">Changer le mode d\'affichage des applis récentes Slim ou standard. Cocher ou décocher la case va faire redémarrer le SYSTEMUI</string>
 
+    <!-- CPUFreq Tile -->
+    <string name="title_tile_cpufreq">CPUFreq</string>
+
+    <!-- Statusbar Second Clock -->
+    <string name="clock_use_second">Utilisez la seconde horloge</string>
+    <string name="clock_use_second_summary">Afficher la seconde horloge</string>
+
+    <!-- Custom Recent Settings -->
+    <string name="custom_recent_title">Changer le style Récents</string>
+    <string name="custom_recent_summary">Changer le mode d\'affichage des applis récentes Slim ou standard. Cocher ou décocher la case va faire redémarrer le SYSTEMUI</string>
 
 </resources>
