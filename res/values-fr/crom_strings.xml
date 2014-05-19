@@ -1958,6 +1958,12 @@ deux afin d\'insérer des points de commande supplémentaires. \'Supprimer\' Eff
     <string name="app_security_title">Sécurité des Applis</string>
     <string name="security_unlock_category">Débloquer</string>
 
+    <!-- Keyguard allow rotation -->
+    <string name="lockscreen_rotation_title">Rotation de l\'écran de verrouillage</string>
+    <string name="lockscreen_rotation_portrait">Portrait seulement</string>
+    <string name="lockscreen_rotation_landscape">Paysage seulement</string>
+    <string name="lockscreen_rotation_summary_extra">(Dépendant de la rotation de l\'affichage)</string>
+
     <!-- C-ROM Settings  -->
     <!-- Settings main menu category heading. Interface (Launcher, Themes, System). [CHAR LIMIT=40] -->
     <string name="header_category_crom">Personnalisation</string>
@@ -2435,10 +2441,6 @@ translation isn't needed -->
 
     <!-- Force fast charge -->
     <string name="pref_force_fast_charge_title">Forcer charge rapide</string>
-    
-    <!-- Custom Recent Settings -->
-    <string name="custom_recent_title">Changer le style Récents</string>
-    <string name="custom_recent_summary">Changer le mode d\'affichage des applis récentes Slim ou standard. Cocher ou décocher la case va faire redémarrer le SYSTEMUI</string>
 
     <!-- CPUFreq Tile -->
     <string name="title_tile_cpufreq">CPUFreq</string>
@@ -2450,5 +2452,8 @@ translation isn't needed -->
     <!-- Custom Recent Settings -->
     <string name="custom_recent_title">Changer le style Récents</string>
     <string name="custom_recent_summary">Changer le mode d\'affichage des applis récentes Slim ou standard. Cocher ou décocher la case va faire redémarrer le SYSTEMUI</string>
+
+    <!-- Bluetooth accept all Filestypes -->
+    <string name="bluetooth_accept_all_files">Accepter tous les types de fichiers</string>
 
 </resources>
