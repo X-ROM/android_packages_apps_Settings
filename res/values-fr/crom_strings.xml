@@ -1581,6 +1581,10 @@
     <string name="increasing_ring_interval_5seconds">5 secondes</string>
     <string name="increasing_ring_interval_10seconds">10 secondes</string>
 
+    <!-- Sound settings screen, setting check box label -->
+    <string name="camera_sounds_title">Son obturateur appareil photo</string>
+    <string name="camera_sounds_summary">Attention : desactiver ce son est illégal dans certains pays!</string>
+
     <!-- Profiles settings  -->
     <string name="profiles_settings_title">Profils</string>
     <string name="profiles_add">Ajouter</string>
@@ -2455,5 +2459,17 @@ translation isn't needed -->
 
     <!-- Bluetooth accept all Filestypes -->
     <string name="bluetooth_accept_all_files">Accepter tous les types de fichiers</string>
+
+    <!-- Installer settings -->
+    <string name="installer_title">Installateur</string>
+    <string name="persist_options">Persistance</string>
+    <string name="persist_enable">Activer Persistance</string>
+    <string name="persist_enable_summary">Activer la persistance des données aprés installations</string>
+    <string name="persist_prop_density">Persistance densité</string>
+    <string name="persist_prop_density_summary">Persistance densité LCD</string>
+    <string name="persist_file_hosts">Persistance de l\'hôte</string>
+    <string name="persist_file_hosts_summary">Persistance des fichiers hôte</string>
+    <string name="persist_file_xposed">Persistance Xposed</string>
+    <string name="persist_file_xposed_summary">Persistance fichier app_process pour le framework Xposed</string>
 
 </resources>
