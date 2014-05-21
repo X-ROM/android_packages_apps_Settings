@@ -2124,6 +2124,20 @@ deux afin d\'insérer des points de commande supplémentaires. \'Supprimer\' Eff
     <string name="lockscreen_widget_frame_title">Désactiver le cadre de widgets</string>
     <string name="lockscreen_widget_frame_summary">Désactiver l\'arriere plan des cadres de widgets</string>
     
+    <!-- Shake to secure -->
+    <string name="shake_to_secure_title">Secouer a partir de l\'écran de verrouillage pour activer la sécurité</string>
+    <string name="shake_to_secure_summary">La sécurité sera désactivée après chaque déverrouillage réussi</string>
+    <string name="shake_to_secure_dlg_title">Attention:</string>
+    <string name="shake_to_secure_dlg_message">Votre appareil sera non sécurisé jusqu\'à ce que vous le secouiez
+    volontairement pour verrouiller temporairement . Une fois sécurisé: si votre appareil est débloqué, il 
+    deviendra non sécurisé jusqu'à ce que vous le secouiez de nouveau.</string>
+    <string name="shake_secure_timeout_title">Re-sécuriser automatiquement</string>
+    <string name="shake_secure_timeout_disabled">ne jamais sécuriser automatiquement</string>
+    <string name="shake_secure_timeout_1min">1 minute après que l\écran soit éteint</string>
+    <string name="shake_secure_timeout_5min">5 minutes après que l\écran soit éteint</string>
+    <string name="shake_secure_timeout_10min">10 minutes après que l\écran soit éteint</string>
+    <string name="shake_secure_timeout_30min">30 minutes après que l\écran soit éteint</string>
+
     <!-- Sizes for pattern lockscreen -->
     <string name="lock_pattern_size_3">3x3</string>
     <string name="lock_pattern_size_4">4x4</string>
@@ -2471,5 +2485,12 @@ translation isn't needed -->
     <string name="persist_file_hosts_summary">Persistance des fichiers hôte</string>
     <string name="persist_file_xposed">Persistance Xposed</string>
     <string name="persist_file_xposed_summary">Persistance fichier app_process pour le framework Xposed</string>
+
+    <!-- Automatic performance profiles -->
+    <string name="autoperf_title">Activer des profils par applis</string>
+    <string name="autoperf_summary">Choisir automatiquement le profil de performance adéquat pour diverses applications</string>
+
+    <!-- Performance menu, graphics options category -->
+    <string name="graphics_title">Graphiques et rendu</string>
 
 </resources>
