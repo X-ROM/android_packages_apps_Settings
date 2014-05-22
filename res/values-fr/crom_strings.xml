@@ -2130,7 +2130,7 @@ deux afin d\'insérer des points de commande supplémentaires. \'Supprimer\' Eff
     <string name="shake_to_secure_dlg_title">Attention:</string>
     <string name="shake_to_secure_dlg_message">Votre appareil sera non sécurisé jusqu\'à ce que vous le secouiez
     volontairement pour verrouiller temporairement . Une fois sécurisé: si votre appareil est débloqué, il 
-    deviendra non sécurisé jusqu'à ce que vous le secouiez de nouveau.</string>
+    deviendra non sécurisé jusqu\'à ce que vous le secouiez de nouveau.</string>
     <string name="shake_secure_timeout_title">Re-sécuriser automatiquement</string>
     <string name="shake_secure_timeout_disabled">ne jamais sécuriser automatiquement</string>
     <string name="shake_secure_timeout_1min">1 minute après que l\écran soit éteint</string>
