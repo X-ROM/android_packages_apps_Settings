@@ -1,95 +1,161 @@
-/*
- * Copyright (C) 2014 The C-RoM Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.android.settings.crom;
 
-import android.content.ContentResolver;
+import android.app.ActionBar;
+import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
+import android.net.Uri;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.os.Bundle;
+import android.provider.Settings;
+import android.preference.CheckBoxPreference;
 import android.preference.Preference;
+import android.preference.PreferenceCategory;
+import android.preference.PreferenceManager;
+import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceScreen;
+import android.support.v13.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.android.internal.util.slim.DeviceUtils;
+
+import com.android.settings.crom.ButtonSettings;
+import com.android.settings.crom.InterfaceSettings;
+import com.android.settings.crom.LockscreenSettings;
+import com.android.settings.crom.SystemSettings;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class CtoolSettings extends SettingsPreferenceFragment
-        implements OnSharedPreferenceChangeListener {
+import java.util.ArrayList;
+import java.util.List;
 
-    private static final String TAG = "CtoolSettings";
+public class CtoolSettings extends SettingsPreferenceFragment implements ActionBar.TabListener {
 
-    private static final String KERNELTWEAKER_START = "kerneltweaker_start";
-    private static final String CROMOTA_START = "crom_ota_start";
+    ViewPager mViewPager;
+    String titleString[];
+    ViewGroup mContainer;
 
-    // Package name of the kernel tweaker app
-    public static final String KERNELTWEAKER_PACKAGE_NAME = "com.dsht.kerneltweaker";
-    // Intent for launching the kernel tweaker main actvity
-    public static Intent INTENT_KERNELTWEAKER = new Intent(Intent.ACTION_MAIN)
-            .setClassName(KERNELTWEAKER_PACKAGE_NAME, KERNELTWEAKER_PACKAGE_NAME + ".MainActivity");
+    static Bundle mSavedState;
 
-    // Package name of the C-RoM Ota app
-    public static final String CROMOTA_PACKAGE_NAME = "com.crom.cromota";
-    // Intent for launching the C-RoM ota main actvity
-    public static Intent INTENT_CROMOTA = new Intent(Intent.ACTION_MAIN)
-            .setClassName(CROMOTA_PACKAGE_NAME, CROMOTA_PACKAGE_NAME + ".MainActivity");
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        mContainer = container;
+        final ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_system);
+   
+        View view = inflater.inflate(R.layout.ctool_settings, container, false);
+        mViewPager = (ViewPager) view.findViewById(R.id.viewPager);
+        StatusBarAdapter StatusBarAdapter = new StatusBarAdapter(getFragmentManager());
+        mViewPager.setAdapter(StatusBarAdapter);
+        mViewPager.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
+            @Override
+            public void onPageSelected(int position) {
+                actionBar.setSelectedNavigationItem(position);
+            }
+        });
 
-    private Preference mKernelTweaker;
-    private Preference mCromOta;
+        ActionBar.Tab interfaceTab = actionBar.newTab();
+        interfaceTab.setText("Interface");
+        interfaceTab.setTabListener(this);
+
+        ActionBar.Tab buttonTab = actionBar.newTab();
+        buttonTab.setText("Button");
+        buttonTab.setTabListener(this);
+
+        ActionBar.Tab lockscreenTab = actionBar.newTab();
+        lockscreenTab.setText("LockScreen");
+        lockscreenTab.setTabListener(this);
+
+        ActionBar.Tab systemTab = actionBar.newTab();
+        systemTab.setText("System");
+        systemTab.setTabListener(this);
+
+        actionBar.addTab(interfaceTab);
+        actionBar.addTab(buttonTab);
+        actionBar.addTab(lockscreenTab);
+        actionBar.addTab(systemTab);
+
+        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+
+        return view;
+    }
 
     @Override
-    public void onCreate(Bundle icicle) {
-        super.onCreate(icicle);
+    public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {
+        mViewPager.setCurrentItem(tab.getPosition());
+    }
 
-        addPreferencesFromResource(R.xml.ctool_settings);
+    @Override
+    public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction ft) {
+    }
 
-        PreferenceScreen prefSet = getPreferenceScreen();
-        ContentResolver resolver = getActivity().getContentResolver();
+    @Override
+    public void onTabReselected(ActionBar.Tab tab, FragmentTransaction ft) {
+    }
 
-        mKernelTweaker = (Preference)
-                prefSet.findPreference(KERNELTWEAKER_START);
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        // After confirming PreferenceScreen is available, we call super.
+        super.onActivityCreated(savedInstanceState);
+    }
 
-        mCromOta = (Preference)
-                prefSet.findPreference(CROMOTA_START);
-
+    @Override
+    public void onSaveInstanceState(Bundle saveState) {
+        super.onSaveInstanceState(saveState);
     }
 
     @Override
     public void onResume() {
         super.onResume();
-    }
 
-    @Override
-    public void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    public void onSharedPreferenceChanged(SharedPreferences preferences, String key) {
-    }
-
-    @Override
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if (preference == mKernelTweaker) {
-            startActivity(INTENT_KERNELTWEAKER);
-            return true;
-        } else if (preference == mCromOta) {
-            startActivity(INTENT_CROMOTA);
-            return true;
+        if (!DeviceUtils.isTablet(getActivity())) {
+            mContainer.setPadding(0, 0, 0, 0);
         }
-        return super.onPreferenceTreeClick(preferenceScreen, preference);
+    }
+
+    class StatusBarAdapter extends FragmentPagerAdapter {
+        String titles[] = getTitles();
+        private Fragment frags[] = new Fragment[titles.length];
+
+        public StatusBarAdapter(FragmentManager fm) {
+            super(fm);
+            frags[0] = new InterfaceSettings();
+            frags[1] = new ButtonSettings();
+            frags[2] = new LockscreenSettings();
+            frags[3] = new SystemSettings();
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return titles[position];
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            return frags[position];
+        }
+
+        @Override
+        public int getCount() {
+            return frags.length;
+        }
+    }
+
+    private String[] getTitles() {
+        String titleString[];
+        titleString = new String[]{
+                    getString(R.string.interface_category),
+                    getString(R.string.button_category),
+                    getString(R.string.lockscreen_category),
+                    getString(R.string.system_category)};
+        return titleString;
     }
 }
-

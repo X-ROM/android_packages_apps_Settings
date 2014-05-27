@@ -1,0 +1,81 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/system_category"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:key="system_settings">
+
+    <PreferenceScreen
+        android:id="@+id/about_crom"
+        android:icon="@drawable/ic_crom_about"
+        android:title="@string/about_crom_title" >
+        <intent
+        android:action="android.intent.action.MAIN"
+        android:targetPackage="com.crom.about"
+        android:targetClass="com.crom.about.activities.AboutActivity" />
+    </PreferenceScreen>
+
+    <!-- C-ROM OTA -->
+    <PreferenceScreen
+        android:key="crom_ota_start"
+        android:title="@string/crom_ota_settings_title"
+        android:icon="@drawable/ic_crom_ota" />
+
+    <!-- KernelTweaker -->
+    <PreferenceScreen
+        android:key="kerneltweaker_start"
+        android:title="@string/kerneltweaker_settings_title"
+        android:icon="@drawable/ic_kernel_tweaker" />
+
+    <!-- WakeLock -->
+    <PreferenceScreen
+        android:key="wakelock_blocker"
+        android:icon="@drawable/ic_wakelock_blocker"
+        android:fragment="com.android.settings.crom.WakeLockBlocker"
+        android:title="@string/wakelock_blocker"
+        android:summary="@string/wakelock_blocker_header_summary" />
+
+    <!-- Animations -->
+    <PreferenceScreen
+        android:id="@+id/interface_animation"
+        android:title="@string/interface_animation_title"
+        android:breadCrumbTitle="@string/interface_animation_title"
+        android:fragment="com.android.settings.crom.AnimationInterfaceSettings"
+        android:icon="@drawable/ic_rom_control_animations" />
+
+    <PreferenceScreen
+        android:key="misc_options"
+        android:fragment="com.android.settings.crom.MiscOptions"
+        android:layout="@layout/preference_miscoptions"
+        android:icon="@drawable/ic_crom_miscoptions"
+        android:title="@string/misc_options_title"/>
+
+    <!-- ProgressBar -->
+    <PreferenceScreen
+        android:key="progressbar_settings"
+        android:fragment="com.android.settings.cyanogenmod.ProgressBar"
+        android:icon="@drawable/ic_crom_progressbar"
+        android:title="@string/progressbar_title" >
+    </PreferenceScreen>
+
+    <!-- Density changer -->
+    <PreferenceScreen
+        android:id="@+id/density_changer"
+        android:title="@string/lcd_density_title"
+        android:icon="@drawable/ic_settings_density_changer"
+        android:fragment="com.android.settings.crom.DensityChanger" />
+
+    <PreferenceScreen
+        android:key="download_center"
+        android:icon="@drawable/ic_crom_download"
+        android:fragment="com.android.settings.crom.Download"
+        android:layout="@layout/preference_download"
+        android:title="@string/download_category" />
+
+    <!-- SlimSizer -->
+    <PreferenceScreen
+        android:id="@+id/system_app_remover"
+        android:icon="@drawable/ic_settings_slim_sizer"
+        android:title="@string/system_app_remover"
+        android:fragment="com.android.settings.slim.SystemappRemover" />
+
+</PreferenceScreen>
